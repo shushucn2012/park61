@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="购物车" />
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="编辑"
+            android:textColor="@color/g666666"
+            android:textSize="14sp" />
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pull_refresh_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/area_bottom"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:smoothScrollbar="true"
+            ptr:ptrHeaderBackground="#e5e5e5"
+            ptr:ptrHeaderTextColor="@color/g666666"
+            ptr:ptrMode="pullFromStart" />
+
+        <RelativeLayout
+            android:id="@+id/area_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gffffff">
+
+            <CheckBox
+                android:id="@+id/selectall_cb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/ckb_circle"
+                android:button="@null"
+                android:checked="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/tv_selectall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/selectall_cb"
+                android:text="全选"
+                android:textColor="@color/g666666"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/area_total"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/btn_commit"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        style="@style/text_33314_style"
+                        android:text="合计：" />
+
+                    <TextView
+                        android:id="@+id/tv_total_amount"
+                        style="@style/text_33316_style"
+                        android:text="￥0.00"
+                        android:textColor="@color/com_orange" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_save_amount"
+                    style="@style/text_33314_style"
+                    android:text="为您节省了￥0.00"
+                    android:textColor="@color/g999999" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/com_orange"
+                android:text="结算"
+                android:textColor="@color/gffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/top_bar">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pull_refresh_list_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/area_bottom2"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:smoothScrollbar="true"
+            ptr:ptrMode="disabled" />
+
+        <RelativeLayout
+            android:id="@+id/area_bottom2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gffffff">
+
+            <CheckBox
+                android:id="@+id/selectall_cb_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/ckb_circle"
+                android:button="@null"
+                android:checked="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                style="@style/text_66614_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/selectall_cb_delete"
+                android:text="全选" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/com_orange"
+                android:text="删除"
+                android:textColor="@color/gffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

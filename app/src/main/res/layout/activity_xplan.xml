@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_space_area"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        android:layout_alignParentTop="true"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="课表" />
+
+        <LinearLayout
+            android:id="@+id/llayout_week"
+            style="@style/topbar_rightbtn_style"
+            android:layout_width="55dp"
+            android:gravity="center_vertical|right"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_week_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下一周"
+                android:textColor="@color/g000000" />
+        </LinearLayout>
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:minHeight="45dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_topbar_month"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="月"
+            android:textColor="#616060"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.park61.moduel.shophome.viewprotocol.UpDownLeftRightScrollView
+            android:id="@+id/item_scroll_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/flayout_topbar_monday"
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/txt_topbar_monday"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="周一"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/txt_topbar_monday_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/g000000"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flayout_topbar_tuesday"
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/txt_topbar_tuesday"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="周二"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/txt_topbar_tuesday_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/g000000"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flayout_topbar_wednesday"
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/txt_topbar_wednesday"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="周三"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/txt_topbar_wednesday_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/g000000"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flayout_topbar_thursday"
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/txt_topbar_thursday"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="周四"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/txt_topbar_thursday_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/g000000"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/flayout_topbar_friday"
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/txt_topbar_friday"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="周五"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/txt_topbar_friday_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/g000000"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flayout_topbar_saturday"
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/txt_topbar_saturday"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="周六"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/txt_topbar_saturday_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/g000000"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flayout_topbar_sunday"
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/txt_topbar_sunday"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="周日"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/txt_topbar_sunday_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/g000000"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+        </com.park61.moduel.shophome.viewprotocol.UpDownLeftRightScrollView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/scroll_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="#e1e2e2"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"></ListView>
+</LinearLayout>

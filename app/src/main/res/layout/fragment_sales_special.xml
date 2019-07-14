@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrHeaderBackground="#e5e5e5"
+        ptr:ptrHeaderTextColor="@color/g666666"
+        ptr:ptrMode="both">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/banner_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@color/bg_color"
+                    android:visibility="gone">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/top_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <include
+                        android:id="@+id/top_vp_dot"
+                        layout="@layout/home_pageview_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_promotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/tebuy_promotion"
+                    android:visibility="gone"/>
+
+                <com.park61.widget.list.ListViewForScrollView
+                    android:id="@+id/lv_top_cate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@color/bg_color"
+                    android:dividerHeight="1dp"
+                    android:listSelector="#00000000" />
+
+                <include
+                    android:id="@+id/temai_mid_area"
+                    layout="@layout/temai_mid_layout" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/bg_color"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:background="@color/com_orange" />
+
+                    <TextView
+                        style="@style/text_33312_style"
+                        android:text="精品特卖"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/com_orange" />
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/com_orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.park61.widget.list.ListViewForScrollView
+                        android:id="@+id/lv_bottom_goods"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@color/bg_color"
+                        android:dividerHeight="3dp"
+                        android:listSelector="#00000000" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <com.park61.widget.NetLoadingView
+        android:id="@+id/view_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

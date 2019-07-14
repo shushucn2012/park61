@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bigcate_item_root"
+    android:layout_width="60dp"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:minHeight="30dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_brand_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/rec_gray_stroke_gray_solid"
+        style="@style/text_33312_style"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text="品牌" />
+
+</LinearLayout>

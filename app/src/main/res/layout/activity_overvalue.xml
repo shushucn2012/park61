@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_page_title"
+            style="@style/topbar_title_style"
+            android:text="超值限量" />
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_bar"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrHeaderBackground="#e5e5e5"
+        ptr:ptrHeaderTextColor="@color/g666666"
+        ptr:ptrMode="both" />
+    <RelativeLayout
+        android:id="@+id/block"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/empty_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/quexing"
+            android:textSize="15pt" />
+
+        <TextView
+            android:id="@+id/empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_img"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/g999999"
+            android:text="暂无数据"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_empty_tip"-->
+        <!--style="@style/text_66616_style"-->
+        <!--android:layout_below="@id/top_bar"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="150dp"-->
+        <!--android:text="暂无数据"-->
+        <!--android:visibility="gone" />-->
+
+</RelativeLayout>

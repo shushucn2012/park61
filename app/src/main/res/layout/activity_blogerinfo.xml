@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/rv_firsthead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        style="@style/AppTitle_Layout"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/AppTitle_TextView"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/AppTitle_BackView"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_red_backimg" />
+
+        <ImageView
+            android:id="@+id/iv_redshre"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/red_contentshare"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/nodata"
+        android:visibility="gone" />
+</RelativeLayout>

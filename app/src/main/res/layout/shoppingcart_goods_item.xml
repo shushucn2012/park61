@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp">
+
+        <CheckBox
+            android:id="@+id/goods_cb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ckb_circle"
+            android:button="@null"
+            android:checked="false"
+            android:focusableInTouchMode="false" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/goods_cb"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_v" />
+
+        <LinearLayout
+            android:id="@+id/lay_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cur_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥55.55"
+                android:textColor="#5c5c5c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/src_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥88.55"
+                android:textColor="@color/g999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_33314_style"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/lay_right"
+            android:layout_toRightOf="@id/icon"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="正版泰迪熊抱抱熊" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/title"
+            android:layout_below="@+id/lay_right"
+            android:layout_marginTop="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/area_add_reduce"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_color"
+                    style="@style/text_99912_style"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="颜色：紫色紫色紫色紫色紫色紫色紫色紫色紫色紫色" />
+
+                <TextView
+                    android:id="@+id/tv_size"
+                    style="@style/text_99912_style"
+                    android:layout_alignLeft="@+id/tv_color"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="尺码：l*2*3*2*3*2*3*2*3*2*3*2*3*2*3*2*3*2*3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_add_reduce"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edit_comt_selector"
+                android:gravity="right|bottom">
+
+                <Button
+                    android:id="@+id/btn_reduce"
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="-"
+                    android:textColor="@color/g666666"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_color" />
+
+                <TextView
+                    android:id="@+id/tv_buy_num"
+                    style="@style/text_33314_style"
+                    android:layout_width="28dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="1" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_color" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="+"
+                    android:textColor="@color/g666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            style="@style/hline_fill"
+            android:layout_alignLeft="@+id/icon"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/icon" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/area_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33000000"
+        android:clickable="true"
+        android:visibility="visible" >
+
+        <TextView
+            style="@style/text_33316_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@color/g999999"
+            android:text="失效" />
+    </RelativeLayout>
+
+</FrameLayout>

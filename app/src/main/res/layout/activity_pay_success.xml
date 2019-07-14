@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="支付结果" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/com_orange">
+
+        <TextView
+            style="@style/text_fff16_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="恭喜您！支付成功啦！" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_finish"
+        style="@style/btn_com_style"
+        android:layout_marginTop="80dp"
+        android:text="完成" />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:minHeight="60dp"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp">
+        <View
+            android:id="@+id/cicle"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_shape2"/>
+
+        <View
+            android:id="@+id/h_line"
+            android:layout_below="@+id/cicle"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/bg_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@+id/line"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_detail"
+            style="@style/text_66614_style"
+            android:text="您的包裹已出库您的包"
+            android:gravity="top"
+            android:maxLines="3"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_99912_style"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="2016-02-27 12:12:12" />
+    </LinearLayout>
+
+</LinearLayout>

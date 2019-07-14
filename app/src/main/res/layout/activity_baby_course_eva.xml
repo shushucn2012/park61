@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <LinearLayout
+        android:id="@+id/area_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:background="@color/gffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:id="@+id/img_course"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_v" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_marginLeft="5dp"
+                    android:text="课程评分" />
+
+                <com.park61.widget.ActsRatingBar
+                    android:id="@+id/ratingbar_course_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/hline_fill_top" />
+
+        <EditText
+            android:id="@+id/edit_input_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gffffff"
+            android:gravity="top"
+            android:hint="分享您的课程心得吧，至少5个字哦~"
+            android:maxLength="140"
+            android:minLines="5"
+            android:padding="10dp"
+            android:textColorHint="@color/g999999"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/area_add_and_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gffffff"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/area_add_pic"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/rec_xu_stroke_trans_solid"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/pingjiatupian" />
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:layout_marginTop="10dp"
+                    android:text="添加图片"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_left_pic_num"
+                style="@style/text_99914_style"
+                android:layout_marginLeft="10dp"
+                android:text="还能添加4张\n支持png、jpg、jpeg" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_input_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:background="@color/gffffff"
+            android:horizontalSpacing="10dp"
+            android:numColumns="4"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:verticalSpacing="10dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gffffff"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <com.park61.widget.circleimageview.CircleImageView
+                    android:id="@+id/img_teacher"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/headimg_default_img" />
+
+                <TextView
+                    android:id="@+id/tv_teacher_name"
+                    style="@style/text_99913_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="老师辛苦了，评价一下老师吧！" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="2dp"
+                    android:text="教学质量" />
+
+                <com.park61.widget.ActsRatingBar
+                    android:id="@+id/ratingbar_teacher_point"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gffffff">
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentTop="true" />
+
+        <CheckBox
+            android:id="@+id/cb_anonymous"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/chk_apply_babylist_item_selector"
+            android:button="@null"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/cb_anonymous"
+            android:gravity="center"
+            android:text="匿名评价"
+            android:textColor="@color/g999999"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_evaluate"
+            android:layout_width="160dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_rec"
+            android:gravity="center"
+            android:text="发表评价"
+            android:textColor="@color/gffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

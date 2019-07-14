@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="@string/order_activity_my_order" />
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    
+     <LinearLayout
+        android:id="@+id/title_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:background="@color/gffffff"
+        android:layout_marginTop="1dp"
+         >
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+             >
+             <RadioButton 
+                 android:id="@+id/all_tv"
+                 style="@style/myorder_activity_top_tv_style"
+                 android:text="@string/order_activity_all"
+                 android:checked="true"
+                 />
+             <RadioButton 
+                 android:id="@+id/pay_tv"
+                 style="@style/myorder_activity_top_tv_style"
+                 android:text="@string/order_activity_pay"
+                 />
+             <RadioButton 
+                 android:id="@+id/receive_tv"
+                 style="@style/myorder_activity_top_tv_style"
+                 android:text="@string/order_activity_receive"
+                 />
+             <RadioButton 
+                 android:id="@+id/evaluate_tv"
+                 style="@style/myorder_activity_top_tv_style"
+                 android:text="@string/order_activity_evaluate"
+                 />
+             <RadioButton 
+                 android:id="@+id/salesAfter_tv"
+                 style="@style/myorder_activity_top_tv_style"
+                 android:text="@string/order_activity_salesAfter"
+                 />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:padding="5dp"
+            android:background="@color/com_orange" 
+            android:layout_gravity="bottom"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+           />
+         <View
+             style="@style/hline_fill"/>
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+</LinearLayout>

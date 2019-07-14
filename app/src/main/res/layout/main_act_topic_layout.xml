@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/gffffff"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/area_topic1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_area5_title"
+            style="@style/text_33314_style"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_area5_des"
+            style="@style/text_66610_style"
+            android:singleLine="true"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/img_area5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_default_h" />
+    </LinearLayout>
+
+    <View style="@style/vline_fill" />
+
+    <LinearLayout
+        android:id="@+id/area_topic2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_area6_title"
+            style="@style/text_33314_style"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_area6_des"
+            style="@style/text_66610_style"
+            android:singleLine="true"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/img_area6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_h" />
+    </LinearLayout>
+
+    <View style="@style/vline_fill" />
+
+    <LinearLayout
+        android:id="@+id/area_topic3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_area7_title"
+            style="@style/text_33314_style"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_area7_des"
+            style="@style/text_66610_style"
+            android:singleLine="true"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/img_area7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_h" />
+    </LinearLayout>
+
+    <View style="@style/vline_fill" />
+
+    <LinearLayout
+        android:id="@+id/area_topic4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_area8_title"
+            style="@style/text_33314_style"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_area8_des"
+            style="@style/text_66610_style"
+            android:singleLine="true"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/img_area8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_h" />
+    </LinearLayout>
+
+</LinearLayout>

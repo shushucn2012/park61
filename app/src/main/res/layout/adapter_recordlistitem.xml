@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:id="@+id/rl_parent"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="@android:color/white">-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="12dp"-->
+        <!--android:background="@color/bg_color" />-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+        <!--<RelativeLayout-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:gravity="center_vertical"-->
+            <!--&gt;-->
+            <!--<com.makeramen.roundedimageview.RoundedImageView   xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/iv_righticon"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@color/alivc_blue"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--app:riv_corner_radius="5dp"-->
+                <!--app:riv_oval="false"-->
+                <!--/>-->
+        <!--</RelativeLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_title"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="16dp"-->
+                <!--android:textColor="@color/bdp_dark_gray"-->
+                <!--android:text="DAP测评很好帮助儿童"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_agearount"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="13dp"-->
+                <!--android:textColor="@color/bdp_dark_gray"-->
+                <!--android:text="测评宝宝：小妞妞"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_viewnum"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="13dp"-->
+                <!--android:textColor="@color/g999999"-->
+                <!--android:text="12位小朋友完成测试"-->
+                <!--/>-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_realprice"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:textColor="@color/com_red"-->
+                    <!--android:text="¥169.8"-->
+                    <!--android:textStyle="bold"-->
+                    <!--/>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_color" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/gffffff">
+
+        <com.makeramen.roundedimageview.RoundedImageView   xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_item"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dp"
+           app:riv_oval="false"
+            android:src="@drawable/img_default_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img_item"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_33316_style"
+                android:singleLine="true"
+                android:text="DAP多元智慧发展评测" />
+
+            <TextView
+                android:id="@+id/tv_child_name"
+                style="@style/text_33313_style"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:text="测评宝宝：小妞妞" />
+
+            <TextView
+                android:id="@+id/tv_test_time"
+                style="@style/text_99913_style"
+                android:layout_marginTop="2dp"
+                android:text="08-15 09:00" />
+
+            <TextView
+                android:id="@+id/tv_question_num"
+                style="@style/text_99913_style"
+                android:textColor="@color/color_text_red_light"
+                android:layout_marginTop="2dp"
+                android:text="共21题未完成，预计3分钟" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_unfinished"
+            android:layout_width="48dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:src="@drawable/icon_unfinished"/>
+    </RelativeLayout>
+
+</LinearLayout>
+<!--</LinearLayout>-->

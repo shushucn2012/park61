@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/head_area"
+    android:background="@color/gffffff"
+    android:minHeight="90dp"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/headimg_default_img" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/text_99916_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/img"
+            android:textColor="@color/g222222"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_evaluate_date"
+            style="@style/text_99912_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2017-03-04" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_replay"
+            style="@style/text_33314_style"
+            android:text="回复 ："
+            android:textColor="@color/com_orange"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_comt_content"
+            style="@style/text_33314_style"
+            android:text="12356"
+            android:textColor="@color/g222222"/>
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        style="@style/hline_fill"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            style="@style/topbar_area_style">
+
+            <Button
+                android:id="@+id/left_img"
+                style="@style/topbar_leftbtn_style"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/topbar_title_style"
+                android:text="个人信息" />
+
+            <View
+                style="@style/hline_fill_top"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/gffffff"
+            android:orientation="vertical">
+
+            <View style="@style/hline_fill" />
+
+            <RelativeLayout
+                android:id="@+id/me_pic_area"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="@color/gffffff">
+
+                <TextView
+                    android:id="@+id/tv_me_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="头像"
+                    android:textColor="@color/g333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_me_pic"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/img_me_pic_downarrow"
+                    android:src="@drawable/headimg_default_img" />
+
+                <ImageView
+                    android:id="@id/img_me_pic_downarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_next" />
+            </RelativeLayout>
+
+            <View
+                style="@style/hline_fill"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/name_area"
+                style="@style/me_item_area_style">
+
+                <TextView
+                    style="@style/me_item_tv_style"
+                    android:layout_alignParentLeft="true"
+                    android:text="姓名"
+                    android:textColor="@color/g333333" />
+
+                <TextView
+                    android:id="@+id/tv_name_value"
+                    style="@style/me_item_righttv_style"
+                    android:layout_toLeftOf="@+id/img_name_downarrow"
+                    android:text="未填写" />
+
+                <ImageView
+                    android:id="@+id/img_name_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <View style="@style/hline_margin12" />
+
+            <RelativeLayout
+                android:id="@+id/nickname_area"
+                style="@style/me_item_area_style">
+
+                <TextView
+                    style="@style/me_item_tv_style"
+                    android:layout_alignParentLeft="true"
+                    android:text="昵称"
+                    android:textColor="@color/g333333" />
+
+                <TextView
+                    android:id="@+id/tv_nickname_value"
+                    style="@style/me_item_righttv_style"
+                    android:layout_toLeftOf="@+id/img_nickname_downarrow"
+                    android:text="未填写" />
+
+                <ImageView
+                    android:id="@+id/img_nickname_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/hline_fill"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/pinfo_area"
+                style="@style/me_item_area_style"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_pinfo_label"
+                    style="@style/me_item_tv_style"
+                    android:layout_alignParentLeft="true"
+                    android:text="签名"
+                    android:textColor="@color/g333333" />
+
+                <TextView
+                    android:id="@+id/tv_pinfo_value"
+                    style="@style/me_item_righttv_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/img_pinfo_downarrow"
+                    android:layout_toRightOf="@+id/tv_pinfo_label"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="未填写" />
+
+                <ImageView
+                    android:id="@+id/img_pinfo_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <View style="@style/hline_margin12" />
+
+            <RelativeLayout
+                android:id="@+id/auth_area"
+                style="@style/me_item_area_style"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_auth_label"
+                    style="@style/me_item_tv_style"
+                    android:layout_alignParentLeft="true"
+                    android:text="官方认证"
+                    android:textColor="@color/g333333" />
+
+                <TextView
+                    android:id="@+id/tv_auth_value"
+                    style="@style/me_item_righttv_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/img_auth_downarrow"
+                    android:layout_toRightOf="@+id/tv_auth_label"
+                    android:gravity="right"
+                    android:maxLines="2"
+                    android:text="未认证" />
+
+                <ImageView
+                    android:id="@+id/img_auth_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/hline_fill"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/addr_area"
+                style="@style/me_item_area_style"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_addr_label"
+                    style="@style/me_item_tv_style"
+                    android:layout_alignParentLeft="true"
+                    android:text="家庭住址"
+                    android:textColor="@color/g333333" />
+
+                <TextView
+                    android:id="@+id/tv_addr_value"
+                    style="@style/me_item_righttv_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/img_addr_downarrow"
+                    android:layout_toRightOf="@+id/tv_addr_label"
+                    android:gravity="right"
+                    android:maxLines="2"
+                    android:text="未填写" />
+
+                <ImageView
+                    android:id="@+id/img_addr_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <View style="@style/hline_fill" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <View style="@style/hline_fill" />
+
+            <RelativeLayout
+                android:id="@+id/contact_area"
+                style="@style/me_item_area_style">
+
+                <TextView
+                    style="@style/me_item_tv_style"
+                    android:layout_alignParentLeft="true"
+                    android:text="手机号"
+                    android:textColor="@color/g333333" />
+
+                <TextView
+                    android:id="@+id/tv_contact_value"
+                    style="@style/me_item_righttv_style"
+                    android:layout_toLeftOf="@+id/img_contact_downarrow"
+                    android:text="未填写" />
+
+                <ImageView
+                    android:id="@+id/img_contact_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/hline_fill"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/weixin_area"
+                style="@style/me_item_area_style"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/me_item_tv_style"
+                    android:layout_alignParentLeft="true"
+                    android:text="微信"
+                    android:textColor="@color/g333333" />
+
+                <TextView
+                    android:id="@+id/tv_weixin_value"
+                    style="@style/me_item_righttv_style"
+                    android:layout_toLeftOf="@+id/img_weixin_downarrow"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/img_weixin_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/hline_fill"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/pwd_area"
+                style="@style/me_item_area_style">
+
+                <TextView
+                    style="@style/me_item_tv_style"
+                    android:layout_alignParentLeft="true"
+                    android:text="登录密码"
+                    android:textColor="@color/g333333" />
+
+                <TextView
+                    android:id="@+id/tv_pwd_value"
+                    style="@style/me_item_righttv_style"
+                    android:layout_toLeftOf="@+id/img_pwd_downarrow"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/img_pwd_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <View style="@style/hline_fill" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <View style="@style/hline_fill" />
+
+            <RelativeLayout
+                android:id="@+id/address_manage_area"
+                style="@style/me_item_area_style">
+
+                <TextView
+                    style="@style/me_item_tv_style"
+                    android:layout_alignParentLeft="true"
+                    android:text="地址管理"
+                    android:textColor="@color/g333333" />
+
+                <ImageView
+                    android:id="@+id/img_address_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <View style="@style/hline_fill" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_modify_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transbg"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_above="@+id/area_cancel"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rec_white_stroke_white_solid_corner10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_99913_style"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:gravity="center"
+                android:text="修改登录密码" />
+
+            <View style="@style/hline_fill" />
+
+            <TextView
+                android:id="@+id/tv_modify_by_pwd"
+                style="@style/text_33318_style"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:gravity="center"
+                android:text="通过旧密码" />
+
+            <View style="@style/hline_fill" />
+
+            <TextView
+                android:id="@+id/tv_modify_by_phone"
+                style="@style/text_33318_style"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:gravity="center"
+                android:text="通过手机验证" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/area_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/rec_white_stroke_white_solid_corner10"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text_33318_style"
+                android:text="取消"
+                android:textColor="@color/g08a6db" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/area"
+    android:layout_width="match_parent"
+    android:layout_height="104dp"
+    android:background="@color/gffffff">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_default_v" />
+
+    <LinearLayout
+        android:id="@+id/lay_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/icon"
+        android:layout_marginRight="12dp"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cur_price"
+            style="@style/text_33315_style"
+            android:text="￥29.9"
+            android:textColor="@color/color_text_red_deep" />
+
+        <TextView
+            android:id="@+id/src_price"
+            style="@style/text_99913_style"
+            android:text="￥59.9"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/num"
+            style="@style/text_99912_style"
+            android:layout_marginTop="3dp"
+            android:text="X2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goods_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/lay_right"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_33314_style"
+            android:layout_gravity="top"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="抱抱熊公仔抱抱熊抱抱熊公仔抱抱熊抱抱熊公仔抱抱熊抱抱熊公仔抱抱熊抱抱熊公仔抱抱熊" />
+
+        <TextView
+            android:id="@+id/tv_color"
+            style="@style/text_99912_style"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="颜色：黄色" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            style="@style/text_99912_style"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="尺码：80cm" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="105dp" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cate_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.park61.widget.gridview.GridViewForScrollView
+        android:id="@+id/gv_cate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:listSelector="#00000000"
+        android:paddingBottom="10dp"
+        android:numColumns="2" />
+
+</LinearLayout>

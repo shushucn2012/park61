@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_to_red_selector"
+    android:gravity="center_vertical"
+    android:minHeight="61dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/baby_area"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/img_shop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_v" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_shop"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大河春天"
+                android:textColor="@color/g333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="地址："
+                android:textColor="@color/g666666"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_downarrow"
+            style="@style/me_item_arrow_style"
+            android:layout_marginRight="12dp"
+            android:textSize="14sp"
+            android:text="200m"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/colorLine"
+        android:visibility="visible" />
+
+</LinearLayout>

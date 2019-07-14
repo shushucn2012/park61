@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="确认订单" />
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@id/top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/area_input_contactor"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/gffffff">
+
+                <TextView
+                    android:id="@+id/tv_rname"
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_rphone"
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_toLeftOf="@+id/img_right_arrow"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/img_right_arrow"
+                    style="@style/mem_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/addr_img"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/addr_img" />
+
+            <RelativeLayout
+                android:id="@+id/area_course_info"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gffffff"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/img_course"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_default_v" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/price_area"
+                    android:layout_toRightOf="@id/img_course"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_course_title"
+                        style="@style/text_33314_style"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        style="@style/text_66612_style"
+                        android:layout_below="@+id/tv_course_title"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/dianpudizhi_img" />
+
+                        <TextView
+                            android:id="@+id/tv_addr"
+                            style="@style/text_66612_style"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:text="" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@id/price_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_goods_price"
+                        style="@style/text_33314_style"
+                        android:text="￥0.00" />
+
+                    <TextView
+                        android:id="@+id/tv_goods_old_price"
+                        style="@style/text_99912_style"
+                        android:layout_marginTop="3dp"
+                        android:text="￥0.00" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/area_baby"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@color/gffffff">
+
+                <TextView
+                    android:id="@+id/tv_child_label"
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="报名人" />
+
+                <TextView
+                    android:id="@+id/tv_child_names"
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_child_label"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/btn_add_baby"
+                    android:layout_width="48dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/rec_orange_stroke_trans_solid"
+                    android:text="添加"
+                    android:textColor="@color/com_orange" />
+
+                <View
+                    style="@style/hline_fill"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/area_coupon_choose"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/gffffff"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_canuse_coupon_count"
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="优惠券" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_coupon_right_arrow">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_reduce_money"
+                        style="@style/text_66614_style"
+                        android:layout_marginLeft="3dp"
+                        android:text="无可用" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_coupon_right_arrow"
+                    style="@style/mem_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+
+                <View
+                    style="@style/hline_fill"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_invitecode_choose"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/gffffff"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_invitecode_label"
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="推荐码" />
+
+                <TextView
+                    android:id="@+id/tv_invitecode"
+                    style="@style/text_66614_style"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_invitecode_right_arrow"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/img_invitecode_right_arrow"
+                    style="@style/mem_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/gffffff"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:layout_centerVertical="true"
+                        android:text="商品金额" />
+
+                    <TextView
+                        android:id="@+id/tv_total_price"
+                        style="@style/text_33314_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="￥0.00"
+                        android:textColor="@color/com_orange" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:layout_centerVertical="true"
+                        android:text="优惠券" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_money"
+                        style="@style/text_33314_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="-￥0.00"
+                        android:textColor="@color/com_orange" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:layout_centerVertical="true"
+                        android:text="订单总计" />
+
+                    <TextView
+                        android:id="@+id/tv_final_money"
+                        style="@style/text_33314_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="+￥0.00"
+                        android:textColor="@color/com_orange" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:id="@+id/tv_total_label"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:text="合计：" />
+
+        <TextView
+            android:id="@+id/tv_total_money"
+            style="@style/text_33316_style"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_total_label"
+            android:text="￥0.00"
+            android:textColor="@color/com_orange" />
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_rec"
+            android:gravity="center"
+            android:text="立即支付"
+            android:textColor="@color/gffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

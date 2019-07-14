@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/begin_loading"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/area_jump"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rec_gray_stroke_white_solid"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_99914_style"
+            android:text="跳过" />
+
+        <TextView
+            android:id="@+id/tv_left_sec"
+            style="@style/text_99914_style"
+            android:text="3S" />
+    </LinearLayout>
+
+    <tyrantgit.widget.HeartLayout
+        android:id="@+id/heart_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pull_refresh_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    ptr:ptrHeaderBackground="@color/gffffff"
+    ptr:ptrHeaderTextColor="@color/g666666"
+    ptr:ptrMode="both">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/mtab_group"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/gffffff">
+
+                <RadioButton
+                    android:id="@+id/rb_goodsdetails"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="图文详情"
+                    android:textColor="@drawable/tab_text_color"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="12dp"
+                    android:background="@color/com_orange"
+                    android:layout_gravity="center_vertical"/>
+
+                <RadioButton
+                    android:id="@+id/rb_problem"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="问题咨询"
+                    android:textColor="@drawable/tab_text_color"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/details_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:visibility="visible">
+
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ask_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:visibility="gone">
+
+                <WebView
+                    android:id="@+id/webview_problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

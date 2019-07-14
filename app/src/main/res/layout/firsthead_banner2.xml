@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/text_33316_style"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginLeft="@dimen/com_border_margin"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="亲近大自然，和宝宝一起游玩东湖亲近大自然" />
+
+    <RelativeLayout
+        android:id="@+id/area_content"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/img_big"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_default_h" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/jianbianyinying"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_user_head"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/headimg_default_img" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/text_99912_style"
+                android:textColor="@color/color_text_red_deep"
+                android:layout_width="200dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="专题" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_botto"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/spliulan" />
+
+            <TextView
+                android:id="@+id/tv_read_num"
+                style="@style/text_99910_style"
+                android:layout_marginLeft="5dp"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/iv_comment"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/sppinglun" />
+
+            <TextView
+                android:id="@+id/tv_commt_num"
+                style="@style/text_99910_style"
+                android:layout_marginLeft="5dp"
+                android:text="0" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_99912_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="1小时前"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View style="@style/between_line" />
+</LinearLayout>

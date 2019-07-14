@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    >
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/guanbi"
+        android:layout_marginTop="39dp"
+        />
+    <ImageView
+        android:id="@+id/img_kuaizhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/liuzhukuaile"
+        android:layout_marginTop="170dp"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:layout_below="@+id/img_kuaizhao"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginTop="34dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/view_take_photo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/paizhao"
+                />
+
+            <TextView
+                style="@style/text_66614_style"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="center"
+                android:text="拍照" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_photo_album"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/xiangce"
+                />
+
+            <TextView
+                style="@style/text_66614_style"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="center"
+                android:text="相册" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_text_description"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/wenzi"
+                />
+
+            <TextView
+                style="@style/text_66614_style"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="center"
+                android:text="文字" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

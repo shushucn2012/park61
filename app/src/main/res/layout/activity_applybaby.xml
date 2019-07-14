@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="报名儿童" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorBg"
+        android:textSize="12dp"
+        android:textColor="@color/g333333"
+        android:text="报名儿童"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:listSelector="#00000000"
+        />
+</LinearLayout>

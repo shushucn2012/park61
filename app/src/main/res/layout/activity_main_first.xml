@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/area_top_firsthead"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/com_orange"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/top_space_area"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <RelativeLayout
+                android:id="@+id/top_bar"
+                style="@style/topbar_area_style"
+                android:background="@color/com_orange">
+
+                <ImageView
+                    android:id="@+id/img_scan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/saoyisao"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/sousuo_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/area_msg"
+                    android:layout_toRightOf="@+id/img_scan"
+                    android:background="@drawable/rec_gray_stroke_white_solid"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bsxiaosousuo" />
+
+                    <TextView
+                        style="@style/text_fff14_style"
+                        android:layout_marginLeft="10dp"
+                        android:text="搜索你感兴趣的" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/area_msg"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp">
+
+                    <ImageView
+                        android:id="@+id/img_msg"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/xiaoxi1" />
+
+                    <TextView
+                        android:id="@+id/tv_msg_remind"
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/circle_shape_white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/rv_firsthead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/area_top_firsthead"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/title_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/area_top_firsthead"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:background="@color/gffffff"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_class"
+                    style="@style/myorder_activity_top_tv_style"
+                    android:checked="true"
+                    android:text="班级"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/rb_first"
+                    style="@style/myorder_activity_top_tv_style"
+                    android:text="推荐"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_tv"
+                    style="@style/myorder_activity_top_tv_style"
+                    android:text="视频"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_topic"
+                    style="@style/myorder_activity_top_tv_style"
+                    android:text="话题"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/rg"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <View
+                        android:id="@+id/stick0"
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/com_orange"
+                        android:visibility="visible" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <View
+                        android:id="@+id/stick1"
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/com_orange"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <View
+                        android:id="@+id/stick2"
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/com_orange"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/area_stick3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone">
+                    <View
+                        android:id="@+id/stick3"
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/com_orange"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/hline_fill"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_lay" />
+
+        <ImageView
+            android:id="@+id/img_fabu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/fabuicon" />
+
+        <RelativeLayout
+            android:id="@+id/area_publish_share"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="70dp"
+            android:background="#f8f7f6"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_video_cover"
+                android:layout_width="35dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_v" />
+
+            <TextView
+                android:id="@+id/tv_upload_success"
+                style="@style/text_66612_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_video_cover"
+                android:text="上传成功" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_upload_success"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_66612_style"
+                    android:layout_marginTop="8dp"
+                    android:text="分享至" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_fx_pyq"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/fxpengyouquan" />
+
+                    <ImageView
+                        android:id="@+id/img_fx_qq"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/fxqq" />
+
+                    <ImageView
+                        android:id="@+id/img_fx_qzone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/fxkongjian" />
+
+                    <ImageView
+                        android:id="@+id/img_fx_wx"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/fxweixin" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/img_publish_share_close"
+                android:layout_width="43dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="-1dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/gaunbi2" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_cover_fabu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/area_start_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/fb_paishe" />
+
+                    <TextView
+                        style="@style/text_fff12_style"
+                        android:layout_marginTop="15dp"
+                        android:text="拍摄视频" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/area_huati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/fb_tiezi" />
+
+                    <TextView
+                        style="@style/text_fff12_style"
+                        android:layout_marginTop="15dp"
+                        android:text="帖子" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/area_import_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/fb_daoru" />
+
+                    <TextView
+                        style="@style/text_fff12_style"
+                        android:layout_marginTop="15dp"
+                        android:text="导入视频" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_fb_close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/fb_guanbi" />
+    </RelativeLayout>
+</FrameLayout>
+

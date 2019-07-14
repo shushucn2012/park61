@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="38dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trans_to_red_selector"
+        android:gravity="center_vertical"
+        android:minHeight="35dp"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/user_area"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                android:id="@+id/tv_reply_username"
+                style="@style/text_33314_style"
+                android:layout_centerVertical="true"
+                android:text="清风徐来" />
+
+            <TextView
+                android:id="@+id/tv_reply_time"
+                style="@style/text_99912_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="宝妈，2015-10-24"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/reply_comt_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_reply_content"
+                style="@style/text_33312_style"
+                android:text="这个游戏真不错，宝贝很喜欢呢！我们家小宝宝说他以后还想来这里画画" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/transparent" />
+
+</LinearLayout>

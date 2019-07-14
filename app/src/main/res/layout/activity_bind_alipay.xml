@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="绑定支付宝" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tip_area"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/top_bar"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/tv_input_tip"
+            style="@style/text_66614_style"
+            android:text="仅支持绑定实名认证的支付宝账号，验证码将发送到您账号绑定的手机上，请注意查收" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_old_account"
+        style="@style/me_item_area_style"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/back"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_aliaccount_old_label"
+            style="@style/text_33314_style"
+            android:layout_width="75dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="right"
+            android:text="当前账户"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_old_account"
+            style="@style/edit_com_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/tv_aliaccount_old_label"
+            android:background="@null"
+            android:hint=""
+            android:textColorHint="@color/g999999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/me_item_area_style"
+        android:layout_height="44dp"
+        android:background="@drawable/back">
+
+        <TextView
+            android:id="@+id/tv_aliaccount_label"
+            style="@style/text_33314_style"
+            android:layout_width="75dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="right"
+            android:text="支付宝账户"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edit_aliaccount"
+            style="@style/edit_com_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/tv_aliaccount_label"
+            android:background="@null"
+            android:hint="请输入收款支付宝账户"
+            android:textColorHint="@color/g999999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/me_item_area_style"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back">
+
+        <TextView
+            android:id="@+id/tv_name_label"
+            style="@style/text_33314_style"
+            android:layout_width="75dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="right"
+            android:text="认证姓名"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edit_realname"
+            style="@style/edit_com_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/tv_name_label"
+            android:background="@null"
+            android:hint="输入真实姓名"
+            android:textColorHint="@color/g999999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/me_item_area_style"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back">
+
+        <TextView
+            android:id="@+id/tv_vcode_label"
+            style="@style/text_33314_style"
+            android:layout_width="75dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="right"
+            android:text="验证码"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edit_vcode"
+            style="@style/edit_com_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_del"
+            android:layout_toRightOf="@id/tv_vcode_label"
+            android:background="@null"
+            android:hint="输入验证码"
+            android:inputType="number"
+            android:textColorHint="@color/g999999"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_del"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/area_vline"
+            android:scaleType="fitXY"
+            android:src="@drawable/shanchu"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/area_vline"
+            style="@style/vline_margin8"
+            android:layout_toLeftOf="@+id/area_sendvcode"
+            android:background="@color/gcccccc" />
+
+        <LinearLayout
+            android:id="@+id/area_sendvcode"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_sendvcode"
+                style="@style/text_red14_style"
+                android:text="发送验证码"
+                android:visibility="visible" />
+
+            <com.park61.widget.textview.AccoutSafeTimeTextView
+                android:id="@+id/ttv_time"
+                style="@style/text_66614_style"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/btn_com_style"
+        android:layout_marginTop="35dp"
+        android:text="确定" />
+
+</LinearLayout>

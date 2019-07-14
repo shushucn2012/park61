@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_to_red_selector"
+    android:gravity="center_vertical"
+    android:minHeight="277dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="183dp">
+
+        <ImageView
+            android:id="@+id/act_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_default_h" />
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/nianling2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_age"
+                style="@style/text_fff13_style"
+                android:text="3" />
+
+            <TextView
+                style="@style/text_fff10_style"
+                android:layout_marginLeft="1dp"
+                android:text="岁" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_leiji"
+            style="@style/text_fff12_style"
+            android:layout_alignBottom="@+id/act_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/circlert_reclt_trans_stroke_blacktrans_solid"
+            android:paddingBottom="2dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="2dp"
+            android:text="累计100人报名"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            style="@style/text_33312_style"
+            android:background="@color/com_orange"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="61区官方"
+            android:textColor="@color/gffffff"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/act_info_area_top"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_act_title"
+            style="@style/text_33316_style"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="61区南湖儿童创意绘画" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/tv_act_price"
+                    style="@style/text_red16_style"
+                    android:text="￥20" />
+
+                <TextView
+                    android:id="@+id/tv_act_price_old"
+                    style="@style/text_99914_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="￥19.9" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_read_num"
+                android:src="@drawable/liulan" />
+
+            <TextView
+                android:id="@+id/tv_read_num"
+                style="@style/text_99912_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_color" />
+
+</LinearLayout>

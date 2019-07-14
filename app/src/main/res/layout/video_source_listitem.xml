@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="18dp"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin"
+        android:paddingTop="18dp">
+
+        <com.park61.widget.circleimageview.CircleImageView
+            android:id="@+id/img_bofang_cover"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/img_default_v" />
+
+        <ImageView
+            android:id="@+id/img_bofang_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/gequcaidan" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/area_download_state"
+            android:layout_toRightOf="@+id/img_bofang_cover"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_source_title"
+                style="@style/text_33315_style"
+                android:text="可爱的二年级：大脚丫和小脚丫学芭蕾" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_source_duration"
+                    style="@style/text_99910_style"
+                    android:text="40:12" />
+
+                <TextView
+                    android:id="@+id/tv_download_times"
+                    style="@style/text_99910_style"
+                    android:layout_marginLeft="25dp"
+                    android:text="1.8W次下载" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_download_state"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/img_download_state"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/xiazai" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/linear_bottom"
+        style="@style/hline_margin12_top" />
+</LinearLayout>

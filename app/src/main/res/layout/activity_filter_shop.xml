@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="更换店铺" />
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gffffff" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/edit_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_search_shape"
+                android:gravity="center_vertical"
+                android:hint="请输入查询店铺"
+                android:maxLength="15"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/g333333"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/sousuo_area"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_sousuo" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/right_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/saoyisao2"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            style="@style/text_33314_style"
+            android:text="当前店铺:" />
+
+        <TextView
+            android:id="@+id/tv_currshop"
+            style="@style/text_33316_style"
+            android:layout_marginLeft="10dp"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ListView
+            android:id="@+id/lv_country"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/transparent" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/list_divider" />
+
+        <ListView
+            android:id="@+id/lv_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/gffffff"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/transparent" />
+    </LinearLayout>
+
+</LinearLayout>

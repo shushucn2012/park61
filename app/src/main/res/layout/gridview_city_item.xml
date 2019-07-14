@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/tv_now_city"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rec_e0e0e0_stroke_trans_solid"
+        android:gravity="center"
+        android:text="郑州"
+        android:textColor="@color/g666666"
+        android:textSize="16sp" />
+
+</LinearLayout>

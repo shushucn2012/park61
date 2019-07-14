@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/text_33316_style"
+        android:layout_gravity="center_horizontal"
+        android:text="您当前没有地址赶紧添加吧"
+        android:padding="10dp" />
+
+    <View
+        style="@style/hline_fill"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@color/gffffff"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/gaaaaaa" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorLine" />
+
+        <Button
+            android:id="@+id/btn_add_address"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@color/gffffff"
+            android:text="去添加"
+            android:textColor="@color/g000000" />
+    </LinearLayout>
+
+</LinearLayout>

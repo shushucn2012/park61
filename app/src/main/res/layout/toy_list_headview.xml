@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="headState"
+            type="String"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/order_state_area"
+            android:layout_width="match_parent"
+            android:background="@drawable/qinzi_top_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="30dp"
+            android:layout_height="92dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3b77"
+                android:textSize="15sp"
+                android:text="@{headState}"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:id="@+id/order_state_img"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <!-- 订单信息 -->
+        <LinearLayout
+            android:id="@+id/order_llyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_22214_style"
+                    android:text="联系人："
+                    />
+
+                <TextView
+                    android:id="@+id/contact_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    style="@style/text_22214_style"
+                    />
+                <TextView
+                    android:id="@+id/contact_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_22214_style"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_height="6dp"
+                style="@style/between_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="12dp"
+                >
+                
+                <ImageView
+                    android:id="@+id/activity_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/img_default_v"
+                    android:scaleType="centerCrop"
+                    />
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    >
+                    
+                    <TextView
+                        android:id="@+id/activity_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        style="@style/text_22215_style"
+                        />
+
+                    <TextView
+                        android:id="@+id/activity_time"
+                        style="@style/text_99912_style"
+                        android:layout_alignParentBottom="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/activity_site"
+                        style="@style/text_99912_style"
+                        android:layout_above="@id/activity_time"
+                        android:layout_marginBottom="3dp"
+                        />
+                </RelativeLayout>
+                
+            </LinearLayout>
+            <View style="@style/between_line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@color/white"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/text_99913_style"
+                        android:text="报名时间："
+                        />
+                    <TextView
+                        android:id="@+id/activity_signup_time"
+                        style="@style/text_99913_style"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/text_99913_style"
+                        android:text="签到时间："
+                        />
+                    <TextView
+                        android:id="@+id/activity_signin_time"
+                        style="@style/text_99913_style"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toylist_top_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <View
+                android:layout_height="6dp"
+                style="@style/between_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_22214_style"
+                    android:text="推荐活动装备"
+                    />
+
+                <TextView
+                    android:id="@+id/buy_toy_state"
+                    style="@style/text_red12_style"
+                    android:text="您还未购买装备"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_height="1dp"
+                style="@style/between_line" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

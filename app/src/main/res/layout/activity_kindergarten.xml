@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/text_99916_style"
+        android:layout_centerInParent="true"
+        android:text="加载中..." />
+
+    <LinearLayout
+        android:id="@+id/view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/kindergarten_bg"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        android:layout_alignParentTop="true"
+        android:background="@color/gffffff">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            android:id="@+id/tv_page_title"
+            style="@style/topbar_title_style"
+            android:text="幼儿园" />
+
+        <LinearLayout
+            android:id="@+id/right_img_add"
+            style="@style/topbar_rightbtn_style"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|right">
+
+            <TextView
+                style="@style/text_33314_style"
+                android:text="加入班级"
+                android:textColor="@color/color_text_red_deep" />
+        </LinearLayout>
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fdfafb"
+        android:orientation="vertical">
+
+        <View style="@style/hline_fill_top" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="邀请老师建立班级"
+            android:textColor="@color/color_text_red_deep"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

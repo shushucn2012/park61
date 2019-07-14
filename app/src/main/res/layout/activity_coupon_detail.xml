@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="优惠券详情" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/huaban1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gffffff" >
+
+        <TextView
+            android:id="@+id/tv_number"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="编号" />
+
+        <TextView
+            android:id="@+id/tv_number_value"
+            style="@style/text_66612_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="@drawable/xuxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gffffff" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="名称" />
+
+        <TextView
+            android:id="@+id/tv_title_value"
+            style="@style/text_66612_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="@drawable/xuxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gffffff" >
+
+        <TextView
+            android:id="@+id/tv_source"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="来源" />
+
+        <TextView
+            android:id="@+id/tv_source_value"
+            style="@style/text_66612_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="@drawable/xuxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gffffff" >
+
+        <TextView
+            android:id="@+id/tv_face"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="面值" />
+
+        <TextView
+            android:id="@+id/tv_face_value"
+            style="@style/text_66612_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="@drawable/xuxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:background="@color/gffffff" >
+
+        <TextView
+            android:id="@+id/tv_range"
+            style="@style/text_33314_style"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:text="可用范围" />
+
+        <TextView
+            android:id="@+id/tv_range_value"
+            android:layout_width="230dp"
+            style="@style/text_66612_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:layout_marginRight="12dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="@drawable/xuxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gffffff" >
+
+        <TextView
+            android:id="@+id/tv_releasedate"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="发放日期" />
+
+        <TextView
+            android:id="@+id/tv_releasedate_value"
+            style="@style/text_66612_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="@drawable/xuxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gffffff" >
+
+        <TextView
+            android:id="@+id/tv_limitdate"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="有效日期" />
+
+        <TextView
+            android:id="@+id/tv_limitdate_value"
+            style="@style/text_66612_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="@drawable/xuxian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_rule"
+            style="@style/text_33314_style"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:text="使用规则" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            style="@style/text_66612_style"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:maxLines="5"
+            android:text="" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/huaban2" />
+
+</LinearLayout>

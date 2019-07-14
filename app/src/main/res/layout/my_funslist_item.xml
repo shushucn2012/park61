@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/area_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp">
+
+        <com.park61.widget.circleimageview.CircleImageView
+            android:id="@+id/img_expert"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/img_default_v" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/tv_expert_focus"
+            android:layout_toRightOf="@+id/img_expert"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_expert_name"
+                    style="@style/text_66614_style"
+                    android:text="于刚" />
+
+                <LinearLayout
+                    android:id="@+id/area_expert_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="11dp"
+                        android:background="@color/com_orange" />
+
+                    <TextView
+                        android:id="@+id/tv_expert_flag"
+                        style="@style/text_org12_style"
+                        android:layout_marginLeft="5dp"
+                        android:text="专家" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_funs_num"
+                style="@style/text_99912_style"
+                android:layout_marginTop="3dp"
+                android:text="粉丝1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_expert_focus"
+            style="@style/text_org12_style"
+            android:layout_width="65dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rec_red_stroke_trans_solid_corner30"
+            android:gravity="center"
+            android:text="+关注" />
+    </RelativeLayout>
+
+    <View
+        style="@style/hline_fill_top"
+        android:layout_height="1dp" />
+</LinearLayout>

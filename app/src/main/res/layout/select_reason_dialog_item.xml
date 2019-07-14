@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff" >
+
+    <TextView
+        android:id="@+id/reason_value"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:text="7天无理由退货"
+        android:textColor="@color/g000000"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img_chioce"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/choice_selector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gffffff" >
+
+        <View
+            style="@style/hline_fill"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

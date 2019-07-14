@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/area_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/dialog_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/loading"
+            android:visibility="visible"/>
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_marginTop="10dp"
+            android:text="加载中..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/wangluo" />
+
+        <TextView
+            style="@style/text_99914_style"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/gaaaaaa" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            style="@style/button_refresh_style"
+            android:layout_marginTop="15dp"
+            android:text="重试" />
+    </LinearLayout>
+
+</LinearLayout>

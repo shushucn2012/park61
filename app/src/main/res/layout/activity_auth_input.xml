@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_com" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/hline_fill"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/text_33315_style"
+                        android:text="姓名" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/bitian" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_expertName"
+                    style="@style/edit_auth_style"
+                    android:layout_marginLeft="12dp"
+                    android:hint="请输入您的真实姓名" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+                <View style="@style/hline_margin12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    style="@style/text_33315_style"
+                    android:layout_width="80dp"
+                    android:text="手机号" />
+
+                <EditText
+                    android:id="@+id/edit_phone_num"
+                    style="@style/edit_auth_style"
+                    android:layout_marginLeft="12dp"
+                    android:hint="请输入您的手机号" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+                <View style="@style/hline_margin12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/text_33315_style"
+                        android:text="身份证号" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/bitian" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_identityNo"
+                    style="@style/edit_auth_style"
+                    android:layout_marginLeft="12dp"
+                    android:hint="请输入您的身份证号" />
+            </LinearLayout>
+
+            <View style="@style/hline_fill" />
+
+            <View
+                style="@style/hline_fill"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    style="@style/text_33315_style"
+                    android:layout_width="80dp"
+                    android:text="所在行业" />
+
+                <EditText
+                    android:id="@+id/edit_industry"
+                    style="@style/edit_auth_style"
+                    android:layout_marginLeft="12dp"
+                    android:hint="请输入您的所在职业" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+                <View style="@style/hline_margin12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    style="@style/text_33315_style"
+                    android:layout_width="80dp"
+                    android:text="单位/组织" />
+
+                <EditText
+                    android:id="@+id/edit_organization"
+                    style="@style/edit_auth_style"
+                    android:layout_marginLeft="12dp"
+                    android:hint="请输入您的单位/组织" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+                <View style="@style/hline_margin12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    style="@style/text_33315_style"
+                    android:layout_width="80dp"
+                    android:text="职位/称号" />
+
+                <EditText
+                    android:id="@+id/edit_title"
+                    style="@style/edit_auth_style"
+                    android:layout_marginLeft="12dp"
+                    android:hint="请输入您的职位/称号" />
+            </LinearLayout>
+
+            <View style="@style/hline_fill" />
+
+            <View
+                style="@style/hline_fill"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/text_33315_style"
+                        android:text="个人简介" />
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/bitian" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_label"
+                    style="@style/text_org15_style"
+                    android:layout_marginLeft="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <EditText
+                    android:id="@+id/edit_resume"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@color/gffffff"
+                    android:gravity="top"
+                    android:hint="说点什么吧"
+                    android:maxLength="140"
+                    android:minLines="5"
+                    android:textColor="#666666"
+                    android:textColorHint="#dadada"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:id="@+id/tv_add_label"
+                    style="@style/text_33315_style"
+                    android:layout_width="80dp"
+                    android:text="#添加标签#"
+                    android:textColor="#44bfff" />
+            </LinearLayout>
+
+            <View style="@style/hline_fill" />
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/btn_com_style"
+                android:layout_marginBottom="30dp"
+                android:text="下一步" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

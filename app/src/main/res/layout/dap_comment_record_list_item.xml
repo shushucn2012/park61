@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    android:background="@color/gffffff"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/text_33314_style"
+            android:text="学习潜能测评"/>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_marginTop="5dp"
+            style="@style/text_99912_style"
+            android:text="2017-02-11"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_downarrow"
+        style="@style/me_item_arrow_style"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp" />
+    <View
+        android:id="@+id/line"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"/>
+</RelativeLayout>

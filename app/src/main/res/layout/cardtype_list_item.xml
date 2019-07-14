@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:minHeight="45dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/gffffff">
+
+        <ImageView
+            android:id="@+id/img_card"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/huiyuanka" />
+
+        <TextView
+            android:id="@+id/tv_cardtype_name"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_card"
+            android:text="会员卡" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/text_99912_style"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/img_vip_member"
+            android:text="2016-09-25" />
+
+        <ImageView
+            android:id="@+id/img_vip_member"
+            style="@style/mem_item_arrow_style"
+            android:layout_marginRight="12dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/hline_fill"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="12dp"/>
+</LinearLayout>

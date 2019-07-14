@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_height="250dp"
+    android:id="@+id/rr_specalheader"
+    android:layout_width="match_parent">
+    <ImageView
+        android:layout_below="@+id/ll_title"
+        android:id="@+id/iv_teachpic"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/teach_empty"
+        android:scaleType="centerCrop"
+        />
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        style="@style/AppTitle_Layout">
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/AppTitle_TextView"
+            android:text=""/>
+        <ImageView
+            android:id="@+id/iv_back"
+            android:src="@drawable/icon_red_backimg"
+            style="@style/AppTitle_BackView"
+            android:contentDescription="@null"/>
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/red_contentshare"
+            android:id="@+id/iv_redshre"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

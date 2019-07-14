@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/area_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7.5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7.5dp">
+
+        <ImageView
+            android:id="@+id/img_expert"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_default_v" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_expert"
+            android:layout_toLeftOf="@+id/tv_expert_focus"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_expert_name"
+                    style="@style/text_33315_style"
+                    android:text="于刚" />
+
+                <TextView
+                    android:id="@+id/tv_expert_funs"
+                    style="@style/text_99911_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="6530粉丝" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_expert_level"
+                style="@style/text_99912_style"
+                android:layout_marginTop="14dp"
+                android:singleLine="true"
+                android:text="国家一级儿童教育专家" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_expert_focus"
+            style="@style/text_org12_style"
+            android:layout_width="65dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rec_red_stroke_trans_solid_corner30"
+            android:gravity="center"
+            android:text="+关注" />
+    </RelativeLayout>
+</LinearLayout>

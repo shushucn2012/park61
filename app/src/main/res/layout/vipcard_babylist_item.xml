@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="@drawable/white_to_red_selector"
+    android:gravity="center_vertical"
+    android:minHeight="66dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/baby_area"
+        android:layout_width="match_parent"
+        android:layout_height="65dp" >
+
+        <com.park61.widget.circleimageview.CircleImageView
+            android:id="@+id/img_baby"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/headimg_default_img" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/area_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/img_baby"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_33314_style"
+                android:text="小豆豆"
+                />
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/text_33312_style"
+                android:layout_marginTop="5dp"
+                android:text="2017-08-14到期"
+                />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_vip_member"
+            style="@style/mem_item_arrow_style"
+            android:layout_marginRight="12dp"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line"
+        style="@style/hline_fill"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="70dp"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_baby_name"
+        style="@style/text_66612_style"
+        android:layout_marginLeft="12dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="宝宝" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff" >
+
+        <TextView
+            android:id="@+id/tv_coupon_price"
+            style="@style/text_33316_style"
+            android:layout_width="85dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="left"
+            android:text="￥0.00"
+            android:textColor="@color/com_orange" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_coupon_price"
+            android:layout_toLeftOf="@+id/img_chosen"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_33314_style"
+                android:text="订单满100减50" />
+
+            <TextView
+                android:id="@+id/tv_limit_date"
+                style="@style/text_66612_style"
+                android:layout_marginTop="5dp"
+                android:text="有效期：2016.03.13至2016.04.21" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_chosen"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/xuanze_default" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/item_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff" >
+
+        <View
+            style="@style/hline_margin12"
+            android:background="@color/list_divider" />
+    </LinearLayout>
+
+</LinearLayout>

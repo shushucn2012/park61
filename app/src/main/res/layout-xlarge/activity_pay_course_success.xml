@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_btn_rec"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/chenggong" />
+
+                <TextView
+                    android:id="@+id/tv_tip"
+                    style="@style/text_fff18_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="支付成功" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_details"
+                    style="@style/text_fff14_style"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_bottom_tip"
+                style="@style/text_fff14_style"
+                android:layout_marginLeft="40dp"
+                android:text="" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/shenqingchenggong" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/colorLine" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="一起玩 更好玩" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/colorLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_33316_style"
+            android:layout_marginRight="24dp"
+            android:text="邀  好  友" />
+
+        <ImageView
+            android:id="@+id/img_fx_pyq"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/fxpengyouquan" />
+
+        <ImageView
+            android:id="@+id/img_fx_qq"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/fxqq" />
+
+        <ImageView
+            android:id="@+id/img_fx_qzone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/fxkongjian" />
+
+        <ImageView
+            android:id="@+id/img_fx_wx"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/fxweixin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rec_red_stroke_trans_solid_corner30"
+            android:text="完成"
+            android:textColor="@color/com_orange" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/rec_red_stroke_trans_solid_corner30"
+            android:text="宝宝课程"
+            android:textColor="@color/com_orange" />
+    </LinearLayout>
+
+</LinearLayout>

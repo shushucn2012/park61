@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    >
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            style="@style/topbar_title_style"
+            android:text="我的宝宝" />
+        <TextView
+            android:id="@+id/tv_cancle"
+            style="@style/text_66614_style"
+            android:text="取消"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            />
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparent" />
+
+</RelativeLayout>

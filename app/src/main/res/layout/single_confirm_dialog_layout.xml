@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:background="@drawable/rec_white_stroke_white_solid"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/text_33318_style"
+        android:layout_marginTop="20dp"
+        android:text="提 示" />
+
+    <TextView
+        android:id="@+id/text_msg"
+        style="@style/text_33316_style"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="提 示" />
+
+    <View
+        style="@style/hline_fill"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btn_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:text="完成"
+        android:textColor="@color/text_blue"
+        android:textSize="16sp" />
+
+</LinearLayout>

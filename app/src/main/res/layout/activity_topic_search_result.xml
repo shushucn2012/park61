@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/gffffff">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:layout_width="50dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/serach_area"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_cancel"
+            android:layout_toRightOf="@+id/left_img"
+            android:background="@drawable/rec_gray_stroke_gray_solid_corner30"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edit_sousuo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="搜索你感兴趣的"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLength="30"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:singleLine="true"
+                android:textColor="@color/g333333"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_sousuo"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiaosousuo" />
+
+            <ImageView
+                android:id="@+id/img_del"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/delete_img"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/text_66616_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="取消" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_tv"
+                style="@style/myorder_activity_top_tv_style"
+                android:checked="true"
+                android:text="视频"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_topic"
+                style="@style/myorder_activity_top_tv_style"
+                android:text="话题"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/rg"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <View
+                    android:id="@+id/stick0"
+                    android:layout_width="18dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/com_orange"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <View
+                    android:id="@+id/stick1"
+                    android:layout_width="18dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/com_orange"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/hline_fill"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

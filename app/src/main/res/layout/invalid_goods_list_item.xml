@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff">
+
+    <RelativeLayout
+        android:id="@+id/img_area"
+        android:layout_width="70dp"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/img_goods"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_v" />
+
+        <TextView
+            android:id="@+id/tv_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_invalid"
+            android:gravity="center"
+            android:text="失效"
+            android:textColor="@color/gffffff"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+             />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/goods_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/img_area"
+        android:maxLines="2"
+        android:text="杯子杯子杯子杯子杯子杯子杯子杯子"
+        android:textColor="@color/g333333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/goods_title"
+        android:layout_below="@id/goods_title"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="颜色：白色"
+        android:textColor="@color/g666666"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goods_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tv_color"
+        android:singleLine="true"
+        android:text="尺寸：标准"
+        android:textColor="@color/g666666"
+        android:textSize="12sp" />
+</RelativeLayout>
+

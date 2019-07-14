@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="185dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_v" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_33313_style"
+            android:layout_width="100dp"
+            android:layout_below="@+id/image"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="adfaadfaadfaadfaadfaadfaadfaadfaadfa" />
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/text_33315_style"
+            android:layout_alignParentBottom="true"
+            android:singleLine="true"
+            android:text="123"
+            android:textColor="@color/com_orange" />
+    </RelativeLayout>
+
+    <View style="@style/vline_fill" />
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="物流详情"
+        android:textColor="@color/g000000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gffffff" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/gffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_delivery_logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="选择快递"
+            android:textColor="@color/gaaaaaa"
+            android:textSize="14sp" />
+        <RelativeLayout
+            android:id="@+id/rl_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/rectangle_shape"
+            >
+
+            <TextView
+                android:id="@+id/tv_delivery_company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="申通"
+                android:textColor="@color/g000000"
+                android:textSize="14sp" />
+            <ImageView 
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:src="@drawable/select_arr"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                />
+
+            <!-- <Spinner -->
+            <!-- android:layout_marginLeft="12dp" -->
+            <!-- android:id="@+id/spinner1" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- /> -->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/gffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="快递单号"
+            android:textColor="@color/gaaaaaa"
+            android:textSize="14sp" />  
+            
+        <EditText
+            android:id="@+id/et_delivery_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text=""
+            android:maxLength="15"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/g000000"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gffffff" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@color/gffffff"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/gaaaaaa" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="@color/bg_color" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@color/gffffff"
+            android:text="确定"
+            android:textColor="@color/g000000" />
+    </LinearLayout>
+
+</LinearLayout>

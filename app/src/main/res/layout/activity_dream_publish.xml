@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="愿望发布" />
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_publish"
+        android:layout_below="@id/top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_dream_cover"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/gffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_dream_title_label"
+                        style="@style/text_33314_style"
+                        android:layout_centerVertical="true"
+                        android:text="梦想标题" />
+
+                    <EditText
+                        android:id="@+id/edit_dream_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toLeftOf="@+id/vline_title"
+                        android:layout_toRightOf="@id/tv_dream_title_label"
+                        android:background="@null"
+                        android:hint="不超过20个字"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@id/vline_title"
+                        style="@style/vline_margin8"
+                        android:layout_width="1dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/img_choose_photo" />
+
+                    <ImageView
+                        android:id="@id/img_choose_photo"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/xiangcetubiao" />
+                </RelativeLayout>
+
+                <View style="@style/hline_fill" />
+
+                <RelativeLayout
+                    android:id="@+id/area_choose_dream_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_dream_time_label"
+                        style="@style/text_33314_style"
+                        android:layout_centerVertical="true"
+                        android:text="实现时间" />
+
+                    <TextView
+                        android:id="@+id/tv_dream_time_value"
+                        style="@style/text_33314_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/tv_dream_time_label"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/img_dream_time_arrow"
+                        style="@style/mem_item_arrow_style"
+                        android:layout_marginRight="0dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/gffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/area_add_flag"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_addflag_tip"
+                        style="@style/text_99914_style"
+                        android:text="添加标签会吸引更多人哦！" />
+
+                    <TextView
+                        android:id="@+id/tv_flag_name"
+                        style="@style/text_33314_style"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/hline_margin12" />
+
+                <LinearLayout
+                    android:id="@+id/area_input_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:orientation="vertical">
+
+                    <WebView
+                        android:id="@+id/webview_input_textarea"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <GridView
+                        android:id="@+id/gv_input_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gffffff"
+                        android:columnWidth="80dp"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="4"
+                        android:padding="10dp"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/area_xiangji"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp">
+
+                        <ImageView
+                            android:id="@+id/img_xiangji"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/xiangji" />
+
+                        <LinearLayout
+                            android:id="@+id/area_mostpic_tip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/text_99914_style"
+                                android:text="图片最多4张\n支持png、jpg、jpeg" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actdetails_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- <WebView
+                     android:id="@+id/webview_actdetails"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />-->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_choose_game"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gffffff"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:text="选择现有游戏" />
+
+                <ImageView
+                    style="@style/mem_item_arrow_style"
+                    android:layout_marginRight="0dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/chk_xieyi"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/chk_apply_babylist_item_selector"
+                    android:button="@null" />
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="我已经阅读并同意" />
+
+                <TextView
+                    android:id="@+id/tv_fuwu_xieyi"
+                    style="@style/text_red12_style"
+                    android:text="《61区服务协议》" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/com_orange"
+        android:text="立即发布"
+        android:textColor="@color/gffffff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

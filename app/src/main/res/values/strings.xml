@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">61区</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="scan_text">请将二维码放在取景器内</string>
+    <string name="order_activity_my_order"> 我购买的商品</string>
+    <string name="order_activity_all">全部</string>
+    <string name="order_activity_pay">待付款</string>
+    <string name="order_activity_receive">待收货</string>
+    <string name="order_activity_evaluate">待评价</string>
+    <string name="order_activity_salesAfter">售后</string>
+
+    <string name="activity_time">活动时间</string>
+    <string name="activity_site">活动地点</string>
+    <string name="activity_peoples">TA们也参加了</string>
+    <string name="activity_notice">活动须知</string>
+    <string name="activity_detail">活动详情</string>
+    <string name="activity_arms">游戏物料</string>
+    <string name="activity_buy_arms">一键购买</string>
+    <string name="one_key_buy">一键购买</string>
+    <string name="activity_sign">立即报名</string>
+    <string name="activity_close">报名结束</string>
+    <string name="activity_sign_success">报名成功</string>
+    <string name="sign_peoples">报名人数</string>
+
+    <string-array name="order_statue_name">
+        <item></item>
+        <item>待付款</item>
+        <item>已付款</item>
+        <item>处理中</item>
+        <item>已出库</item>
+        <item>已收货</item>
+        <item>送货失败</item>
+        <item>要求退货</item>
+        <item>退货中</item>
+        <item>退货完成</item>
+        <item>已取消</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="order_statue_info">
+        <item></item>
+        <item>等待买家付款</item>
+        <item>买家已付款</item>
+        <item>等待商家发货</item>
+        <item>商品正在配送中</item>
+        <item>商品已签收</item>
+        <item>商品送货失败</item>
+        <item>申请退货中</item>
+        <item>商品正在退货中</item>
+        <item>退货完成</item>
+        <item>订单已取消</item>
+        <item>交易完成</item>
+    </string-array>
+
+    <string name="download_all">下载全部</string>
+    <string name="pause_all">全部暂停</string>
+    <string name="audio">音频</string>
+    <string name="video">视频</string>
+    <string name="download_num">共%1$d个</string>
+    <string name="ok">是</string>
+    <string name="no">否</string>
+    <string name="net_change_to_4g">网络切换为4G</string>
+    <string name="continue_to_download">继续下载会消耗您的流量</string>
+
+    <string name="order_str">{"accountBalance":9991113.89,"couponAmount":0.00,"orderAmount":0,"orderId":100385323145,"orderToPayAmount":8.01,"paymentMethodList":[{"id":1,"isDefault":0,"paymentMethodName":"余额支付","paymentMethodPicUrl":"http://ghpprod.oss-cn-qingdao.aliyuncs.com/icon/yue.png","paymentMethodType":2},{"id":2,"isDefault":0,"paymentMethodName":"支付宝支付","paymentMethodPicUrl":"http://ghpprod.oss-cn-qingdao.aliyuncs.com/icon/zhifubao.png","paymentMethodType":1},{"id":3,"isDefault":0,"paymentMethodName":"微信支付","paymentMethodPicUrl":"http://ghpprod.oss-cn-qingdao.aliyuncs.com/icon/weixin.png","paymentMethodType":1}]}</string>
+
+    <string name="register_paperno_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+
+    <string name="kefu_phone"><u>400-006-5111</u></string>
+</resources>

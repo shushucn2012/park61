@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_color" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/tv_order_number"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:text="订单编号：1324142342" />
+
+        <TextView
+            android:id="@+id/tv_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="报名成功"
+            android:textColor="@color/com_orange"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/actinfo_area"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#f9f9fc"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/img_act"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_v" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/area_price"
+            android:layout_toRightOf="@id/img_act"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_act_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="61区南湖儿童创意绘画61区南湖意绘画"
+                android:textColor="@color/g333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_act_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="地址：洪山区八一路延长线青菱小区"
+                android:textColor="@color/g666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_creator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/com_orange"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="61区官方"
+                android:textColor="@color/gffffff"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_act_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥20"
+                android:textColor="@color/g333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_small_course_num"
+                style="@style/text_99912_style"
+                android:text="共2节小课" />
+
+            <TextView
+                android:id="@+id/tv_apply_adult_num"
+                style="@style/text_99912_style"
+                android:text="成人×2" />
+
+            <TextView
+                android:id="@+id/tv_apply_child_num"
+                style="@style/text_99912_style"
+                android:text="儿童×2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/gffffff"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_pay"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:text="实付金额：" />
+
+        <TextView
+            android:id="@+id/tv_pay_sign"
+            style="@style/text_org12_style"
+            android:layout_alignBaseline="@+id/tv_pay"
+            android:layout_toRightOf="@+id/tv_pay"
+            android:text="￥" />
+
+        <TextView
+            android:id="@+id/tv_pay_value"
+            style="@style/text_org20_style"
+            android:layout_alignBaseline="@+id/tv_pay_sign"
+            android:layout_toRightOf="@+id/tv_pay_sign"
+            android:text="20.0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel_apply"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_actlist_share_selector"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text="取消订单"
+                android:textColor="@drawable/txt_actlist_share_selector"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_orderlist_selector"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text="继续支付"
+                android:textColor="@drawable/txt_orderlist_selector"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_actlist_share_selector"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text="分享"
+                android:textColor="@drawable/txt_actlist_share_selector"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_comt"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_orderlist_selector"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text="评价"
+                android:textColor="@drawable/txt_orderlist_selector"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

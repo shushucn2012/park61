@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/text_33316_style"
+        android:text="部分商品已失效"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textColor="@color/g000000"
+        />
+
+   <ListView
+       android:id="@+id/lv_listview"
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       android:layout_marginBottom="10dp"
+       android:background="@color/gffffff"
+       android:cacheColorHint="#00000000"
+       android:divider="#00000000"
+       android:listSelector="#00000000"
+       />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@color/gffffff"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="18sp"
+            android:textColor="@color/g999999" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorLine" />
+
+        <Button
+            android:id="@+id/btn_add_cart"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@color/gffffff"
+            android:text="返回购物车"
+            android:textSize="18sp"
+            android:textColor="@color/text_color_blue" />
+    </LinearLayout>
+
+</LinearLayout>

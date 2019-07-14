@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/area_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/img_close_cover"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/guanbi_icon" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        android:layout_below="@+id/area_top">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="配送地址" />
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar">
+
+        <LinearLayout
+            android:id="@+id/area_other"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gffffff"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv_p"
+                    style="@style/text_33314_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="请选择" />
+
+                <TextView
+                    android:id="@+id/tv_c"
+                    style="@style/text_33314_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="请选择"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <View
+                    android:id="@+id/stick0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/com_orange"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/stick1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/com_orange"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View style="@style/hline_fill" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/lv_province"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gffffff"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp"
+                    android:listSelector="@color/transparent" />
+
+                <ListView
+                    android:id="@+id/lv_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gffffff"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp"
+                    android:listSelector="@color/transparent"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/area_deaddr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ListView
+                android:id="@+id/lv_deaddr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/btn_other"
+                android:background="@color/gffffff"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/list_divider"
+                android:dividerHeight="1dp"
+                android:listSelector="@color/transparent" />
+
+            <Button
+                android:id="@+id/btn_other"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/com_orange"
+                android:gravity="center"
+                android:text="选择其他地址"
+                android:textColor="@color/gffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

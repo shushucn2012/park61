@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff">
+
+    <RelativeLayout
+        android:id="@+id/area_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:background="@color/bg_color">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/area_price"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_act_course_title"
+                style="@style/text_33314_style"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_course_applynum"
+                android:layout_marginTop="2dp"
+                style="@style/text_33314_style"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_course_prise"
+                style="@style/text_red14_style"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_course_fullnum"
+                android:layout_marginTop="2dp"
+                style="@style/text_33314_style"
+                android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_title"
+        android:layout_below="@id/area_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/img_kecheng"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_kecheng"/>
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_toRightOf="@id/img_kecheng"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="课程安排详情"/>
+
+        <TextView
+            android:id="@+id/tv_courselist_num_info"
+            style="@style/text_33314_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=""/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_course"
+        android:layout_below="@id/area_title"
+        android:layout_above="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <Button
+        android:id="@id/btn_apply"
+        style="@style/btn_bottom_style"
+        android:layout_alignParentBottom="true"
+        android:text="立即报名"/>
+
+</RelativeLayout>

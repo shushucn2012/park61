@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--  宝宝成长日程 -->
+ <string name="babyschedule_activity_title">宝宝日程</string>
+ <string name="babyschedule_activity_not_join_title">未参加</string>
+ <string name="babyschedule_activity_join_title">已参加</string>
+ <string name="babyschedule_activity_no_data_title">好冷清啊~宝宝没有任何游戏安排</string>
+ <!--  店铺首页 -->
+ <string name="shop_activity_no_data_title">当天没有游戏</string>
+</resources>

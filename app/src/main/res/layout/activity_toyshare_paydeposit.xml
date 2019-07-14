@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/text_33314_style"
+            android:text="手机验证" />
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/jnyjjc" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:text="缴纳押金" />
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/jnyjjc" />
+
+        <TextView
+            style="@style/text_99914_style"
+            android:text="立即申领" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/tv_deposit_label"
+                style="@style/text_33316_style"
+                android:layout_centerVertical="true"
+                android:text="押金" />
+
+            <TextView
+                style="@style/text_red12_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_deposit_label"
+                android:text="(可退)" />
+
+            <TextView
+                android:id="@+id/tv_deposit"
+                style="@style/text_33318_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="￥199" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_deposit_tip"
+            style="@style/text_99912_style"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:text="为了保障合理玩玩具，需缴纳押金。可随时申请退还到付款账户" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/gffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ListView
+            android:id="@+id/lv_pay_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/bg_color"
+            android:dividerHeight="1dp"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/btn_com_style"
+        android:text="押金充值" />
+
+</LinearLayout>

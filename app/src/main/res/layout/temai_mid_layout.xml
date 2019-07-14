@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/gffffff">
+
+
+        <LinearLayout
+            android:id="@+id/secondkill_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_sk_title"
+                style="@style/text_33316_style"
+                android:text="限时秒杀"
+                android:textColor="@color/com_orange"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_sk_des"
+                style="@style/text_66612_style"
+                android:layout_marginTop="2dp"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/img_sk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_default_v" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/area1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_area1_title"
+                        style="@style/text_33314_style"
+                        android:text=""
+                        android:textColor="@color/com_orange" />
+
+                    <TextView
+                        android:id="@+id/tv_area1_des"
+                        style="@style/text_66612_style"
+                        android:layout_marginTop="2dp"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/img_area1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_default_v" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color" />
+
+                <LinearLayout
+                    android:id="@+id/area2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_area2_title"
+                        style="@style/text_33314_style"
+                        android:text=""
+                        android:textColor="@color/com_orange" />
+
+                    <TextView
+                        android:id="@+id/tv_area2_des"
+                        style="@style/text_66612_style"
+                        android:layout_marginTop="2dp"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/img_area2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_default_v" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_color" />
+
+            <LinearLayout
+                android:id="@+id/area3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_area3_title"
+                        style="@style/text_33314_style"
+                        android:text=""
+                        android:textColor="@color/com_orange" />
+
+                    <TextView
+                        android:id="@+id/tv_area3_des"
+                        style="@style/text_66612_style"
+                        android:layout_marginTop="2dp"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/img_area3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_default_v" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color" />
+
+                <LinearLayout
+                    android:id="@+id/area4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_area4_title"
+                        style="@style/text_33314_style"
+                        android:text=""
+                        android:textColor="@color/com_orange" />
+
+                    <TextView
+                        android:id="@+id/tv_area4_des"
+                        style="@style/text_66612_style"
+                        android:layout_marginTop="2dp"
+                        android:text=""
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/img_area4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_default_v" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

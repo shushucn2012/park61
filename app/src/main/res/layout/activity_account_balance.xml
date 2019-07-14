@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="账户余额" />
+
+        <Button
+            android:id="@+id/btn_bill_detail"
+            style="@style/topbar_rightbtn_style"
+            android:layout_width="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="明细"
+            android:textSize="14sp"/>
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/com_orange"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/total_amount_title"
+                style="@style/text_33314_style"
+                android:layout_centerHorizontal="true"
+                android:text="总余额（元）"
+                android:textColor="@color/gffffff" />
+
+            <ImageView
+                android:id="@+id/help_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/shuoming_img" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_below="@+id/area"
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="0.00"
+            android:textColor="@color/gffffff"
+            android:textSize="40dp" />
+
+        <RelativeLayout
+            android:background="#ff6464"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/recharge_balance_area"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="49dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recharge_balance_title"
+                    style="@style/text_33314_style"
+                    android:layout_centerHorizontal="true"
+                    android:text="充值余额（元）"
+                    android:textColor="#ffcaca" />
+
+                <TextView
+                    android:id="@+id/recharge_balance_amount"
+                    style="@style/text_33314_style"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="0.00"
+                    android:textColor="#ffcaca" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/presenter_balance_area"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="49dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/presenter_balance_title"
+                    style="@style/text_33314_style"
+                    android:layout_centerHorizontal="true"
+                    android:text="赠送余额（元）"
+                    android:textColor="#ffcaca" />
+
+                <TextView
+                    android:id="@+id/presenter_balance_amount"
+                    style="@style/text_33314_style"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="0.00"
+                    android:textColor="#ffcaca" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_recharge"
+        style="@style/btn_com_style"
+        android:text="充值" />
+
+</LinearLayout>

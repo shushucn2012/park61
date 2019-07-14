@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:minHeight="48dp">
+
+    <com.park61.widget.circleimageview.CircleImageView
+        android:id="@+id/img_teacher"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/headimg_default_img" />
+
+    <TextView
+        android:id="@+id/tv_teacher_name"
+        style="@style/text_33314_style"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img_teacher"
+        android:text="123" />
+
+    <TextView
+        android:id="@+id/tv_course_time"
+        android:layout_width="96dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/rec_gray_stroke_trans_solid"
+        android:gravity="center"
+        android:text="每周二 10:30"
+        android:textColor="@color/g333333"
+        android:textSize="13sp" />
+</RelativeLayout>

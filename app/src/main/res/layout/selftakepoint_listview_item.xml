@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/gffffff"
+    android:gravity="center_vertical"
+    android:minHeight="80dp" >
+
+    <ImageView
+        android:id="@+id/img_chioce"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="12dp"
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/choice_selector" />
+
+    <LinearLayout
+        android:id="@+id/addr_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_shopname"
+                style="@style/text_33316_style"
+                android:layout_centerVertical="true"
+                android:maxLines="2"
+                android:text="大河春天点" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                style="@style/text_66614_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:maxLines="2"
+                android:text="距您0.2km" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_addr"
+            style="@style/text_66614_style"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:text="地址：武汉市江夏区纸坊北小区A1栋14楼" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/text_66614_style"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:text="电话：18062511980" />
+    </LinearLayout>
+
+</LinearLayout>

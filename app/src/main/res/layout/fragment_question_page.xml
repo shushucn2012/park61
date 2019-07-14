@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/area_top_progress"
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:layout_height="60dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/imgstart_rightline"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_toRightOf="@+id/img_circle_start"
+                    android:background="@color/gdedede" />
+
+                <ImageView
+                    android:id="@+id/img_circle_start"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/testprogress_circleleft_red" />
+
+                <TextView
+                    style="@style/text_fff14_style"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="5dp"
+                    android:text="1" />
+            </RelativeLayout>
+
+            <!--<RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/img1_leftline"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="-2dp"
+                    android:layout_toLeftOf="@+id/img_circle1"
+                    android:background="@color/gdedede" />
+
+                <ImageView
+                    android:id="@+id/img_circle1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/testprogress_circleboth_gray" />
+
+                <TextView
+                    style="@style/text_fff14_style"
+                    android:layout_centerInParent="true"
+                    android:text="2" />
+
+                <View
+                    android:id="@+id/img1_rightline"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_toRightOf="@+id/img_circle1"
+                    android:background="@color/gdedede" />
+            </RelativeLayout>-->
+
+            <!--<RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/img2_leftline"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="-2dp"
+                    android:layout_toLeftOf="@+id/img_circle2"
+                    android:background="@color/gdedede" />
+
+                <ImageView
+                    android:id="@+id/img_circle2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/testprogress_circleboth_gray" />
+
+                <TextView
+                    style="@style/text_fff14_style"
+                    android:layout_centerInParent="true"
+                    android:text="3" />
+
+                <View
+                    android:id="@+id/img2_rightline"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_toRightOf="@+id/img_circle2"
+                    android:background="@color/gdedede" />
+            </RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/imgend_leftline"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="-4dp"
+                    android:layout_toLeftOf="@+id/img_circle_end"
+                    android:background="@color/gdedede" />
+
+                <ImageView
+                    android:id="@+id/img_circle_end"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/testprogress_circleright_gray" />
+
+                <TextView
+                    android:id="@+id/tv_progress_num_end"
+                    style="@style/text_fff14_style"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="5dp"
+                    android:text="4" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.park61.widget.list.ListViewForScrollView
+            android:id="@+id/lv_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/rec_white_stroke_white_solid_corner10"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/rec_white_stroke_white_solid_cornerbottom10"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rec_reddeep_stroke_reddeep_solid_corner30"
+                android:text="下一题"
+                android:textColor="@color/gffffff" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/gffffff"
+    android:minHeight="90dp">
+
+    <ImageView
+        android:id="@+id/img_game"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_default_v" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@+id/img_game">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_33316_style"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="61区儿童节61区儿童节61区儿童节61区儿童节童节61区儿童节" />
+
+        <TextView
+            android:id="@+id/tv_lable"
+            style="@style/text_99912_style"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="5dp"
+            android:text="亲子游|意大利|儿童节"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/text_33314_style"
+                android:text="￥338"
+                android:textColor="@color/com_orange" />
+
+            <TextView
+                android:id="@+id/tv_src_price"
+                style="@style/text_99914_style"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/tv_price"
+                android:text="￥599"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                style="@style/text_99914_style"
+                android:layout_alignParentRight="true"
+                android:text="已售20" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/hline_fill"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp" />
+</RelativeLayout>

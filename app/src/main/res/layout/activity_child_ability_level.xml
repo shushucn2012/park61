@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="能力阶梯" />
+    </RelativeLayout>
+
+    <View
+        style="@style/hline_fill"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@color/gffffff"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/jiangbei_img"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/jiangbei_dap" />
+
+                    <ImageView
+                        android:id="@+id/huangguang_img"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_toLeftOf="@+id/jiangbei_img"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/huangguang_dap" />
+
+                    <ImageView
+                        android:id="@+id/dianzan_img"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_toLeftOf="@+id/huangguang_img"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/dianzan_dap" />
+
+                    <ImageView
+                        android:id="@+id/ok_img"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_toLeftOf="@+id/dianzan_img"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/okshoushi_dap" />
+                </RelativeLayout>
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="12dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:thumb="@null" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="综合评分"
+                            android:textColor="@color/g666666"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/tv_act_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50"
+                            android:textColor="@color/com_orange"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分，"
+                            android:textColor="@color/g666666"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="超过"
+                            android:textColor="@color/g666666"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_fenshu_per"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/com_orange"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="%同龄宝宝"
+                            android:textColor="@color/g666666"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <com.github.mikephil.charting.charts.RadarChart
+                    android:id="@+id/radar_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="#ff6b69" />
+
+                    <TextView
+                        style="@style/text_33310_style"
+                        android:layout_marginLeft="5dp"
+                        android:text="当前能力区域"
+                        android:textColor="@color/g999999" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_dimension"
+                    style="@style/text_99912_style"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="能力平衡图"
+                    android:textColor="@color/g222222" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_color" />
+
+            <LinearLayout
+                android:id="@+id/dap_area"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="@color/gffffff"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/comment_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_comment_name"
+                            style="@style/text_33314_style"
+                            android:text="测评动态"
+                            android:textColor="@color/g222222" />
+
+                        <TextView
+                            android:id="@+id/tv_comment_date"
+                            style="@style/text_99912_style"
+                            android:layout_marginTop="3dp"
+                            android:text="02-16"
+                            android:textColor="@color/g222222" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_profit_downarrow"
+                        style="@style/me_item_arrow_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_firstcomment_name"
+                    style="@style/text_33318_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/g222222" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorLine" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    style="@style/text_33318_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="查看更多"
+                    android:textColor="@color/com_orange" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/below_dap_area_line"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_color" />
+
+            <LinearLayout
+                android:id="@+id/recomment_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tishenjihua_dap" />
+
+                <TextView
+                    style="@style/text_33310_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="以下趣课有助于提升宝宝各项能力"
+                    android:textColor="@color/g999999" />
+
+                <com.park61.widget.list.ListViewForScrollView
+                    android:id="@+id/lv_recommend_act"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gffffff"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0.5dp"
+                    android:listSelector="@color/transparent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

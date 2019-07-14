@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="236dp"
+        android:layout_height="306dp"
+        android:layout_centerHorizontal="true">
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="-3dp"
+            android:paddingRight="-3dp">
+
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="135dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gffffff" />
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="135dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/renzhengshibai" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="200dp"
+                android:background="@color/gffffff"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_failed_info"
+                    style="@style/text_33318_style"
+                    android:layout_height="43dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="认证失败"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="16dp"
+                    android:text="可以重新去认证哦~" />
+
+                <Button
+                    android:id="@+id/btn_redo"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/rec_red_stroke_red_solid_corner30"
+                    android:gravity="center"
+                    android:text="重新认证"
+                    android:textColor="@color/gffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/guanbi_auth_failed" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

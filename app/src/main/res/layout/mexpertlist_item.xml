@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_hotgame"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    android:background="@color/gffffff"
+    android:minHeight="145dp">
+
+    <ImageView
+        android:id="@+id/img_teacher"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_default_v" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/img_teacher">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_33316_style"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="61区儿童节61区儿童节61区儿童节61区儿童节童节61区儿童节" />
+
+        <TextView
+            android:id="@+id/tv_lable"
+            style="@style/text_99912_style"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:layout_marginTop="11dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="亲子游|意大利|儿童节" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/text_33312_style"
+            android:layout_below="@+id/tv_lable"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="第六课 | 父母对孩子有意专注的经验式教育" />
+
+        <View
+            android:id="@+id/bottom_line"
+            style="@style/between_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

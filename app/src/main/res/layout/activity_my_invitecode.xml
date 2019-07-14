@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="我的推荐码" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_invite_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_orange_key" />
+
+        <TextView
+            android:id="@+id/tv_invite_code"
+            style="@style/text_33316_style"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="123456"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/text_66614_style"
+            android:layout_below="@id/tv_invite_code"
+            android:layout_centerHorizontal="true"
+            android:text="(长按复制)" />
+    </RelativeLayout>
+
+</LinearLayout>

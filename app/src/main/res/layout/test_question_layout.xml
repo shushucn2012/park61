@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gffffff"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_question_id"
+            style="@style/text_red15_style"
+            android:text="问题1：" />
+
+        <TextView
+            android:id="@+id/tv_question_content"
+            style="@style/text_33315_style"
+            android:text="宝宝可以连续翻身（比如，能连续从俯卧翻到仰卧、再翻到俯卧）吗？" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <Button
+            android:id="@+id/tv_answer_one"
+            style="@style/btn_answer_style"
+            android:layout_weight="1"
+            android:text="是"/>
+
+        <Button
+            android:id="@+id/tv_answer_two"
+            style="@style/btn_answer_style"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="不是"/>
+
+        <Button
+            android:id="@+id/tv_answer_three"
+            style="@style/btn_answer_style"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="不知道"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            style="@style/topbar_area_style">
+
+            <Button
+                android:id="@+id/left_img"
+                style="@style/topbar_leftbtn_style"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/topbar_title_style"
+                android:text="成长测评" />
+
+            <View
+                style="@style/hline_fill_top"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="30dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/tv_process"
+                android:background="@color/gray_red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@id/tv_process"
+                android:gravity="center_vertical">
+
+                <View
+                    android:id="@+id/view_focus"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/com_orange" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="21dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/jindutuzi" />
+
+                <View
+                    android:id="@+id/view_default"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="99"
+                    android:background="@color/gray_red" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_process"
+                style="@style/text_red12_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="1/10" />
+        </RelativeLayout>
+
+        <com.park61.widget.viewpager.CanotSlidingViewpager
+            android:id="@+id/vp_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-160dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img_tishi_tuzi"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_v"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_tishi_qipao"
+            android:layout_width="105dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:layout_toRightOf="@id/img_tishi_tuzi"
+            android:scaleType="fitXY"
+            android:src="@drawable/tishiyuyun" />
+
+        <TextView
+            android:id="@+id/tv_tuzi_tip"
+            style="@style/text_fff14_style"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="202dp"
+            android:layout_toRightOf="@id/img_tishi_tuzi"
+            android:text="专心答题很,\n重要哦" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66666666"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_left_flip"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_flip_left" />
+
+        <TextView
+            style="@style/text_fff14_style"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/img_left_flip"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:text="往左滑动到上一题" />
+
+        <ImageView
+            android:id="@+id/img_right_flip"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_flip_right" />
+
+        <TextView
+            style="@style/text_fff14_style"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/img_right_flip"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="15dp"
+            android:text="往右滑动到下一题" />
+    </RelativeLayout>
+
+</FrameLayout>

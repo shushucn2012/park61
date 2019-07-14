@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/base_info_num"
+            style="@style/text_33316_style"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"
+            android:text="1."
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_33316_style"
+            android:layout_marginLeft="10dp"
+            android:text="DAP多元测评（一）"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_choose_type"
+            style="@style/text_99916_style"
+            android:layout_marginLeft="10dp"
+            android:text="（多选）"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_color" />
+
+    <com.park61.widget.list.ListViewForScrollView
+        android:id="@+id/lv_ea_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/gffffff"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="1dp"
+        android:visibility="visible" />
+
+</LinearLayout>

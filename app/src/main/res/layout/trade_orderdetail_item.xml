@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff" >
+		<ImageView
+			android:id="@+id/bag_img"
+			android:layout_width="15dp"
+			android:layout_height="15dp"
+			android:src="@drawable/baoguo_img"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="12dp"
+			/>
+
+        <TextView
+            android:id="@+id/tv_bags_num"
+			android:layout_toRightOf="@+id/bag_img"
+            style="@style/text_33316_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:text="包裹1" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/tv_bags_num"
+            android:text="共" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="1"
+            android:textColor="@color/com_orange" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/tv_num"
+            android:text="件" />
+        
+         <LinearLayout 
+	        android:layout_alignParentRight="true"	        
+	        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+	        >
+	        <Button
+		        android:id="@+id/btn1"
+	            style="@style/text_99914_style"
+	            android:text="" 
+	            android:background="@drawable/rectangle_shape_red"
+				android:textColor="@color/com_orange"
+	            android:layout_marginRight="12dp"
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp"
+	            android:paddingTop="3dp"
+	            android:paddingBottom="3dp"
+	            android:focusable="false"
+	            />
+		    <Button
+		        android:id="@+id/btn2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/rectangle_shape_red"
+	            android:layout_marginRight="12dp"
+	            android:textColor="@color/com_orange"
+	            android:textSize="14sp"
+	            android:text="" 
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp"
+	            android:paddingTop="3dp"
+	            android:paddingBottom="3dp"
+	            android:focusable="false"/>
+	    </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/hline_fill"/>
+
+    <LinearLayout
+        android:id="@+id/lay_goods"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_store"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+    </LinearLayout>
+
+    <TextView
+		android:visibility="gone"
+        android:id="@+id/tv_order_state"
+        style="@style/text_33314_style"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="" />
+
+</LinearLayout>

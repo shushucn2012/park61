@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/white_to_red_selector"
+    android:gravity="center_vertical"
+    android:minHeight="80dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/img_folder_logo"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_folder_name"
+        style="@style/text_66616_style"
+        android:layout_marginLeft="15dp"
+        android:text="123"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_folder_count"
+        style="@style/text_99914_style"
+        android:layout_marginLeft="5dp"
+        android:text="(55)张" />
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/banner_area"
+            android:layout_width="match_parent"
+            android:layout_height="198dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/top_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                android:id="@+id/top_vp_dot"
+                layout="@layout/home_pageview_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <View style="@style/between_line" />
+
+    <include
+        android:id="@+id/area_banner2"
+        layout="@layout/home_banner2_layout" />
+
+    <View style="@style/between_line" />
+
+    <LinearLayout
+        android:id="@+id/area_star_baby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:id="@+id/tv_star_baby"
+                style="@style/text_33316_style"
+                android:layout_centerVertical="true"
+                android:text="创造力之星"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.park61.widget.list.HorizontalListViewV2
+            android:id="@+id/horilistview"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@color/gffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+    </LinearLayout>
+
+    <View style="@style/between_line" />
+
+    <LinearLayout
+        android:id="@+id/area_gold_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_gold_teacher"
+                style="@style/text_33316_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="金牌培训师"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/area_change_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:text="换一换" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="1dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_change" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_gold_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/between_line"
+        android:layout_height="8dp" />
+
+    <LinearLayout
+        android:id="@+id/area_mid_banner2"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@color/gffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/img_mid0"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/img_mid1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_h" />
+
+            <ImageView
+                android:id="@+id/img_mid2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_h" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/between_line"
+        android:layout_height="8dp" />
+
+</LinearLayout>

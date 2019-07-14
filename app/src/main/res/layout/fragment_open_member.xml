@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrHeaderBackground="#e5e5e5"
+        ptr:ptrHeaderTextColor="@color/g666666"
+        ptr:ptrMode="pullFromStart">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gffffff"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/bg_color" />
+
+                <RelativeLayout
+                    android:id="@+id/area_baby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/img_baby"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/headimg_default_img" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/img_baby"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_baby_name"
+                            style="@style/text_33314_style"
+                            android:layout_marginTop="15dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            style="@style/text_99912_style"
+                            android:layout_marginTop="5dp"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_change_baby"
+                        style="@style/text_33314_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="26dp"
+                        android:text="更换宝宝"
+                        android:textColor="@color/text_blue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/area_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_store_name"
+                        style="@style/text_33314_style"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="12dp"
+                        android:text="亲，您没选店铺"
+                        android:textColor="@color/com_orange" />
+
+                    <TextView
+                        android:id="@+id/tv_range"
+                        style="@style/text_99912_style"
+                        android:layout_alignBottom="@+id/tv_store_name"
+                        android:layout_toRightOf="@+id/tv_store_name"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_change_store"
+                        style="@style/text_33314_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="12dp"
+                        android:text="选择店铺"
+                        android:textColor="@color/text_blue" />
+                </RelativeLayout>
+
+                <com.park61.widget.list.ListViewForScrollView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@color/gffffff"
+                    android:dividerHeight="3dp"
+                    android:listSelector="#00000000" />
+            </LinearLayout>
+        </ScrollView>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_com" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_btn_rec"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/circle_shape_white"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/circle_shape_red"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/text_fff14_style"
+                    android:text="审核中..." />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rec_lightgray_stroke_trans_solid_corner30"
+            android:text="取消审核"
+            android:textColor="@color/gffffff"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/img_grxx"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/grxx_default" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_grxx"
+            android:text="个人信息" />
+
+        <TextView
+            style="@style/text_99912_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="待审核" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/img_zmcl"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/zmcl_default" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_zmcl"
+            android:text="证明材料" />
+
+        <TextView
+            style="@style/text_99912_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="待审核" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/img_sfzm"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shenfen_default" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_sfzm"
+            android:text="身份证明" />
+
+        <TextView
+            style="@style/text_99912_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="待审核" />
+    </RelativeLayout>
+
+
+</LinearLayout>

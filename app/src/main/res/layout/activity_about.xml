@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="关于" />
+        <View style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_app_about" />
+
+    <TextView
+        style="@style/text_33316_style"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="61区"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        style="@style/text_66616_style"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="版本号：V1.1.1" />
+
+    <Button
+        android:id="@+id/btn_request"
+        style="@style/btn_com_style"
+        android:text="请求"
+        android:visibility="gone"/>
+
+</LinearLayout>

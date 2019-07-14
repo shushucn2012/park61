@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="育儿专家" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            style="@style/text_99912_style"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/img_right_arrow"
+            android:text="更多" />
+
+        <ImageView
+            android:id="@+id/img_right_arrow"
+            android:layout_width="6dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gdjiantou" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <LinearLayout
+            android:id="@+id/area_expert_one"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_expert_one"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_v" />
+
+            <TextView
+                android:id="@+id/tv_expert_name_one"
+                style="@style/text_33314_style"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="于刚" />
+
+            <TextView
+                android:id="@+id/tv_expert_level_one"
+                style="@style/expert_level_text_style"
+                android:layout_marginTop="10dp"
+                android:text="国家一级儿童国家" />
+
+            <TextView
+                android:id="@+id/tv_expert_focus_one"
+                style="@style/text_org12_style"
+                android:layout_width="65dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rec_red_stroke_trans_solid_corner30"
+                android:gravity="center"
+                android:text="+关注" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_expert_two"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_expert_two"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_v" />
+
+            <TextView
+                android:id="@+id/tv_expert_name_two"
+                style="@style/text_33314_style"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="于刚" />
+
+            <TextView
+                android:id="@+id/tv_expert_level_two"
+                style="@style/expert_level_text_style"
+                android:layout_marginTop="10dp"
+                android:text="国家一级儿童教育专家" />
+
+            <TextView
+                android:id="@+id/tv_expert_focus_two"
+                style="@style/text_org12_style"
+                android:layout_width="65dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rec_red_stroke_trans_solid_corner30"
+                android:gravity="center"
+                android:text="+关注" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_expert_three"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_expert_three"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_v" />
+
+            <TextView
+                android:id="@+id/tv_expert_name_three"
+                style="@style/text_33314_style"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="于刚" />
+
+            <TextView
+                android:id="@+id/tv_expert_level_three"
+                style="@style/expert_level_text_style"
+                android:layout_marginTop="10dp"
+                android:text="国家一级儿童教育专家" />
+
+            <TextView
+                android:id="@+id/tv_expert_focus_three"
+                style="@style/text_org12_style"
+                android:layout_width="65dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rec_red_stroke_trans_solid_corner30"
+                android:gravity="center"
+                android:text="+关注" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_expert_four"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_expert_four"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_v" />
+
+            <TextView
+                android:id="@+id/tv_expert_name_four"
+                style="@style/text_33314_style"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="于刚" />
+
+            <TextView
+                android:id="@+id/tv_expert_level_four"
+                style="@style/expert_level_text_style"
+                android:layout_marginTop="10dp"
+                android:text="国家一级儿" />
+
+            <TextView
+                android:id="@+id/tv_expert_focus_four"
+                style="@style/text_org12_style"
+                android:layout_width="65dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rec_red_stroke_trans_solid_corner30"
+                android:gravity="center"
+                android:text="+关注" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_color" />
+
+</LinearLayout>

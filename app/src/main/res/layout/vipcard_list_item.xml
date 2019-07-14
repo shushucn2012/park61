@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:background="@color/gffffff"
+    android:minHeight="63dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/area_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_33314_style"
+                android:text="购买会员服务（大宝）" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/text_66612_style"
+                android:layout_marginTop="5dp"
+                android:text="2016-08-14 09:00" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_count"
+            style="@style/text_33316_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="+35次"
+            android:textColor="@color/com_orange" />
+    </RelativeLayout>
+
+    <View
+        style="@style/hline_fill"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
+</LinearLayout>

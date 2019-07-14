@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_title"
+            android:layout_width="350dp"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:id="@+id/area_more"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text_99912_style"
+                android:text="更多" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/gengduoxiaotubiao"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.park61.widget.list.HorizontalListViewV2
+        android:id="@+id/horilistview"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@color/gffffff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</LinearLayout>

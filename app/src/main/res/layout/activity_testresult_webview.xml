@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com_whole" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/top_bar"
+        android:max="100"
+        android:progress="0" />
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_finish"
+        android:layout_below="@id/pb"
+        android:layout_marginTop="1dp" />
+
+    <LinearLayout
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fcf9fa"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_btn_name"
+            style="@style/text_33316_style"
+            android:text="继续测评"
+            android:textColor="@color/color_text_red_deep" />
+
+    </LinearLayout>
+</RelativeLayout>

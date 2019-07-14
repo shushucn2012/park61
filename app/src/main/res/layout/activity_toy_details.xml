@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/area_top"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />
+
+        <View
+            android:id="@+id/area_play"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp" />
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/hxbofang"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:thumb="@drawable/player_settings_bright_thumb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/currentPosition"
+                    style="@style/text_fff10_style"
+                    android:layout_alignParentLeft="true"
+                    android:text="00:00" />
+
+                <TextView
+                    android:id="@+id/totalDuration"
+                    style="@style/text_fff10_style"
+                    android:layout_alignParentRight="true"
+                    android:text="00:00" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            style="@style/topbar_area_style"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:id="@+id/area_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/icon_back_white"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_share"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|right"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/navi_fenxiang_btn"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/area_bottom"
+        android:layout_below="@+id/area_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_33316_style"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:text="" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+                <LinearLayout
+                    android:id="@+id/area_per_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        style="@style/text_org16_style"
+                        android:text="每天" />
+
+                    <TextView
+                        android:id="@+id/tv_share_price"
+                        style="@style/text_org16_style"
+                        android:text=""
+                        android:textSize="24sp" />
+
+                    <TextView
+                        style="@style/text_org16_style"
+                        android:text="块钱" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_real_price"
+                    style="@style/text_99912_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/area_per_price"
+                    android:paddingTop="8dp"
+                    android:text="￥" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv_read_num"
+                        style="@style/text_99912_style"
+                        android:layout_marginLeft="5dp"
+                        android:paddingTop="8dp"
+                        android:text="人已参加" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line_between_price_tamll"
+                style="@style/hline_margin12"
+                android:layout_marginTop="5dp" />
+
+            <RelativeLayout
+                android:id="@+id/area_tmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/img_tmall"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/tianmao" />
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_tmall"
+                    android:text="天猫" />
+
+                <TextView
+                    android:id="@+id/tv_tmall_price"
+                    style="@style/text_66614_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img_tmall_arrow_right"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/img_tmall_arrow_right"
+                    style="@style/mem_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_jd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/img_jd"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/jingdong" />
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_jd"
+                    android:text="京东" />
+
+                <TextView
+                    android:id="@+id/tv_jd_price"
+                    style="@style/text_66614_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img_jd_arrow_right"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/img_jd_arrow_right"
+                    style="@style/mem_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/bg_color" />
+
+            <RelativeLayout
+                android:id="@+id/area_apply_progress_rule"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:id="@+id/tv_sl"
+                    style="@style/text_fff12_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/rec_orange_stroke_orange_solid"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="申领流程" />
+
+                <TextView
+                    style="@style/text_99914_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_sl"
+                    android:text="免费申领.手机验证.领取玩具.玩具换新" />
+
+                <ImageView
+                    style="@style/mem_item_arrow_style"
+                    android:layout_marginRight="12dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/bg_color"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/baoxiang" />
+
+                <TextView
+                    style="@style/text_99914_style"
+                    android:layout_marginLeft="8dp"
+                    android:text="开启宝箱" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/details_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:visibility="visible">
+
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/area_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_red"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/area_bottom_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/area_bottom_right"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_left_num"
+                style="@style/text_org16_style"
+                android:text="只剩 件，把TA带回家" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/area_bottom_right"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_rec"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text_fff16_style"
+                android:text="立即申请"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_toRightOf="@id/area_bottom_left"
+            android:src="@drawable/gxxqjiantou"/>
+    </RelativeLayout>
+</RelativeLayout>

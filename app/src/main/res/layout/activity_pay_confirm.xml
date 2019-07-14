@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        android:layout_width="match_parent" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="确认支付" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/user_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img_act"
+                android:layout_width="72dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_default_v" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/img_downarrow"
+                android:layout_toRightOf="@id/img_act"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_act_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="61区南湖儿童创意绘画"
+                    android:textColor="@color/g333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_act_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="游戏地址：洪山区八一路延长线青菱小区"
+                    android:textColor="@color/g666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_creator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/com_orange"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="61区官方"
+                    android:textColor="@color/gffffff"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg_color" />
+
+        <TextView
+            android:id="@+id/tv_left_day"
+            style="@style/text_33316_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="距离游戏开始还有10天"
+            android:textColor="@color/com_orange" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_66614_style"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:text="报名信息" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/text_33314_style"
+                android:text="报名费用：" />
+
+            <TextView
+                android:id="@+id/tv_total_money"
+                style="@style/text_33316_style"
+                android:text="￥10"
+                android:textColor="@color/com_orange" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/text_33314_style"
+                android:text="参与人：" />
+
+            <TextView
+                android:id="@+id/tv_apply_num"
+                style="@style/text_66614_style"
+                android:text="1位成人    1位儿童" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_66614_style"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:text="选择支付方式" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <ImageView
+                android:id="@+id/img_wx_pay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/weixinzhifu" />
+
+            <TextView
+                style="@style/text_33314_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/img_wx_pay"
+                android:text="微信支付" />
+
+            <CheckBox
+                android:id="@+id/chk_wxpay"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/chk_apply_babylist_item_selector"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <ImageView
+                android:id="@+id/img_ali_pay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/alizhifu" />
+
+            <TextView
+                style="@style/text_33314_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/img_ali_pay"
+                android:text="支付宝支付" />
+
+            <CheckBox
+                android:id="@+id/chk_alipay"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/chk_apply_babylist_item_selector"
+                android:button="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/btn_com_style"
+        android:layout_marginTop="30dp"
+        android:text="确认支付" />
+
+</LinearLayout>

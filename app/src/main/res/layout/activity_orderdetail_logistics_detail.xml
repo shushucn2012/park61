@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="物流详情" />
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:text="物流状态："
+                        android:textColor="@color/g000000" />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        style="@style/text_33314_style"
+                        android:text=""
+                        android:textColor="@color/com_orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/companyname_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_66614_style"
+                        android:text="物流公司：" />
+
+                    <TextView
+                        android:id="@+id/tv_company"
+                        style="@style/text_66614_style"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/delivery_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_66614_style"
+                        android:text="运单编号：" />
+
+                    <TextView
+                        android:id="@+id/tv_logisitic_number"
+                        style="@style/text_66614_style"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_66614_style"
+                        android:text="订单编号：" />
+
+                    <TextView
+                        android:id="@+id/tv_order_number"
+                        style="@style/text_66614_style"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/bg_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="订单跟踪"
+                android:textColor="@color/g000000"
+                android:textSize="14sp" />
+
+            <com.park61.widget.list.ListViewForScrollView
+                android:id="@+id/lv_listview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gffffff"
+                android:divider="#00000000" />
+            <com.park61.widget.list.ListViewForScrollView
+                android:id="@+id/lv_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:background="@color/gffffff"
+                android:divider="#00000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/gffffff"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="14dp"
+                        android:background="@color/colorLine" />
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/circle_shape1" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/gffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="湖北省武汉市江夏区纸坊公司     已签收     签收人：本人  "
+                        android:textColor="@color/text_txt_bg"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_sign_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:text="2016-03-01 12:12:12"
+                        android:textColor="@color/text_txt_bg"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

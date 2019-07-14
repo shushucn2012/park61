@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:background="@null"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/mengxiangwu" />
+
+        <LinearLayout
+            android:id="@+id/btn_right"
+            style="@style/topbar_rightbtn_style"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|right">
+
+            <ImageView
+                android:id="@+id/img_dream_user"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/headimg_default_img" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="5dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:src="@drawable/erjidaohang" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/top_bar"
+        android:max="100"
+        android:progress="0" />
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pb"
+        android:layout_marginTop="1dp" />
+
+    <LinearLayout
+        android:id="@+id/area_publish"
+        android:layout_width="140dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/dreamhouse_publish_btn"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/fabumengxiang" />
+
+        <TextView
+            style="@style/text_fff16_style"
+            android:layout_marginLeft="8dp"
+            android:text="发布梦想" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/topbar_title_style"
+            android:text="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/quguanfang" />
+
+        <TextView
+            style="@style/text_33318_style"
+            android:layout_marginTop="23dp"
+            android:layout_gravity="center_horizontal"
+            android:text="申请61区身份认证" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="66dp">
+
+            <ImageView
+                android:id="@+id/img_guanfang_auth"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/guanfangrenzheng" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:layout_toRightOf="@+id/img_guanfang_auth"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:text="官方认证" />
+
+                <TextView
+                    style="@style/text_66613_style"
+                    android:layout_marginTop="10dp"
+                    android:text="提高身份真实性，更加权威可信" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="33dp">
+
+            <ImageView
+                android:id="@+id/img_user_auth"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/yonghurentong" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:layout_toRightOf="@+id/img_user_auth"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:text="用户认同" />
+
+                <TextView
+                    style="@style/text_66613_style"
+                    android:layout_marginTop="10dp"
+                    android:text="获得广大用户的认可，实现价值" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="33dp">
+
+            <ImageView
+                android:id="@+id/img_add_funs"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/zengjiafensi" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:layout_toRightOf="@+id/img_add_funs"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:text="增加粉丝" />
+
+                <TextView
+                    style="@style/text_66613_style"
+                    android:layout_marginTop="10dp"
+                    android:text="获得推荐机会，增加关注几率" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_to_auth"
+        style="@style/btn_com_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="去认证" />
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:background="@color/bg_color"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img_course"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baba" />
+
+        <LinearLayout
+            android:id="@+id/area_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/roundProgressBar2"
+            android:layout_toRightOf="@+id/img_course"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_cousre_title"
+                style="@style/text_33314_style"
+                android:ellipsize="end"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="工匠系列之童话故事探索之旅，公主和王子的城堡" />
+
+            <TextView
+                android:id="@+id/tv_last_time"
+                style="@style/text_66612_style"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:text="上次学习：2017年6月30日 14:30" />
+
+            <TextView
+                android:id="@+id/tv_pinjia"
+                style="@style/text_red12_style"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="立即评价 >" />
+        </LinearLayout>
+
+        <com.park61.widget.progress.RoundProgressBar
+            android:id="@+id/roundProgressBar2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android_custom:roundColor="#8800b4ff"
+            android_custom:roundProgressColor="@color/text_blue"
+            android_custom:roundWidth="3dp"
+            android_custom:textColor="@color/g333333"
+            android_custom:textSize="11sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

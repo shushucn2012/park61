@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/top_space_area"
+            android:layout_width="match_parent"
+            android:layout_height="23dp" />
+
+        <RelativeLayout style="@style/topbar_area_style">
+
+            <Button
+                android:id="@+id/btn_fenlei"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/leimufenlei" />
+
+            <LinearLayout
+                android:id="@+id/sousuo_area"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btn_fenlei"
+                android:layout_toLeftOf="@+id/btn_cart"
+                android:background="@drawable/rec_gray_stroke_gray_solid_corner30"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sousuo_white" />
+
+                <TextView
+                    style="@style/text_99914_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="搜索你感兴趣的" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_cart"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/area_msg"
+                android:background="@drawable/cart_site" />
+
+            <RelativeLayout
+                android:id="@+id/area_msg"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp">
+
+                <ImageView
+                    android:id="@+id/img_xiaoxi"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/xiaoxihuise" />
+
+                <TextView
+                    android:id="@+id/tv_msg_remind"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/circle_shape_gray"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/hline_fill_top" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/area_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone">
+
+                <com.park61.widget.viewpager.SalesTopPagerSlidingTabStrip
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@+id/area_shuaixuan"
+                    android:background="@color/gffffff"
+                    android:fillViewport="false" />
+
+                <View
+                    android:layout_width="52dp"
+                    android:layout_height="35dp"
+                    android:background="@color/gffffff"
+                    android:clickable="true" />
+
+                <LinearLayout
+                    android:id="@+id/area_cover"
+                    android:layout_width="52dp"
+                    android:layout_height="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gffffff"
+                    android:clickable="true"
+                    android:gravity="center|bottom"
+                    android:visibility="visible">
+
+                    <View
+                        android:id="@+id/area_phoney_underline"
+                        android:layout_width="32dp"
+                        android:layout_height="2dp"
+                        android:background="@color/com_orange" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_temai"
+                    style="@style/text_66614_style"
+                    android:layout_width="52dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="特卖"
+                    android:textColor="@color/com_orange" />
+
+                <View
+                    style="@style/vline_margin4_sales"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_temai" />
+
+                <View
+                    style="@style/vline_margin4_sales"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/area_shuaixuan" />
+
+                <LinearLayout
+                    android:id="@+id/area_shuaixuan"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/gffffff"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_shaixuan"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/shangchengshuaixuan" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/hline_fill" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.park61.widget.NetLoadingView
+            android:id="@+id/view_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            android:id="@+id/tv_page_title"
+            style="@style/topbar_title_style"
+            android:text="课程安排" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/img_kecheng"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_kecheng" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_kecheng"
+            android:text="课程安排详情" />
+
+        <TextView
+            android:id="@+id/tv_courselist_num_info"
+            style="@style/text_33314_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="#00000000" />
+
+</LinearLayout>

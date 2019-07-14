@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_to_red_selector"
+    android:gravity="center_vertical"
+    android:minHeight="100dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/user_area"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/tv_username"
+            style="@style/text_66614_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/img_user"
+            android:text="清风徐来" />
+
+        <com.park61.widget.ProductRatingBar
+            android:id="@+id/ratingbar_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/comt_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_comt_content"
+            style="@style/text_33314_style"
+            android:layout_alignParentLeft="true"
+            android:text="这个游戏真不错，宝贝很喜欢呢！我们家小宝宝说他以后还想来这里画画" />
+
+        <LinearLayout
+            android:id="@+id/lv_eva_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gffffff"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:text="颜色:" />
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:layout_marginLeft="5dp"
+                    android:text="黄色" />
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="规格:" />
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:layout_marginLeft="5dp"
+                    android:text="120" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_comt_time"
+                style="@style/text_99912_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="2015-10-24" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/list_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/colorLine" />
+
+</LinearLayout>

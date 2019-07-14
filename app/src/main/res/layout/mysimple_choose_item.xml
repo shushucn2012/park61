@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    android:minHeight="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/chk_item">
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            style="@style/text_33316_style"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:text="选项选项选项选项选项选项选项选项选项" />
+
+        <TextView
+            android:id="@+id/tv_item_remark"
+            style="@style/text_33316_style"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:singleLine="true"
+            android:text="123123123123123123"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/chk_item"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/xuanze_default2" />
+
+</RelativeLayout>

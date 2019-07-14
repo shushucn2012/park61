@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="选择时间和数量" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/area_mid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/area_bottom"
+        android:layout_below="@id/top_bar"
+        android:layout_marginBottom="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/com_orange"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:id="@+id/tv_act_course_title"
+                    style="@style/text_fff14_style"
+                    android:text="疯狂生物数学" />
+
+                <TextView
+                    android:id="@+id/tv_act_course_starttime"
+                    style="@style/text_fff14_style"
+                    android:layout_marginTop="2dp"
+                    android:text="开始时间：8月4日 09:00" />
+
+                <TextView
+                    android:id="@+id/tv_courselist_num_info"
+                    style="@style/text_fff14_style"
+                    android:layout_marginTop="2dp"
+                    android:text="可报4节，共5节" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_99912_style"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="选择场次" />
+
+            <com.park61.widget.gridview.GridViewForScrollView
+                android:id="@+id/gv_session"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/gffffff"
+                android:horizontalSpacing="5dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:verticalSpacing="10dp" />
+
+            <TextView
+                style="@style/text_99912_style"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="选择数量" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/gffffff"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp" >
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:layout_centerVertical="true"
+                        android:text="成人" />
+
+                    <TextView
+                        android:id="@+id/tv_adult_price"
+                        style="@style/text_33316_style"
+                        android:layout_centerInParent="true"
+                        android:text="免费"
+                        android:textColor="@color/com_orange" />
+
+                    <TextView
+                        android:id="@+id/tv_adult_price_unit"
+                        style="@style/text_33314_style"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/tv_adult_price"
+                        android:text="/人" />
+
+                    <Button
+                        android:id="@+id/btn_reduce"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/et_elder_num"
+                        android:background="@drawable/cartin_reduce_btn_selector" />
+
+                    <EditText
+                        android:id="@+id/et_elder_num"
+                        style="@style/text_33314_style"
+                        android:layout_width="35dp"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/btn_add"
+                        android:gravity="center"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/btn_add"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/cartin_increase_btn_selector" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color" />
+
+                <com.park61.widget.list.ListViewForScrollView
+                    android:id="@+id/lv_babylist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#e5e5e5"
+                    android:dividerHeight="1dp" />
+            </LinearLayout>
+
+            <View
+                style="@style/hline_margin12" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/gffffff">
+
+                <Button
+                    android:id="@+id/btn_add_child"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/icon_add_other_baby"
+                    android:drawablePadding="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:background="@null"
+                    android:text="添加玩伴"
+                    android:textColor="@color/com_orange"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/area_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/btn_confirm"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/text_33314_style"
+                android:text="合计：" />
+
+            <TextView
+                android:id="@+id/tv_total_money"
+                style="@style/text_33316_style"
+                android:text="￥0"
+                android:textColor="@color/com_orange" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/com_orange"
+            android:text="填写订单"
+            android:textColor="@color/gffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

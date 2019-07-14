@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/g000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        android:background="@color/g000000">
+
+        <Button
+            android:id="@+id/left_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/icon_back_white" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="店铺二维码"
+            android:textColor="@color/gffffff" />
+
+        <LinearLayout
+            android:id="@+id/right_img"
+            style="@style/topbar_rightbtn_style"
+            android:layout_width="55dp"
+            android:gravity="center_vertical|right"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/erjidaohang" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_topbar_line"
+        style="@style/hline_fill_top"
+        android:layout_below="@id/top_bar"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shop_qcode_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="12dp">
+
+            <ImageView
+                android:id="@+id/img_shop"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_qujiawan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    style="@style/text_33316_style"
+                    android:maxLines="1"
+                    android:text="61区"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_addr"
+                    style="@style/text_66614_style"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="1"
+                    android:text="61区" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btn_share"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- <LinearLayout
+                 android:id="@+id/llayout_contain_qrcode_bg"
+                 android:layout_width="250dp"
+                 android:layout_height="230dp"
+                 android:layout_centerHorizontal="true"
+                 android:background="@drawable/shop_qrcode_bg"
+                 android:gravity="center">-->
+
+            <ImageView
+                android:id="@+id/img_qrcode"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:scaleType="fitXY" />
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:id="@+id/txt_desc"
+                style="@style/text_66614_style"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/img_qrcode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="扫一扫店铺二维码，获取店铺活动信息"
+                android:textColor="@color/gaaaaaa" />
+
+            <Button
+                android:id="@+id/btn_share"
+                style="@style/btn_com_style"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="分享"
+                android:textColor="@color/gffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

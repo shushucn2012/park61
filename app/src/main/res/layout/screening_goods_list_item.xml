@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@color/gffffff"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="125dp">
+
+        <ImageView
+            android:id="@+id/img_goods"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_v" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_goods">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                style="@style/text_33316_style"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="61区南湖儿童创意绘画61区南湖儿童创意绘画" />
+            <RelativeLayout
+                android:id="@id/price_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/tv_goods_price"
+                    style="@style/text_66614_style"
+                    android:text="￥78.9"
+                    android:textColor="@color/collect_red"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_old_goods_price"
+                    android:layout_toRightOf="@+id/tv_goods_price"
+                    android:layout_centerVertical="true"
+                    style="@style/text_99912_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="￥99.5" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

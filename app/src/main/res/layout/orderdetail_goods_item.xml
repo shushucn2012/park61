@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_default_v" />
+
+    <LinearLayout
+        android:id="@+id/lay_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cur_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/g333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/src_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/g999999"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="5dp"
+            android:textColor="@color/g999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/lay_right"
+        android:layout_toRightOf="@id/icon"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="@color/g333333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title"
+        android:layout_below="@id/title"
+        android:singleLine="true"
+        android:text=""
+        android:layout_marginTop="5dp"
+        android:textColor="@color/g666666"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/tv_color"
+        android:singleLine="true"
+        android:text=""
+        android:layout_marginTop="5dp"
+        android:textColor="@color/g666666"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/tv_order_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="处理中"
+        android:textColor="@color/com_orange"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/lay_right"
+        android:layout_alignRight="@+id/lay_right"
+        android:layout_alignEnd="@+id/lay_right" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/icon"
+        android:background="@color/bg_color" />
+
+</RelativeLayout>

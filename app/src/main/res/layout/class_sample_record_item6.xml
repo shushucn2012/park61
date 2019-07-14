@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/text_notice_date_style"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="昨天" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="8dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <com.park61.widget.circleimageview.CircleImageView
+                android:id="@+id/img_teacher"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/headimg_default_img" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/text_33315_style"
+                    android:text="妞妞老师" />
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    style="@style/text_99912_style"
+                    android:text="妞妞老师" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_notice_title_style"
+            android:layout_marginTop="10dp"
+            android:text="比比谁的手更巧，小小世界真奇妙，小宝宝自己动手帮小龙猫建了一个家" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/text_66614_style"
+            android:layout_marginTop="10dp"
+            android:text="比比谁的手更巧，小小世界真奇妙，小宝宝自己动手帮小龙猫建了一个家" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img_sample_item0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_default_h" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/img_sample_item1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_default_h" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/img_sample_item2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_default_h"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img_sample_item3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_default_h" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/img_sample_item4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_default_h" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/img_sample_item5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_default_h"
+                    android:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/hline_margin12_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/gffffff">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/kg_view_num" />
+
+            <TextView
+                android:id="@+id/tv_view_num"
+                style="@style/text_99912_style"
+                android:layout_marginLeft="5dp"
+                android:text="123" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/kg_comment_num" />
+
+            <TextView
+                android:id="@+id/tv_comment_num"
+                style="@style/text_99912_style"
+                android:layout_marginLeft="5dp"
+                android:text="123" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_praise"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/kg_praise_num" />
+
+            <TextView
+                android:id="@+id/tv_praise_num"
+                style="@style/text_99912_style"
+                android:layout_marginLeft="5dp"
+                android:text="123" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_color"
+        android:visibility="gone"/>
+
+</LinearLayout>

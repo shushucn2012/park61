@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:minHeight="40dp"
+    android:background="@drawable/rec_orange_stroke_trans_solid">
+
+    <ImageView
+        android:id="@+id/img_chosen"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/changcixuanze"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_first_line"
+            style="@style/text_99914_style"
+            android:text="小宝" />
+
+        <TextView
+            android:id="@+id/tv_second_line"
+            style="@style/text_99912_style"
+            android:text="小宝"
+            android:textSize="11sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

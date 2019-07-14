@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="添加标签" />
+
+        <Button
+            android:id="@+id/btn_finish"
+            style="@style/topbar_rightbtn_style"
+            android:layout_width="wrap_content"
+            android:text="完成"
+            android:textColor="@color/com_orange"
+            android:textSize="14sp" />
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_margin="12dp"
+                    android:text="我的标签" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_mostflag_tip"
+                        style="@style/text_99914_style"
+                        android:text="请点选标签（只能选择一个）" />
+
+                    <RelativeLayout
+                        android:id="@+id/area_chosen_flag0"
+                        android:layout_width="80dp"
+                        android:layout_height="32dp"
+                        android:layout_marginRight="15dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_chosen_flag0"
+                            android:layout_width="78dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_dream_flag"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="12sp"
+                            android:textColor="@color/com_orange"/>
+
+                        <ImageView
+                            android:id="@+id/img_del_flag0"
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/shanchu_img"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/area_chosen_flag1"
+                        android:layout_width="80dp"
+                        android:layout_height="32dp"
+                        android:layout_marginRight="15dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_chosen_flag1"
+                            android:layout_width="78dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_dream_flag"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="12sp"
+                            android:textColor="@color/com_orange"/>
+
+                        <ImageView
+                            android:id="@+id/img_del_flag1"
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/shanchu_img"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/area_chosen_flag2"
+                        android:layout_width="80dp"
+                        android:layout_height="32dp"
+                        android:layout_marginRight="15dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_chosen_flag2"
+                            android:layout_width="78dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_dream_flag"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="12sp"
+                            android:textColor="@color/com_orange"/>
+
+                        <ImageView
+                            android:id="@+id/img_del_flag2"
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/shanchu_img"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:text="可用标签" />
+
+                <com.park61.widget.gridview.GridViewForScrollView
+                    android:id="@+id/gv0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="4"
+                    android:paddingBottom="10dp"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_grid1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:text="环游世界" />
+
+                <com.park61.widget.gridview.GridViewForScrollView
+                    android:id="@+id/gv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="4"
+                    android:paddingBottom="10dp"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

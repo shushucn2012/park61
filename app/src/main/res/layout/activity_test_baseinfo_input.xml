@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_com" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/area_baseinfo_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/gffffff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp">
+
+                    <TextView
+                        style="@style/text_33318_style"
+                        android:text="基本信息"
+                        android:textColor="@color/color_text_red_deep" />
+                </LinearLayout>
+
+                <View style="@style/hline_margin12_top" />
+
+                <RelativeLayout
+                    android:id="@+id/nickname_area"
+                    style="@style/me_item_area_style">
+
+                    <TextView
+                        style="@style/me_item_tv_style"
+                        android:layout_alignParentLeft="true"
+                        android:text="宝宝昵称"
+                        android:textColor="@color/g333333" />
+
+                    <TextView
+                        android:id="@+id/tv_nickname_value"
+                        style="@style/me_item_righttv_style"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/img_nickname_downarrow"
+                        android:gravity="right"
+                        android:hint="宝宝昵称"
+                        android:textColorHint="@color/gdedede" />
+
+                    <ImageView
+                        android:id="@id/img_nickname_downarrow"
+                        style="@style/test_baby_item_arrow_style"
+                        android:layout_marginRight="12dp" />
+                </RelativeLayout>
+
+                <View style="@style/hline_margin12_top" />
+
+                <RelativeLayout
+                    android:id="@+id/sex_area"
+                    style="@style/me_item_area_style">
+
+                    <TextView
+                        style="@style/me_item_tv_style"
+                        android:layout_alignParentLeft="true"
+                        android:text="宝宝性别"
+                        android:textColor="@color/g333333" />
+
+                    <TextView
+                        android:id="@+id/tv_sex_value"
+                        style="@style/me_item_righttv_style"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/img_sex_downarrow"
+                        android:gravity="right"
+                        android:hint="宝宝性别"
+                        android:textColorHint="@color/gdedede" />
+
+                    <ImageView
+                        android:id="@+id/img_sex_downarrow"
+                        style="@style/test_baby_item_arrow_style"
+                        android:layout_marginRight="12dp" />
+                </RelativeLayout>
+
+                <View style="@style/hline_margin12_top" />
+
+                <RelativeLayout
+                    android:id="@+id/birthday_area"
+                    style="@style/me_item_area_style">
+
+                    <TextView
+                        style="@style/me_item_tv_style"
+                        android:layout_alignParentLeft="true"
+                        android:text="宝宝出生日期"
+                        android:textColor="@color/g333333" />
+
+                    <TextView
+                        android:id="@+id/tv_birthday_value"
+                        style="@style/me_item_righttv_style"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/img_birthday_downarrow"
+                        android:gravity="right"
+                        android:hint="宝宝出生日期"
+                        android:textColorHint="@color/gdedede" />
+
+                    <ImageView
+                        android:id="@+id/img_birthday_downarrow"
+                        style="@style/test_baby_item_arrow_style"
+                        android:layout_marginRight="12dp" />
+                </RelativeLayout>
+
+                <View style="@style/hline_margin12_top" />
+
+                <RelativeLayout
+                    android:id="@+id/relation_area"
+                    style="@style/me_item_area_style">
+
+                    <TextView
+                        style="@style/me_item_tv_style"
+                        android:layout_alignParentLeft="true"
+                        android:text="我是宝宝"
+                        android:textColor="@color/g333333" />
+
+                    <TextView
+                        android:id="@+id/tv_relation_value"
+                        style="@style/me_item_righttv_style"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/img_relation_downarrow"
+                        android:gravity="right"
+                        android:hint="我是宝宝"
+                        android:textColorHint="@color/gdedede" />
+
+                    <ImageView
+                        android:id="@+id/img_relation_downarrow"
+                        style="@style/test_baby_item_arrow_style" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/hline_margin12_top"
+                    android:layout_height="10dp"
+                    android:background="@color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp">
+
+                <TextView
+                    style="@style/text_33318_style"
+                    android:text="日常动态"
+                    android:textColor="@color/color_text_red_deep" />
+            </LinearLayout>
+
+            <View style="@style/hline_margin12_top" />
+
+            <com.park61.widget.list.ListViewForScrollView
+                android:id="@+id/lv_base_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gffffff"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:listSelector="#00000000" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rec_reddeep_stroke_reddeep_solid_corner30"
+                android:text="下一步"
+                android:textColor="@color/gffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

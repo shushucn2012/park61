@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pull_refresh_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ptr:ptrAnimationStyle="rotate"
+                ptr:ptrHeaderTextColor="@color/g666666"
+                ptr:ptrMode="both">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/picbg"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/top_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:orientation="vertical">
+
+                            <View
+                                android:id="@+id/top_space_area"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:layout_marginTop="20dp">
+
+                                <TextView
+                                    style="@style/topbar_title_style"
+                                    android:text="成长"
+                                    android:textColor="@color/gffffff" />
+
+                                <ImageView
+                                    android:id="@+id/img_right_baby"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="12dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/baobao_img" />
+
+                                <Button
+                                    android:id="@+id/btn_member"
+                                    android:layout_width="65dp"
+                                    android:layout_height="25dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="12dp"
+                                    android:background="@drawable/member_btn"
+                                    android:scaleType="fitXY"
+                                    android:text="会员开通"
+                                    android:textColor="@color/gffffff"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/banner_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp">
+
+                            <com.park61.widget.circleimageview.CircleImageView
+                                android:id="@+id/img_child_pic"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginBottom="30dp"
+                                android:layout_marginLeft="12dp"
+                                android:src="@drawable/headimg_default_img"
+                                ptr:border_color="@color/gffffff"
+                                ptr:border_width="2dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="65dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="35dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/img_child_pic"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/area_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/child_name"
+                                        style="@style/text_33316_style"
+                                        android:text=""
+                                        android:textColor="@color/gffffff" />
+
+                                    <ImageView
+                                        android:id="@+id/img_member_type"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_toRightOf="@+id/child_name"
+                                        android:scaleType="fitXY"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_age"
+                                    style="@style/text_66612_style"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="2dp"
+                                    android:text=""
+                                    android:textColor="@color/gffffff" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@color/gffffff"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/view_show_photo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/baobaoxiu" />
+
+                            <TextView
+                                style="@style/text_33312_style"
+                                android:layout_marginTop="8dp"
+                                android:text="宝宝秀" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/view_ability_level"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ceping" />
+
+                            <TextView
+                                style="@style/text_33312_style"
+                                android:layout_marginTop="8dp"
+                                android:text="测评" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/view_baby_build"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="39dp"
+                                android:layout_height="39dp"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                style="@style/text_33312_style"
+                                android:layout_marginTop="8dp"
+                                android:text="宝贝体格" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/view_invite"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/yaoqingyou" />
+
+                            <TextView
+                                style="@style/text_33312_style"
+                                android:layout_marginTop="8dp"
+                                android:text="邀亲友" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/schedule_llayout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="39dp"
+                                android:layout_height="39dp"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                style="@style/text_33312_style"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/babyschedule_activity_title" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.park61.widget.list.ListViewForScrollView
+                        android:id="@+id/lv_shows"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:listSelector="#00000000" />
+
+                    <LinearLayout
+                        android:id="@+id/empty_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/text_99912_style"
+                            android:text="亲爱的宝贝" />
+
+                        <TextView
+                            style="@style/text_99912_style"
+                            android:text="转眼间，你已慢慢长大" />
+
+                        <TextView
+                            style="@style/text_99912_style"
+                            android:text="我每天如此忙碌" />
+
+                        <TextView
+                            style="@style/text_99912_style"
+                            android:text="已错过太多与你一起的时光" />
+
+                        <TextView
+                            style="@style/text_99912_style"
+                            android:text="今后你成长的每一步有我来守护" />
+
+                        <Button
+                            android:id="@+id/btn_empty"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_apply_selector"
+                            android:text="秀萌照"
+                            android:textColor="@color/gffffff"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/area_bottom_vline"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:background="#eeeeee"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="18dp"
+                            android:background="@color/colorLine" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+            <View
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#66000000"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:paddingLeft="80dp"
+        android:paddingTop="275dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/area"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/nengli" />
+
+            <TextView
+                style="@style/text_33312_style"
+                android:layout_marginTop="8dp"
+                android:text="能力阶梯"
+                android:textColor="@color/gffffff" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_right_flip"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/area"
+            android:scaleType="fitXY"
+            android:src="@drawable/czyindaoye" />
+    </RelativeLayout>
+</FrameLayout>

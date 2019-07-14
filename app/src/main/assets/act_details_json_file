@@ -1,0 +1,174 @@
+{
+    "code": "0",
+    "data": {
+        "actAddress": "华大家园-西门B9栋2单元302室",
+        "actBussinessType": "5",
+        "actCommentCount": 0,
+        "actCover": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/activity/20160726104605840_990.jpg",
+        "actDetail": "",
+        "actEndTime": 1469851571000,
+        "actLatitude": "30.488882",
+        "actLongitude": "114.339021",
+        "actLowAgeLimit": 8,
+        "actLowQuotaLimit": 9,
+        "actNumberVisitor": -6,
+        "actPraise": 0,
+        "actPrice": 11,
+        "actQuotaLimit": 4,
+        "actReadCount": 12,
+        "actReleaseAuthor": "61区官方",
+        "actReleaseType": "0",
+        "actShareCount": 0,
+        "actStartTime": 1469847963000,
+        "actStatus": "1",
+        "actTitle": "天空之城",
+        "actUppAgeLimit": 3,
+        "actVisitorType": "1",
+        "activitySessionVo": {
+            "actSessionList": [
+                {
+                    "actAddress": "华大家园-西门B9栋2单元302室",
+                    "actCover": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/activity/20160726104605840_990.jpg",
+                    "actEndTime": 1469678675000,
+                    "actLowQuotaLimit": 9,
+                    "actNumberVisitor": 0,
+                    "actPrice": 23,
+                    "actQuotaLimit": 4,
+                    "actReleaseAuthor": "61区官方",
+                    "actStartTime": 1469675070000,
+                    "actTitle": "天空之城",
+                    "adultPrice": 33,
+                    "buttonName": "报名已满",
+                    "id": 7622,
+                    "isApply": false
+                },
+                {
+                    "actAddress": "华大家园-西门B9栋2单元302室",
+                    "actCover": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/activity/20160726104605840_990.jpg",
+                    "actEndTime": 1469678675000,
+                    "actLowQuotaLimit": 9,
+                    "actNumberVisitor": 0,
+                    "actPrice": 12,
+                    "actQuotaLimit": 4,
+                    "actReleaseAuthor": "61区官方",
+                    "actStartTime": 1469675070000,
+                    "actTitle": "天空之城",
+                    "adultPrice": 15,
+                    "buttonName": "选择场次",
+                    "id": 7612,
+                    "isApply": true
+                },
+                {
+                    "actAddress": "华大家园-西门B9栋2单元302室",
+                    "actCover": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/activity/20160726104605840_990.jpg",
+                    "actEndTime": 1469851571000,
+                    "actLowQuotaLimit": 9,
+                    "actNumberVisitor": -6,
+                    "actPrice": 99999,
+                    "actQuotaLimit": 4,
+                    "actReleaseAuthor": "61区官方",
+                    "actStartTime": 1469847963000,
+                    "actTitle": "天空之城",
+                    "adultPrice": 14,
+                    "buttonName": "选择场次",
+                    "id": 7602,
+                    "isApply": true
+                },
+                {
+                     "actAddress": "华大家园-西门B9栋2单元302室",
+                     "actCover": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/activity/20160726104605840_990.jpg",
+                     "actEndTime": 1469851571000,
+                     "actLowQuotaLimit": 9,
+                     "actNumberVisitor": -6,
+                     "actPrice": 0,
+                     "actQuotaLimit": 4,
+                     "actReleaseAuthor": "61区官方",
+                     "actStartTime": 1469847963000,
+                     "actTitle": "天空之城",
+                     "adultPrice": 0,
+                     "buttonName": "选择场次",
+                     "id": 7602,
+                     "isApply": true
+                 }
+            ],
+            "storeVO": {
+                "address": "华大家园-西门B9栋2单元302室",
+                "countyId": 1936,
+                "countyName": "江岸区",
+                "distance": "9公里",
+                "distanceNum": 9106,
+                "id": 91,
+                "kiloDistance": "9.1",
+                "latitude": "30.488882",
+                "longitude": "114.339021",
+                "master": "江景",
+                "phone": "027-50778551",
+                "storeName": "华大家园店"
+            }
+        },
+        "adultPrice": 14,
+        "auditingTime": 1469502263000,
+        "auditor": "36",
+        "backendShopId": 91,
+        "capacityList": [
+            {
+                "capacityIncreaseValue": 3,
+                "capacityName": "语言智能",
+                "id": 1
+            },
+            {
+                "capacityIncreaseValue": 2,
+                "capacityName": "逻辑智能",
+                "id": 2
+            },
+            {
+                "capacityIncreaseValue": 3,
+                "capacityName": "空间智能",
+                "id": 3
+            },
+            {
+                "capacityIncreaseValue": 3,
+                "capacityName": "运动智能",
+                "id": 4
+            },
+            {
+                "capacityIncreaseValue": 4,
+                "capacityName": "音乐智能",
+                "id": 5
+            },
+            {
+                "capacityIncreaseValue": 2,
+                "capacityName": "人际智能",
+                "id": 6
+            },
+            {
+                "capacityIncreaseValue": 3,
+                "capacityName": "自我认知",
+                "id": 7
+            },
+            {
+                "capacityIncreaseValue": 3,
+                "capacityName": "自然认知",
+                "id": 8
+            }
+        ],
+        "cityId": 205,
+        "contactTel": "027-50778551",
+        "contactor": "江景",
+        "countActSession": 2,
+        "createTime": 1469584534000,
+        "creator": "36",
+        "grandTotal": 170,
+        "id": 7602,
+        "isApply": false,
+        "isDelete": 0,
+        "isFocus": "true",
+        "isStart": "1",
+        "isTemplate": "0",
+        "labelName": "兴趣开发",
+        "refTemplateId": 7588,
+        "shopName": "华大家园店",
+        "updateTime": 1469502263000,
+        "updater": "36"
+    }
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuview_layout"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/jianjian" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/search_type_pw_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/view_home"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/navi_shouye_btn" />
+
+            <TextView
+                style="@style/text_99916_style"
+                android:layout_marginLeft="5dp"
+                android:text="首页"
+                android:textColor="@color/gffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gouwuche" />
+
+                <TextView
+                    style="@style/text_99916_style"
+                    android:layout_marginLeft="5dp"
+                    android:text="购物车"
+                    android:textColor="@color/gffffff" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/view_conactor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/navi_lianxi_btn" />
+
+                <TextView
+                    style="@style/text_99916_style"
+                    android:layout_marginLeft="5dp"
+                    android:text="联系店员"
+                    android:textColor="@color/gffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

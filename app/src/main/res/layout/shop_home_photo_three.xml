@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/area_photos_three"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:background="@color/gffffff"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="205">
+
+        <ImageView
+            android:id="@+id/img_photo_three0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_default_h" />
+
+        <TextView
+            android:id="@+id/tv_photo_three_title0"
+            style="@style/text_fff13_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.8"
+            android:background="#333333"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_fff12_style"
+                android:text="人气" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/gffffff" />
+
+            <TextView
+                android:id="@+id/tv_photo_three_num0"
+                style="@style/text_fff16_style"
+                android:text=""
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="135"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_photo_three1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_h" />
+
+            <TextView
+                android:id="@+id/tv_photo_three_title1"
+                style="@style/text_fff13_style"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:background="#333333"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_fff11_style"
+                    android:text="人气" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/gffffff" />
+
+                <TextView
+                    android:id="@+id/tv_photo_three_num1"
+                    style="@style/text_fff14_style"
+                    android:text=""
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_photo_three2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_h" />
+
+            <TextView
+                android:id="@+id/tv_photo_three_title2"
+                style="@style/text_fff13_style"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:background="#333333"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_fff11_style"
+                    android:text="人气" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/gffffff" />
+
+                <TextView
+                    android:id="@+id/tv_photo_three_num2"
+                    style="@style/text_fff14_style"
+                    android:text=""
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

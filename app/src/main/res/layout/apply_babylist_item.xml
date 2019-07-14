@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/gffffff"
+    android:minHeight="40dp" >
+
+    <EditText
+        android:id="@+id/tv_child_name"
+        style="@style/text_33314_style"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/tv_child_price"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:text="小豆豆" />
+
+    <TextView
+        android:id="@+id/tv_child_price"
+        style="@style/text_33316_style"
+        android:layout_centerInParent="true"
+        android:text="￥10"
+        android:textColor="@color/com_orange" />
+
+    <TextView
+        android:id="@+id/tv_child_price_unit"
+        style="@style/text_33314_style"
+        android:layout_toRightOf="@id/tv_child_price"
+        android:layout_centerInParent="true"
+        android:text="/人" />
+
+    <CheckBox
+        android:id="@+id/chk_choose"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/chk_apply_babylist_item_selector"
+        android:button="@null" />
+
+</RelativeLayout>

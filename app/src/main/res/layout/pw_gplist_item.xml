@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/area_taste"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:minHeight="40dp"
+    android:background="@color/gffffff">
+
+    <TextView
+        android:id="@+id/tv_taste"
+        style="@style/text_33312_style"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/taste_shape_selector"
+        android:padding="2dp"
+        android:text="满减"
+        android:textColor="@color/gffffff" />
+
+    <TextView
+        android:id="@+id/tv_p_title"
+        style="@style/text_33314_style"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_taste"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/img_left_downarrow"
+        style="@style/mem_item_arrow_style"
+        android:layout_marginRight="12dp" />
+</RelativeLayout>

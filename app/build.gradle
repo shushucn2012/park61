@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'me.tatarka.retrolambda'
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+    useLibrary 'org.apache.http.legacy'
+
+    signingConfigs {
+        signingConfig {
+            keyAlias 'qjw'
+            keyPassword 'qjw1314'
+            storeFile file('../qjw_keystore.keystore')
+            storePassword 'qjw1314'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.park61"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode APP_VERSIONCODE as int
+        versionName APP_VERSION
+        multiDexEnabled true
+        signingConfig signingConfigs.signingConfig
+    }
+
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        //incremental true
+        javaMaxHeapSize "2g"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    repositories {
+        flatDir {
+            dirs 'libs' //this way we can find the .aar file in libs folder
+        }
+    }
+    sourceSets.main {
+        jni.srcDirs = []
+        jniLibs.srcDir "libs"
+    }
+    packagingOptions {
+        exclude('META-INF/LICENSE')
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    //修改生成的apk名字
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                //这里修改apk文件名
+                outputFileName = "park61_v${APP_VERSION}_pre_" + getDate() + '.apk'
+            }
+    }
+}
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmm')
+    return formattedDate
+}
+
+dependencies {
+    api(name:'AlivcPlayer', ext:'aar')
+    api(name:'AlivcReporter', ext:'aar')
+    api(name:'AliyunVodPlayer', ext:'aar')
+    api(name:'AliyunVodPlayerView', ext:'aar')
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    api 'com.android.support:multidex:1.0.1'
+    api project(':handmarklibrary')
+    api project(':LRecyclerview_library')
+    api 'com.google.code.gson:gson:2.4'
+    api 'joda-time:joda-time:2.9.4'
+    api 'org.htmlparser:htmlparser:2.1'
+    api 'com.squareup:otto:1.3.8'
+    api 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    api 'com.umeng.analytics:analytics:6.0.1'
+    api 'org.apache.geronimo.bundles:commons-httpclient:3.1_2'
+    api files('libs/alipaySdk-20160825.jar')
+    api 'com.github.promeg:tinypinyin:1.0.0'
+    //    compile project(':PushSDK')
+    api project(':push')
+    api project(path: ':multi-image-selector')
+    api 'com.makeramen:roundedimageview:2.3.0'
+    api project(':photoview')
+    api 'tyrant:heartlayout:1.0.1'
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    api 'cn.bingoogolapple:bga-banner:2.1.9@aar'
+    api 'com.hyman:flowlayout-lib:1.1.2'
+    //后台下载管理
+    api 'com.lzy.net:okgo:3.0.4'
+    api 'com.lzy.net:okserver:2.0.5'
+    api 'com.squareup.okhttp3:okhttp:3.7.0'
+    api 'com.squareup.okio:okio:1.12.0'
+}

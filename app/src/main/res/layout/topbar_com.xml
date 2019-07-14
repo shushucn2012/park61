@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar"
+    style="@style/topbar_area_style">
+
+    <Button
+        android:id="@+id/left_img"
+        style="@style/topbar_leftbtn_style" />
+
+    <TextView
+        android:id="@+id/page_title"
+        style="@style/topbar_title_style"
+        android:text="61区" />
+
+    <View
+        style="@style/hline_fill_top"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

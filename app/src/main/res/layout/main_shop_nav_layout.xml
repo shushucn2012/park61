@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/view_shopinfo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gaaaaaa" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gaaaaaa" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="店铺详情" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="wrap_content"
+        android:background="@color/gaaaaaa" />
+
+    <LinearLayout
+        android:id="@+id/view_cate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gaaaaaa" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gaaaaaa" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="游戏分类" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="wrap_content"
+        android:background="@color/gaaaaaa" />
+
+    <LinearLayout
+        android:id="@+id/view_salesclerk"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gaaaaaa" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gaaaaaa" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="联系店员" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/img_sousuo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+           android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/xiaosousuo" />
+<TextView
+    android:layout_marginLeft="15dp"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/tv_expert_name"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:textSize="16dp"
+    />
+</LinearLayout>
+<View
+    style="@style/hline_fill_top"
+    android:layout_alignParentBottom="true" />
+</LinearLayout>

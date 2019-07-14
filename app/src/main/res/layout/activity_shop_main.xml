@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="店铺首页" />
+
+        <LinearLayout
+            android:id="@+id/right_img"
+            style="@style/topbar_rightbtn_style"
+            android:layout_width="55dp"
+            android:gravity="center_vertical|right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/erjidaohang" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_collect"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/right_img"
+            android:scaleType="fitXY"
+            android:src="@drawable/shop_shoucang_btn" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_line_view"
+        style="@style/hline_fill_top"
+        android:layout_above="@+id/bottom_nav_llayout" />
+
+    <include
+        android:id="@+id/bottom_nav_llayout"
+        layout="@layout/main_shop_nav_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_line_view"
+        android:layout_below="@id/top_bar"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrHeaderTextColor="@color/g666666"
+        ptr:ptrMode="both">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/big_img_rlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="108dp"
+                    android:layout_gravity="top">
+
+                    <ImageView
+                        android:id="@+id/img_shop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_default_h" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#44000000"
+                        android:scaleType="fitXY" />
+
+                    <com.park61.widget.circleimageview.CircleImageView
+                        android:id="@+id/img_shop_small"
+                        android:layout_width="68dp"
+                        android:layout_height="68dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/img_default_h"
+                        android:visibility="gone" />
+
+                    <com.park61.widget.circleimageview.CircleImageView
+                        android:id="@+id/img_logo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_shop_name"
+                        style="@style/text_99914_style"
+                        android:layout_below="@id/img_logo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/gffffff"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_shop_album_sum"
+                        style="@style/text_99914_style"
+                        android:layout_alignBottom="@+id/tv_shop_name"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/circle_shape_build_white"
+                        android:gravity="center"
+                        android:minWidth="50dp"
+                        android:padding="2dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="相册"
+                        android:textColor="@color/gffffff"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/stopView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/com_green" />
+
+                <com.park61.widget.viewpager.CustomViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/stickyView"
+                android:layout_width="fill_parent"
+                android:layout_height="58dp"
+                android:background="@color/gffffff">
+
+                <com.park61.widget.wheel.weekcalendar.WeekCalendar
+                    android:id="@+id/weekCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/schedule_bg"
+                    app:dayNameLength="singleLetter"
+                    app:daysBackgroundColor="@color/gffffff"
+                    app:daysTextColor="@color/g000000"
+                    app:daysTextSize="14sp"
+                    app:numOfPages="3"
+                    app:selectedBgColor="@color/text_txt_current_bg"
+                    app:todaysDateBgColor="@color/text_txt_current_bg"
+                    app:weekBackgroundColor="@color/schedule_bg"
+                    app:weekTextColor="@color/g999999"
+                    app:weekTextSize="12sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</RelativeLayout>

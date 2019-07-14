@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_33315_style"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:text="上传证明材料" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/bg_color">
+
+            <ImageView
+                android:id="@+id/img_upload_infopaper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/area_upload_infopaper"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/shangchuan2" />
+
+            <TextView
+                android:id="@+id/tv_paper_tip"
+                style="@style/text_99914_style"
+                android:layout_below="@+id/area_upload_infopaper"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="在职证明、工牌、职业资质均可" />
+
+            <TextView
+                android:id="@+id/tv_paper_tip2"
+                style="@style/text_99912_style"
+                android:layout_below="@+id/tv_paper_tip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:visibility="gone"
+                android:text="上传资料系统自动打上水印保护隐私" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/text_33315_style"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:text="上传身份证明" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="158dp"
+                android:layout_weight="1"
+                android:background="@color/bg_color">
+
+                <ImageView
+                    android:id="@+id/img_upload_photo_and_idcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:id="@+id/area_upload_photo_and_idcard_bg"
+                    android:layout_width="90dp"
+                    android:layout_height="54dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/shouchisfz"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/area_upload_photo_and_idcard"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/shangchuan2" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_upload_photo_and_idcard"
+                    style="@style/text_99913_style"
+                    android:layout_below="@+id/area_upload_photo_and_idcard_bg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="22dp"
+                    android:text="手持身份证照片" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="158dp"
+                android:layout_marginLeft="22dp"
+                android:layout_weight="1"
+                android:background="@color/bg_color">
+
+                <ImageView
+                    android:id="@+id/img_upload_front_idcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:id="@+id/area_upload_front_idcard_bg"
+                    android:layout_width="90dp"
+                    android:layout_height="54dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/sfzbeimian"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/area_upload_front_idcard"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/shangchuan2" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_upload_front_idcard"
+                    style="@style/text_99913_style"
+                    android:layout_below="@+id/area_upload_front_idcard_bg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="22dp"
+                    android:text="身份证背面照片" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit_photo"
+        style="@style/btn_com_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="提交" />
+
+</RelativeLayout>

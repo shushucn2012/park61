@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff" >
+
+    <LinearLayout
+        android:id="@+id/lay_store"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gffffff"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/item_cb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/ckb_circle"
+            android:button="@null"
+            android:checked="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:id="@+id/tv_storename_series"
+            style="@style/text_66614_style"
+            android:layout_marginLeft="15dp"
+            android:text="儿童玩具系列" />
+
+        <ImageView
+            android:id="@+id/img_downarrow"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_next" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_below_lay_store"
+        style="@style/hline_fill"
+        android:layout_below="@+id/lay_store"/>
+
+    <LinearLayout
+        android:id="@+id/lay_goods"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_below_lay_store"
+        android:background="@color/gffffff"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_total"
+        style="@style/text_33314_style"
+        android:layout_below="@+id/lay_goods"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="5dp"
+        android:text="小计（共2件）：73.0元"
+        android:textColor="@color/com_orange"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/tv_total"
+        android:background="@color/bg_color" />
+
+</RelativeLayout>

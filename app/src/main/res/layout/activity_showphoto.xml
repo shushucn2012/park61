@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="秀萌照" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_input_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/gffffff"
+        android:gravity="top"
+        android:hint="写点什么吧..."
+        android:maxLength="140"
+        android:minLines="5"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <GridView
+        android:id="@+id/gv_input_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:columnWidth="80dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:padding="10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/btn_com_style"
+        android:text="发表" />
+
+</LinearLayout>

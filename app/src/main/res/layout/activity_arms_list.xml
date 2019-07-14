@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="oneKeyBuy"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray"
+        >
+
+        <include
+            android:id="@+id/top"
+            layout="@layout/topbar_com_whole"/>
+
+        <View style="@style/between_line"/>
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/toys_lv"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/buy_bt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/color_text_red_deep"
+            android:onClick="@{oneKeyBuy}"
+            style="@style/text_fff16_style"
+            android:gravity="center"
+            android:text="@string/one_key_buy"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</layout>

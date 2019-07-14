@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@color/gffffff"
+    android:gravity="center_horizontal"
+    android:minHeight="280dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/area_goods_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_goods_left"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_v" />
+
+        <TextView
+            android:id="@+id/tv_goods_name_left"
+            style="@style/text_66612_style"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="变形金刚4 合金版大黄蜂擎天柱汽车人模型儿童玩具" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/tv_goods_price_left"
+                style="@style/text_66614_style"
+                android:text="￥78.9"
+                android:textColor="@color/com_orange" />
+
+            <TextView
+                android:id="@+id/tv_old_goods_price_left"
+                style="@style/text_99912_style"
+                android:layout_marginLeft="10dp"
+                android:text="￥99.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btn_left"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+            <Button
+                android:id="@+id/btn_num_left"
+                android:layout_marginLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_shape_red_nocorner"
+                android:gravity="center"
+                android:text="3人团"
+                android:textColor="@color/com_orange"
+                android:textSize="12sp" />
+            <Button
+                android:id="@+id/btn_group_left"
+                android:layout_marginRight="12dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/com_orange"
+                android:gravity="center"
+                android:text="马上团"
+                android:textColor="@color/gffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:id="@+id/area_goods_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_goods_right"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_v" />
+
+        <TextView
+            android:id="@+id/tv_goods_name_right"
+            style="@style/text_66612_style"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="变形金刚4 合金版大黄蜂擎天柱汽车人模型儿童玩具" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/tv_goods_price_right"
+                style="@style/text_66614_style"
+                android:text="￥78.9"
+                android:textColor="@color/com_orange" />
+
+            <TextView
+                android:id="@+id/tv_old_goods_price_right"
+                style="@style/text_99912_style"
+                android:layout_marginLeft="10dp"
+                android:text="￥99.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btn_right"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+            <Button
+                android:id="@+id/btn_num_right"
+                android:layout_marginLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_shape_red_nocorner"
+                android:gravity="center"
+                android:text="3人团"
+                android:textColor="@color/com_orange"
+                android:textSize="12sp" />
+            <Button
+                android:id="@+id/btn_group_right"
+                android:layout_marginRight="12dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/com_orange"
+                android:gravity="center"
+                android:text="马上团"
+                android:textColor="@color/gffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

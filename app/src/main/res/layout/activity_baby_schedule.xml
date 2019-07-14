@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="@string/babyschedule_activity_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_date_container"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/schedule_bg"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_week_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrHeaderTextColor="@color/g666666"
+        ptr:ptrMode="pullDownFromTop" >
+
+        <LinearLayout
+            android:id="@+id/llayout_activity_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llayout_empty_activity_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/quexing" />
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/babyschedule_activity_no_data_title"
+                    android:textColor="@color/g999999" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_not_join_activity_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/llayout_not_join_title_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/schedule_bg"
+                    android:gravity="center_vertical|start"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        style="@style/text_33310_style"
+                        android:text="@string/babyschedule_activity_not_join_title"
+                        android:textColor="@color/g999999" />
+                </LinearLayout>
+
+                <com.park61.widget.list.ListViewForScrollView
+                    android:id="@+id/list_not_join"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gffffff"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#00000000"
+                    android:listSelector="#00000000" >
+                </com.park61.widget.list.ListViewForScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_join_activity_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/llayout_join_title_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/schedule_bg"
+                    android:gravity="center_vertical|start"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        style="@style/text_33310_style"
+                        android:text="@string/babyschedule_activity_join_title"
+                        android:textColor="@color/g999999" />
+                </LinearLayout>
+
+                <com.park61.widget.list.ListViewForScrollView
+                    android:id="@+id/list_join"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gffffff"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#00000000"
+                    android:listSelector="#00000000" >
+                </com.park61.widget.list.ListViewForScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f0f5"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/area_top_space"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="358dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rec_white_stroke_white_solid_cornerbottom5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_qrcode"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/img_default_v" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_33316_style"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:text="123132123" />
+
+            <TextView
+                android:id="@+id/tv_addr"
+                style="@style/text_99914_style"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="12313" />
+
+            <View
+                style="@style/hline_margin12_top"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_time_label"
+                    style="@style/text_66614_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:singleLine="true"
+                    android:text="活动时间" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/text_99914_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:singleLine="true"
+                    android:text="123123"
+                    android:textColor="@color/color_text_red_deep" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_state"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_state_yifukuan" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/area_bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</LinearLayout>

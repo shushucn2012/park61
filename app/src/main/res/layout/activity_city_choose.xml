@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="更换城市" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/icon_focus_city" />
+
+        <TextView
+            style="@style/text_66616_style"
+            android:layout_marginLeft="8dp"
+            android:text="当前城市" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/gffffff"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="96dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/rec_e0e0e0_stroke_trans_solid"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_cur_city" />
+
+            <TextView
+                android:id="@+id/tv_now_city"
+                style="@style/text_66616_style"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/icon_focus_city" />
+
+        <TextView
+            style="@style/text_66616_style"
+            android:layout_marginLeft="8dp"
+            android:text="开通城市" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:horizontalSpacing="10dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:paddingBottom="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp"
+        android:verticalSpacing="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="35dp"
+        android:text="更多城市我们正在陆续开发中，敬请期待。感谢您对我们的支持！"
+        android:textColor="@color/g999999"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</LinearLayout>

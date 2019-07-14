@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="新增收货地址" />
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/name_area"
+        style="@style/address_item_area_style">
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/address_item_tv_style"
+            android:text="收货人"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/name_value"
+            style="@style/address_item_et_style2"
+            android:layout_marginLeft="12dp"
+            android:hint="收货人"
+            android:maxLength="10" />
+
+        <View
+            style="@style/hline_fill"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/number_area"
+        style="@style/address_item_area_style">
+
+        <TextView
+            android:id="@+id/number_tv"
+            style="@style/address_item_tv_style"
+            android:text="手机号码"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/number_value"
+            style="@style/address_item_et_style2"
+            android:layout_marginLeft="12dp"
+            android:hint="手机号码"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+        <View
+            style="@style/hline_fill"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_rl"
+        style="@style/address_item_area_style">
+
+        <TextView
+            android:id="@+id/area_tv"
+            style="@style/address_item_tv_style"
+            android:text="所在地区" />
+
+        <TextView
+            android:id="@+id/tv_province_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="30dp"
+            android:gravity="right|center_vertical"
+            android:maxLength="20"
+            android:text=""
+            android:textColor="@color/g666666"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/gffffff"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_province"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="省份 "
+                android:singleLine="true"
+                android:textColor="@color/g666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="城市 "
+                android:singleLine="true"
+                android:textColor="@color/g666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_county"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="区域 "
+                android:singleLine="true"
+                android:textColor="@color/g666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_town"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical"
+                android:hint="乡镇   "
+                android:singleLine="true"
+                android:textColor="@color/g666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/area_choice"
+            style="@style/address_item_arrow_style"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/fujinhuodong_default"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            style="@style/me_item_arrow_style"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/icon_right_2" />
+
+        <View
+            style="@style/hline_fill"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/address_detail"
+        style="@style/address_item_detail_style">
+
+        <TextView
+            android:id="@+id/address_detail_tv"
+            style="@style/address_item_tv_style"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="详细地址"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/address_detail_value"
+            style="@style/address_item_et_style2"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:hint="详细地址"
+            android:maxLength="30"
+            android:maxLines="2"
+            android:singleLine="false" />
+
+        <View
+            style="@style/hline_fill"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/defauit_address_area"
+        style="@style/address_item_area_style"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img_chioce"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/icon_circle_gou_default" />
+
+        <TextView
+            android:id="@+id/defauit_address_tv"
+            style="@style/address_item_tv_style"
+            android:text="默认地址" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/btn_com_style"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rec_red_stroke_red_solid_corner30"
+        android:text="保存" />
+
+</LinearLayout>

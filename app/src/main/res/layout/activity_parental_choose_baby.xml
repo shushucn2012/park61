@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_page_title"
+            style="@style/topbar_title_style"
+            android:text="选择宝宝" />
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tv_title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            style="@style/text_66614_style"
+            android:text="选择参加活动的宝宝" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_confirm"
+        android:layout_below="@id/tv_title_label"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/gffffff"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/transparent" />
+
+    <Button
+        android:id="@id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_btn_rec"
+        android:text="确定"
+        android:textColor="@color/gffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

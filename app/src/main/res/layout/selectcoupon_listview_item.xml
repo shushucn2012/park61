@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/coupon"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp" >
+
+            <LinearLayout
+                android:id="@+id/amount_area"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/amount_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/gffffff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/unit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/gffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/exchange_area"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/img_exchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/duihuan"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/content_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toRightOf="@+id/amount_area"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/coupon_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="代金券"
+                    android:textColor="@color/com_orange"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/discount_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:maxLines="2"
+                    android:text="满100减30"
+                    android:textColor="@color/g333333"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/limittime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="有效期：2016.03.13至2016.04.21"
+                    android:textColor="@color/g333333"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_chioce"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/xuanze_default" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

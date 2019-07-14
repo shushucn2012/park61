@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/area_edit"
+            android:background="@color/gffffff"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/gffffff">
+
+                <TextView
+                    android:id="@+id/browse_name_tv"
+                    style="@style/text_33316_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/browse_number_tv"
+                    android:background="@color/gffffff"
+                    android:paddingLeft="12dp"
+                    android:singleLine="true"
+                    android:text="李茉莉" />
+
+                <TextView
+                    android:id="@+id/browse_number_tv"
+                    style="@style/text_33316_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/gffffff"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:text="18675689087" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:background="@color/gffffff"
+                    android:text=""
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/store_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv"
+                    android:text=""
+                    android:textColor="@color/g333333"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/browse_address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/gffffff"
+                android:maxLines="3"
+                android:paddingLeft="12dp"
+                android:paddingRight="5dp"
+                android:text="武汉市江夏区纸坊北小区A1栋14楼222号武汉市江夏区纸坊北小区A1栋14楼222号"
+                android:textColor="@color/g999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_default"
+                style="@style/text_33314_style"
+                android:textColor="@color/color_text_red_deep"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:text="默认地址"/>
+
+            <View
+                style="@style/hline_fill"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/gffffff"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_chioce"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/choice_selector"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/default_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/img_chioce"
+                android:text="默认地址"
+                android:textColor="@color/g666666"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/delete_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:text="删除"
+                android:textColor="@color/g666666"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toLeftOf="@+id/delete_tv"
+                android:background="@color/colorLine" />
+
+            <TextView
+                android:id="@+id/update_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/line"
+                android:text="编辑"
+                android:textColor="@color/g666666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/area_edit"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="45dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/icon_bianji" />
+
+            <TextView
+                style="@style/text_33314_style"
+                android:layout_marginLeft="3dp"
+                android:text="编辑" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_blod_line"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_color" />
+
+    <View
+        android:id="@+id/bottom_nomorl_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_color" />
+
+</LinearLayout>

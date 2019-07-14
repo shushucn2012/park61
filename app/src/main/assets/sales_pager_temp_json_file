@@ -1,0 +1,437 @@
+{
+    "code": "0",
+    "data": [
+        {
+            "templeteCode": "category_recommend",
+            "templeteData": [
+                {
+                    "categoryDescription": "各种水果",
+                    "categoryLevel": 0,
+                    "categoryName": "水果",
+                    "categoryParentId": 0,
+                    "categoryPicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161027143934769_403.jpg",
+                    "id": 12471
+                },
+                {
+                    "categoryDescription": "",
+                    "categoryLevel": 0,
+                    "categoryName": "家居家装",
+                    "categoryParentId": 0,
+                    "id": 1620
+                },
+                {
+                    "categoryDescription": "",
+                    "categoryLevel": 0,
+                    "categoryName": "数码",
+                    "categoryParentId": 0,
+                    "id": 652
+                },
+                {
+                    "categoryDescription": "",
+                    "categoryLevel": 0,
+                    "categoryName": "电脑、办公",
+                    "categoryParentId": 0,
+                    "id": 670
+                },
+                {
+                    "categoryDescription": "",
+                    "categoryLevel": 0,
+                    "categoryName": "家用电器",
+                    "categoryParentId": 0,
+                    "id": 737
+                },
+                {
+                    "categoryDescription": "",
+                    "categoryLevel": 0,
+                    "categoryName": "个护化妆",
+                    "categoryParentId": 0,
+                    "id": 1316
+                },
+                {
+                    "categoryDescription": "61区虚拟商品",
+                    "categoryLevel": 0,
+                    "categoryName": "虚拟商品",
+                    "categoryParentId": 0,
+                    "categoryPicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161020135612269_953.jpg",
+                    "id": 200
+                },
+                {
+                    "categoryDescription": "",
+                    "categoryLevel": 0,
+                    "categoryName": "母婴",
+                    "categoryParentId": 0,
+                    "id": 1319
+                },
+                {
+                    "categoryDescription": "",
+                    "categoryLevel": 0,
+                    "categoryName": "钟表",
+                    "categoryParentId": 0,
+                    "id": 5025
+                },
+                {
+                    "categoryDescription": "",
+                    "categoryLevel": 0,
+                    "categoryName": "玩具乐器",
+                    "categoryParentId": 0,
+                    "id": 6233
+                },
+                {
+                    "categoryDescription": "",
+                    "categoryLevel": 0,
+                    "categoryName": "宠物生活",
+                    "categoryParentId": 0,
+                    "id": 6994
+                }
+            ]
+        },
+        {
+            "templeteCode": "banner_one",
+            "templeteData": [
+                {
+                    "bannerPositionPic": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/banner/20160926193414797_930.png",
+                    "bannerPositionWebsite": "http://m.61park.cn/events/1001jd.html?bannerTitle=9.30%E5%9B%BD%E5%BA%86%E5%AE%B6%E7%94%B5%E5%A4%A7%E6%94%BE%E4%BB%B7%E5%95%86%E5%9F%8E%E6%B4%BB%E5%8A%A8",
+                    "name": "9.30国庆家电大放价商城活动"
+                },
+                {
+                    "bannerPositionPic": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/banner/20161019172253824_654.jpg",
+                    "bannerPositionWebsite": "http://m.61park.cn/group/groupList.do?bannerTitle=%E7%BA%B8%E5%B0%BF%E8%A3%A4%E4%B8%93%E5%9C%BA",
+                    "name": "纸尿裤专场"
+                }
+            ]
+        },
+        {
+            "templeteCode": "function_navigation",
+            "templeteData": [
+                {
+                    "promotionPicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161029110621610_171.png",
+                    "promotionType": "3",
+                    "title": "妈妈团"
+                },
+                {
+                    "promotionPicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161029110627340_873.png",
+                    "promotionType": "5",
+                    "title": "海外优品"
+                },
+                {
+                    "promotionPicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161029110632814_797.png",
+                    "promotionType": "pb",
+                    "title": "拼吧"
+                },
+                {
+                    "promotionPicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161029110635036_164.png",
+                    "promotionType": "fl",
+                    "title": "分类"
+                }
+            ],
+            "templeteHead": {}
+        },
+        {
+            "templeteCode": "shop_manager_recommend",
+            "templeteData": [
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t2023/273/2307753024/432074/db8842dc/56b2b488N02dee00d.jpg",
+                    "name": "【京东超市】卫仕 NOURSE 宠物专用美毛粉（全犬种）300g",
+                    "oldPrice": 89,
+                    "pmInfoid": 3104,
+                    "salesPrice": 89
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161027162624996_376.jpg",
+                    "name": "福宝卡季卡郑州",
+                    "oldPrice": 20000,
+                    "pmInfoid": 3103,
+                    "salesPrice": 480
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161027160543184_807.png",
+                    "name": "福保卡季卡",
+                    "oldPrice": 9000,
+                    "pmInfoid": 3102,
+                    "salesPrice": 600
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161027101545231_178.jpg",
+                    "name": "CC测试用",
+                    "oldPrice": 99,
+                    "pmInfoid": 3097,
+                    "salesPrice": 89
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161026095230335_469.gif",
+                    "name": "童子专属系列商品会员卡",
+                    "oldPrice": 9.9,
+                    "pmInfoid": 3092,
+                    "salesPrice": 9.9
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161020144316998_913.jpg",
+                    "name": "4",
+                    "oldPrice": 234,
+                    "pmInfoid": 3091,
+                    "salesPrice": 222
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161020142300994_594.jpg",
+                    "name": "3",
+                    "oldPrice": 222,
+                    "pmInfoid": 3090,
+                    "salesPrice": 111
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161020113425956_0.jpg",
+                    "name": "1",
+                    "oldPrice": 222,
+                    "pmInfoid": 3089,
+                    "salesPrice": 111
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161020110650643_290.jpg",
+                    "name": "郑州会员卡",
+                    "oldPrice": 233,
+                    "pmInfoid": 3088,
+                    "salesPrice": 211
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t568/50/136105213/64539/77aec58c/545199f0N28c69866.jpg",
+                    "name": "【京东超市】卡诗（KERASTASE）双重功能洗发水250ml(油性头皮干性发质 )",
+                    "oldPrice": 199,
+                    "pmInfoid": 3079,
+                    "salesPrice": 155
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t2638/74/3600303585/76970/c2c01739/5795c2b5Nd379570e.jpg",
+                    "name": "三星（SAMSUNG）RS542NCAEWW/SC 540升 智能变频 风冷大容量对开门冰箱（雪白色）",
+                    "oldPrice": 4099,
+                    "pmInfoid": 3076,
+                    "salesPrice": 4099
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t2740/242/1823303094/99055/63d4e171/574be629Nd88eccd4.jpg",
+                    "name": "Masentek 纤语 商务通话蓝牙耳机 通用型 耳挂式 白色",
+                    "oldPrice": 69,
+                    "pmInfoid": 3052,
+                    "salesPrice": 69
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t466/253/1266226113/134647/82b2977a/54c76c2cN2401470a.jpg",
+                    "name": "【京东超市】爱音（Aing）儿童餐椅 欧式多功能四合一宝宝餐椅C002 绿色魔法之星 3个月-4岁",
+                    "oldPrice": 368,
+                    "pmInfoid": 3047,
+                    "salesPrice": 368
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t160/311/1396998610/64232/72b82c84/53abe1fcNd5c7e786.jpg",
+                    "name": "泊客行者blomberg 糖果色拉杆箱18寸ABS材质6096荧光黄",
+                    "oldPrice": 199,
+                    "pmInfoid": 3053,
+                    "salesPrice": 199
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t1627/59/697398194/63298/65af72e7/55a4db93N71d5b773.jpg",
+                    "name": "卡拉羊（Carany） CS8375黑色 大容量万向轮男女多彩20英寸拉杆箱 可登机铝合金拉杆静音轮",
+                    "oldPrice": 229,
+                    "pmInfoid": 3048,
+                    "salesPrice": 229
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t1840/79/1269979240/171591/39dfb987/56542f10N2651e3a5.jpg",
+                    "name": "【京东超市】阿奴（ANU）玫瑰滋养润颜面膜25g*5片（玫瑰精油蚕丝面贴膜 提亮肤色 补水保湿 免洗嫩肤）",
+                    "oldPrice": 59,
+                    "pmInfoid": 3061,
+                    "salesPrice": 59
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t1672/129/1470886190/78234/27944544/55cabfa1N8dee3ae6.jpg",
+                    "name": "江荆 手提式干粉灭火器MFZ/ABC3 车用家用及商用灭火器3公斤 ",
+                    "oldPrice": 89,
+                    "pmInfoid": 3055,
+                    "salesPrice": 67
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/g15/M05/02/05/rBEhWlH4XTcIAAAAAADUSsV8mCIAABjsQImq1wAANRi329.jpg",
+                    "name": "【京东超市】碧欧泉修颜平肤隔离霜SPF30+PA++(蓝色)30ml（又名碧欧泉悦源净白隔离霜SPF30+PA++(蓝色)30ml",
+                    "oldPrice": 299,
+                    "pmInfoid": 3060,
+                    "salesPrice": 299
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t2740/71/2476433951/229894/4c0eb9f1/5768ad48N48931bde.jpg",
+                    "name": "法国乐上（LEXON）商务笔记本电脑包14英寸双肩背包防水休闲旅行背包LN654N4黑色",
+                    "oldPrice": 616,
+                    "pmInfoid": 3036,
+                    "salesPrice": 616
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t802/300/493612238/88970/899750a3/55262f87Nd3339da2.jpg",
+                    "name": "胜为（shengwei）FC-212 电信级光纤收发器 单模双纤光电转换器 网络监控SC接口 千兆自适应光钎收发器 25KM",
+                    "oldPrice": 259,
+                    "pmInfoid": 3041,
+                    "salesPrice": 259
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t3070/226/3191194473/260900/71b7f2a2/57eb8e36Nb87f9d59.jpg",
+                    "name": "汇东 241-3-1/2 三联二等分80列撕边（色序：白红黄）彩色电脑打印纸 1000页/箱",
+                    "oldPrice": 62,
+                    "pmInfoid": 3021,
+                    "salesPrice": 62
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t2587/349/3624101009/183270/c3f58f1b/5795bf9eN4b11f66c.jpg",
+                    "name": "【京东超市】裕道府 东北大米 湿地大米 5kg",
+                    "oldPrice": 59.9,
+                    "pmInfoid": 3028,
+                    "salesPrice": 59.9
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t2239/29/556927461/182848/fb85568e/5618e375N899c0164.jpg",
+                    "name": "鹰牌花旗参茶礼盒装3g*40包 年货送礼",
+                    "oldPrice": 398,
+                    "pmInfoid": 3027,
+                    "salesPrice": 268
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t325/339/1626483966/87676/ebdab89b/543f224aN7b76a0e6.jpg",
+                    "name": "汇东 241-4-1/2 四联二等分80列撕边(色序：白红蓝黄)彩色电脑打印纸 1000页/箱",
+                    "oldPrice": 66,
+                    "pmInfoid": 3026,
+                    "salesPrice": 66
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/1785/b6637180-5b62-4734-b69f-ea0d949d480f.jpg",
+                    "name": "风王（COIDO）漩风式12伏特吸尘器 6133",
+                    "oldPrice": 89.9,
+                    "pmInfoid": 3023,
+                    "salesPrice": 83
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t2023/174/2341530779/149369/50cf9aae/56c95b06N1d1449d2.jpg",
+                    "name": "拜格BAYCO 名仕系列高真空保温壶2.0L不锈钢本色BH5425",
+                    "oldPrice": 99,
+                    "pmInfoid": 3022,
+                    "salesPrice": 99
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t3196/52/354028132/137442/8f4c43e7/57b2c536Nde9a6090.jpg",
+                    "name": "莱尔诗丹（Larsd） LD82011 面盆龙头全铜单孔冷热水台上盆 洗脸盆水嘴 洗手盆龙头",
+                    "oldPrice": 229,
+                    "pmInfoid": 3029,
+                    "salesPrice": 229
+                },
+                {
+                    "availableNum": 0,
+                    "img": "http://img20.360buyimg.com/n1/jfs/t2338/142/1870271858/57721/79b6ebf7/56dfdb26N385624f5.jpg",
+                    "name": "美菱(MeiLing) BCD-155CHC 155L 两门冰箱 省电静音 节能保鲜 (亚光银)",
+                    "oldPrice": 899,
+                    "pmInfoid": 3002,
+                    "salesPrice": 872.03
+                }
+            ],
+            "templeteHead": {
+                "moreBtnCanShow": "1",
+                "titlePicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161029111424313_992.png"
+            }
+        },
+        {
+            "templeteCode": "banner_two",
+            "templeteData": [
+                {
+                    "bannerPositionPic": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/banner/20161018165840226_339.jpg",
+                    "bannerPositionWebsite": "http://m.61park.cn/toDiscuntList.do?bannerTitle=%E6%BB%A1%E5%87%8F%E4%BC%9A%E5%9C%BA",
+                    "name": "满减会场"
+                }
+            ]
+        },
+        {
+            "templeteCode": "brand_recommend",
+            "templeteData": [
+                {
+                    "brandCompanyName": "PACO",
+                    "brandLogoUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161027144344841_52.jpg",
+                    "brandName": "PaCO",
+                    "id": 821
+                },
+                {
+                    "brandCompanyName": "",
+                    "brandLogoUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161011171210421_256.jpg",
+                    "brandName": "立顿（Lipton）",
+                    "id": 797
+                },
+                {
+                    "brandCompanyName": "",
+                    "brandLogoUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161011171210421_256.jpg",
+                    "brandName": "天地粮人",
+                    "id": 798
+                },
+                {
+                    "brandCompanyName": "",
+                    "brandLogoUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161011171210421_256.jpg",
+                    "brandName": "LG竹盐",
+                    "id": 790
+                }
+            ],
+            "templeteHead": {
+                "moreBtnCanShow": "1",
+                "recommendNum": "4",
+                "titlePicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161029111632276_187.png"
+            }
+        },
+        {
+            "templeteCode": "promotion_recommend",
+            "templeteData": [
+                {
+                    "promotionPicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161029111926871_456.png",
+                    "promotionType": "2",
+                    "title": "11"
+                },
+                {
+                    "promotionPicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161029111942669_506.png",
+                    "promotionType": "3",
+                    "title": "22"
+                },
+                {
+                    "promotionPicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161029111949283_378.png",
+                    "promotionType": "4",
+                    "title": "33"
+                },
+                {
+                    "promotionPicUrl": "http://ghpprod.oss-cn-qingdao.aliyuncs.com/product/20161029111951665_446.png",
+                    "promotionType": "5",
+                    "title": "44"
+                }
+            ],
+            "templeteHead": {}
+        },
+        {
+            "templeteCode": "hot_recommend"
+        }
+    ],
+    "msg": "操作成功"
+}

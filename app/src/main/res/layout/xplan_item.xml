@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90dip"
+    android:minHeight="90dip"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dp"
+        android:paddingTop="4dp"
+        android:gravity="top|center_horizontal"
+        android:text=""
+        android:textColor="#666666" />
+
+    <com.park61.moduel.shophome.viewprotocol.UpDownLeftRightScrollView
+        android:id="@+id/item_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/flayout_monday"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/txt_monday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f611a0"
+                    android:gravity="center_horizontal"
+                    android:maxLines="4"
+                    android:textColor="@color/gffffff" />
+
+                <ImageView
+                    android:id="@+id/img_monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/xuankuang_bottom"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flayout_tuesday"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/txt_tuesday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f611a0"
+                    android:gravity="center_horizontal"
+                    android:maxLines="4"
+                    android:textColor="@color/gffffff" />
+
+                <ImageView
+                    android:id="@+id/img_tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/xuankuang_bottom"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flayout_wednesday"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/txt_wednesday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f611a0"
+                    android:gravity="center_horizontal"
+                    android:maxLines="4"
+                    android:textColor="@color/gffffff" />
+
+                <ImageView
+                    android:id="@+id/img_wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/xuankuang_bottom"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flayout_thursday"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/txt_thursday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f611a0"
+                    android:gravity="center_horizontal"
+                    android:maxLines="4"
+                    android:textColor="@color/gffffff" />
+
+                <ImageView
+                    android:id="@+id/img_thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/xuankuang_bottom"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flayout_friday"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/txt_friday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f611a0"
+                    android:gravity="center_horizontal"
+                    android:maxLines="4"
+                    android:textColor="@color/gffffff" />
+
+                <ImageView
+                    android:id="@+id/img_friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/xuankuang_bottom"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flayout_saturday"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/txt_saturday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f611a0"
+                    android:gravity="center_horizontal"
+                    android:maxLines="4"
+                    android:textColor="@color/gffffff" />
+
+                <ImageView
+                    android:id="@+id/img_saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/xuankuang_bottom"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flayout_sunday"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/txt_sunday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#f611a0"
+                    android:gravity="center_horizontal"
+                    android:maxLines="4"
+                    android:textColor="@color/gffffff" />
+
+                <ImageView
+                    android:id="@+id/img_sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/xuankuang_bottom"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.park61.moduel.shophome.viewprotocol.UpDownLeftRightScrollView>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:text="万能工匠" />
+
+        <TextView
+            android:id="@+id/tv_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="待领取"
+            android:textColor="@color/com_orange"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/actinfo_area"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#f9f9fc"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/img_act"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_default_v" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_act"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_act_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="61区南湖儿童创意绘画61区南湖意绘画"
+                android:textColor="@color/g333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_state_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:text="快带你的玩具回家吧"
+                android:textColor="@color/g666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/gffffff"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_scan_get"
+                style="@style/order_item_bottom_btn"
+                android:text="扫码领取"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_apply_back"
+                style="@style/order_item_bottom_btn"
+                android:text="申请归还"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_apply_again"
+                style="@style/order_item_bottom_btn"
+                android:text="再次申请"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_pay"
+                style="@style/order_item_bottom_btn"
+                android:text="支付"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_color" />
+
+</LinearLayout>

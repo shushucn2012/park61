@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="评价" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp" >
+
+            <TextView
+                style="@style/text_66614_style"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:text="评价" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/gffffff"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:text="设备及服务：" />
+
+                    <com.park61.widget.MyRatingBar
+                        android:id="@+id/ratingbar_deviceScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:text="互动锻炼性：" />
+
+                    <com.park61.widget.MyRatingBar
+                        android:id="@+id/ratingbar_exerciseScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:text="孩子喜欢度：" />
+
+                    <com.park61.widget.MyRatingBar
+                        android:id="@+id/ratingbar_enjoyScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_66614_style"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:text="游戏趣事" />
+
+            <EditText
+                android:id="@+id/edit_input_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/gffffff"
+                android:gravity="top"
+                android:maxLength="140"
+                android:minLines="5"
+                android:padding="10dp"
+                android:textColor="@color/g333333"
+                android:textSize="16sp" />
+
+            <com.park61.widget.gridview.GridViewForScrollView
+                android:id="@+id/gv_input_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gffffff"
+                android:columnWidth="80dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:padding="10dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+
+            <Button
+                android:id="@+id/btn_commit"
+                style="@style/btn_com_style"
+                android:text="发表" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

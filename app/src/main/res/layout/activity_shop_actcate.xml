@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="游戏分类" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+
+            <View
+                android:id="@+id/left_line1"
+                android:layout_width="3dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:background="@color/com_orange" />
+
+            <TextView
+                style="@style/text_66616_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/left_line1"
+                android:text="游戏类型" />
+
+            <TextView
+                android:id="@+id/tv_cate_all"
+                style="@style/text_99912_style"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:text="查看全部  >" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/btn_joy"
+                style="@style/btn_act_cate_style"
+                android:text="玩具游戏" />
+
+            <Button
+                android:id="@+id/btn_manual"
+                style="@style/btn_act_cate_style"
+                android:layout_marginLeft="10dp"
+                android:text="手工游戏" />
+
+            <Button
+                android:id="@+id/btn_enlighten"
+                style="@style/btn_act_cate_style"
+                android:layout_marginLeft="10dp"
+                android:text="启育" />
+
+            <Button
+                android:id="@+id/btn_kindred"
+                style="@style/btn_act_cate_style"
+                android:layout_marginLeft="10dp"
+                android:text="亲子游" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" >
+
+            <Button
+                android:id="@+id/btn_interesting"
+                style="@style/btn_act_cate_style"
+                android:text="兴趣开发" />
+
+            <Button
+                android:id="@+id/btn_outside"
+                style="@style/btn_act_cate_style"
+                android:layout_marginLeft="10dp"
+                android:text="室外游戏" />
+
+            <Button
+                style="@style/btn_act_cate_style"
+                android:layout_marginLeft="10dp"
+                android:text="占位"
+                android:visibility="invisible" />
+
+            <Button
+                style="@style/btn_act_cate_style"
+                android:layout_marginLeft="10dp"
+                android:text="占位"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+
+            <View
+                android:id="@+id/left_line2"
+                android:layout_width="3dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:background="@color/com_orange" />
+
+            <TextView
+                style="@style/text_66616_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/left_line2"
+                android:text="本周游戏" />
+
+            <TextView
+                android:id="@+id/tv_cur_week_all"
+                style="@style/text_99912_style"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:text="查看全部  >" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:enabled="false"
+                    android:text="星期一"
+                    android:textColor="@color/gaaaaaa" />
+
+                <TextView
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/bubble_week_free_shape"
+                    android:gravity="center"
+                    android:text="消毒日" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_weekday2"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期二" />
+
+                <TextView
+                    android:id="@+id/tv_weekday2_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_weekday3"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期三" />
+
+                <TextView
+                    android:id="@+id/tv_weekday3_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_weekday4"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期四" />
+
+                <TextView
+                    android:id="@+id/tv_weekday4_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_weekday5"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期五" />
+
+                <TextView
+                    android:id="@+id/tv_weekday5_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_weekday6"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期六" />
+
+                <TextView
+                    android:id="@+id/tv_weekday6_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_weekday7"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期日" />
+
+                <TextView
+                    android:id="@+id/tv_weekday7_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+
+            <View
+                android:id="@+id/left_line"
+                android:layout_width="3dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:background="@color/com_orange" />
+
+            <TextView
+                style="@style/text_66616_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/left_line"
+                android:text="下周预告" />
+
+            <TextView
+                android:id="@+id/tv_next_week_all"
+                style="@style/text_99912_style"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:text="查看全部  >" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:enabled="false"
+                    android:text="星期一"
+                    android:textColor="@color/gaaaaaa" />
+
+                <TextView
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/bubble_week_free_shape"
+                    android:gravity="center"
+                    android:text="消毒日" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_next_weekday2"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期二" />
+
+                <TextView
+                    android:id="@+id/tv_next_weekday2_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_next_weekday3"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期三" />
+
+                <TextView
+                    android:id="@+id/tv_next_weekday3_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_next_weekday4"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期四" />
+
+                <TextView
+                    android:id="@+id/tv_next_weekday4_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_next_weekday5"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期五" />
+
+                <TextView
+                    android:id="@+id/tv_next_weekday5_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_next_weekday6"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期六" />
+
+                <TextView
+                    android:id="@+id/tv_next_weekday6_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_next_weekday7"
+                    style="@style/btn_act_weekday_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:text="星期日" />
+
+                <TextView
+                    android:id="@+id/tv_next_weekday7_bubble"
+                    style="@style/bubble_act_cate_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gffffff" />
+
+</LinearLayout>

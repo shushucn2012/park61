@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    >
+    <com.park61.widget.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/pintuanicon"
+        android:layout_marginLeft="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

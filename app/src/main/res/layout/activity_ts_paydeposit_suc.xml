@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/text_33314_style"
+            android:text="手机验证" />
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/jnyjjc" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:text="缴纳押金" />
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/jnyjjc" />
+
+        <TextView
+            style="@style/text_33314_style"
+            android:text="立即申领" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/gffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/jnchenggong"/>
+
+        <TextView
+            style="@style/text_33318_style"
+            android:layout_marginTop="15dp"
+            android:text="缴纳成功" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/btn_com_style"
+        android:text="立即申请" />
+
+</LinearLayout>

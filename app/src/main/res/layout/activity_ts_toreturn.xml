@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_com" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/gffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:id="@+id/tv_toy_name"
+            style="@style/text_33314_style"
+            android:text="三岁宝宝右脑发育" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/img_toy_box"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_default_v" />
+
+        <TextView
+            android:id="@+id/tv_box_name"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_toy_box"
+            android:text="玩具盒子" />
+
+        <TextView
+            android:id="@+id/tv_box_num"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_box_name"
+            android:text="x1" />
+
+        <TextView
+            style="@style/text_red14_style"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/area_count_box"
+            android:text="遗失" />
+
+        <LinearLayout
+            android:id="@+id/area_count_box"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/btn_reduce_box"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@color/bg_color"
+                android:src="@drawable/shuliangjian" />
+
+            <TextView
+                android:id="@+id/tv_return_box_num"
+                style="@style/text_33316_style"
+                android:layout_width="35dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/bg_color"
+                android:gravity="center"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/btn_add_box"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@color/bg_color"
+                android:src="@drawable/shuliangjia" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/img_toy_part"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_default_v" />
+
+        <TextView
+            android:id="@+id/tv_part_name"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_toy_part"
+            android:text="配件总数" />
+
+        <TextView
+            android:id="@+id/tv_part_num"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_part_name"
+            android:text="x199" />
+
+        <TextView
+            style="@style/text_red14_style"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/area_count_part"
+            android:text="遗失" />
+
+        <LinearLayout
+            android:id="@+id/area_count_part"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/btn_reduce_part"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@color/bg_color"
+                android:src="@drawable/shuliangjian" />
+
+            <TextView
+                android:id="@+id/tv_return_part_num"
+                style="@style/text_33316_style"
+                android:layout_width="35dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/bg_color"
+                android:gravity="center"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/btn_add_part"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@color/bg_color"
+                android:src="@drawable/shuliangjia" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        style="@style/text_66614_style"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:text="实际费用按具体归还时间计算为准" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/btn_com_style"
+        android:text="确认申请" />
+
+</LinearLayout>

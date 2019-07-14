@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="wrap_content"
+    android:layout_height="170dp">
+
+    <LinearLayout
+        android:layout_width="109dp"
+        android:layout_height="170dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="109dp"
+            android:layout_height="110dp">
+
+            <ImageView
+                android:id="@+id/image_course"
+                android:layout_width="109dp"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_v" />
+
+            <LinearLayout
+                android:layout_width="49dp"
+                android:layout_height="23dp"
+                android:background="@drawable/nianling_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    style="@style/text_fff13_style"
+                    android:text="3" />
+
+                <TextView
+                    style="@style/text_fff10_style"
+                    android:layout_marginLeft="1dp"
+                    android:text="岁" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_33314_style"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="adfaadfaadfaadfaadfaadfaadfaadfaadfa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/text_org15_style"
+                android:singleLine="true"
+                android:text="￥1234.9" />
+
+            <TextView
+                android:id="@+id/tv_price_old"
+                style="@style/text_99911_style"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="￥1234.9" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="5dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

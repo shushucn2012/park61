@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/dialog_title_text"
+            style="@style/text_33316_style"
+            android:text="请选择时间" />
+    </LinearLayout>
+
+    <View style="@style/hline_fill"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/transparent" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.park61.widget.wheel.WheelView
+                android:id="@+id/year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.park61.widget.wheel.WheelView
+                android:id="@+id/month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.park61.widget.wheel.WheelView
+                android:id="@+id/day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.park61.widget.wheel.WheelView
+                android:id="@+id/hour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <com.park61.widget.wheel.WheelView
+                android:id="@+id/min"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+
+    <View style="@style/hline_fill"/>
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/button_confirm"
+        style="@style/button_bule_style"
+        android:text="确 定" />
+
+</LinearLayout>

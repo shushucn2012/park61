@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/topbar_title_style"
+            android:text="添加标签" />
+
+        <TextView
+            android:id="@+id/tv_finish"
+            style="@style/text_66614_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="完成"
+            android:textColor="@color/com_orange" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_33314_style"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:text="我的标签"
+                android:textColor="@color/g222222" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_label_mark"
+                    style="@style/text_99914_style"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:text="最多选择3个标签" />
+
+                <FrameLayout
+                    android:id="@+id/fl_area1"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_course_label"
+                        style="@style/text_33312_style"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:textColor="@color/com_orange"
+                        android:background="@drawable/select_course"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="亲子游" />
+
+                    <ImageView
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/shanchu_img" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_area2"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_course_labe2"
+                        style="@style/text_33312_style"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:textColor="@color/com_orange"
+                        android:background="@drawable/select_course"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="室外游戏" />
+
+                    <ImageView
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/shanchu_img" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_area3"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_course_label3"
+                        style="@style/text_33312_style"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:textColor="@color/com_orange"
+                        android:background="@drawable/select_course"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="启育" />
+
+                    <ImageView
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/shanchu_img" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_33314_style"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:text="启育课程"
+                android:textColor="@color/g222222" />
+
+            <com.park61.widget.gridview.GridViewForScrollView
+                android:id="@+id/gv_course_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:verticalSpacing="10dp" />
+
+            <TextView
+                style="@style/text_33314_style"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:text="环游世界"
+                android:textColor="@color/g222222" />
+
+            <com.park61.widget.gridview.GridViewForScrollView
+                android:id="@+id/gv_around_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

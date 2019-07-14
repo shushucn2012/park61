@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+        <View
+            android:visibility="gone"
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/bg_color"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/gffffff">
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/headimg_default_img" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/text_33314_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/img_user"
+                android:text="小丫丫"
+                android:textColor="@color/g222222" />
+
+            <TextView
+                android:id="@+id/tv_statue_name"
+                style="@style/text_99914_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:text="审核中"
+                android:textColor="@color/com_orange" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/bg_grey">
+
+            <ImageView
+                android:id="@+id/img_game"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_v" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toRightOf="@+id/img_game"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/text_33314_style"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="61区儿童节绘画总动员61区儿童节绘画总动员61区儿童节绘画总动员"
+                    android:textColor="@color/g222222" />
+                <RelativeLayout
+                    android:id="@+id/shop_area"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_shop_name"
+                        style="@style/text_99912_style"
+                        android:text="大河春天店" />
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_toRightOf="@+id/tv_shop_name"
+                        android:layout_marginLeft="5dp"
+                        style="@style/text_99912_style"
+                        android:text="2017-01-20" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_lable"
+                    android:layout_alignParentBottom="true"
+                    style="@style/text_99912_style"
+                    android:layout_marginTop="5dp"
+                    android:text="亲子游|儿童节" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/gffffff"
+            android:paddingLeft="12dp">
+
+            <RelativeLayout
+                android:id="@+id/img_area"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/headimg_default_img" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/headimg_default_img" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="24dp"
+                    android:src="@drawable/headimg_default_img" />
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="36dp"
+                    android:src="@drawable/headimg_default_img" />
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="48dp"
+                    android:src="@drawable/headimg_default_img" />
+
+                <ImageView
+                    android:id="@+id/img_quesheng"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="60dp"
+                    android:src="@drawable/dian_img" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_people_num"
+                style="@style/text_66612_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/img_area"
+                android:text="120同梦人" />
+
+            <LinearLayout
+                android:id="@+id/btn_area"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="74dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/rectangle_shape_bg_white_stroke_grey"
+                    android:text="放弃"
+                    android:textColor="@color/g222222"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="74dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rectangle_shape_bg_white_stroke_grey"
+                    android:text="修改/编辑"
+                    android:textColor="@color/g222222"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_realized"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="right|bottom"
+        android:scaleType="centerCrop"
+        android:src="@drawable/yishixian_img" />
+</FrameLayout>

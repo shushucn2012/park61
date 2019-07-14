@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/area"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/gffffff">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_default_v" />
+
+    <LinearLayout
+        android:id="@+id/lay_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/icon"
+        android:layout_marginRight="8dp"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cur_price"
+            style="@style/text_33314_style"
+            android:text="￥29.9" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/src_price"
+            style="@style/text_99912_style"
+            android:layout_marginTop="3dp"
+            android:text="59.9" />
+
+        <TextView
+            android:id="@+id/num"
+            style="@style/text_99912_style"
+            android:layout_marginTop="3dp"
+            android:text="X2" />
+        <Button
+            android:id="@+id/btn_apply_aftersales"
+            android:layout_marginTop="5dp"
+            android:layout_width="74dp"
+            android:layout_height="27dp"
+            android:text="申请售后"
+            android:background="@drawable/rectangle_shape_bg_white_stroke_grey"
+            android:textColor="@color/g222222"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goods_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/lay_right"
+        android:layout_toRightOf="@+id/icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_33314_style"
+            android:layout_gravity="top"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="抱抱熊公仔抱抱熊抱抱熊公仔抱抱熊抱抱熊公仔抱抱熊抱抱熊公仔抱抱熊抱抱熊公仔抱抱熊" />
+
+        <TextView
+            android:id="@+id/tv_color"
+            style="@style/text_66612_style"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="颜色：黄色" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            style="@style/text_66612_style"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="尺码：80cm" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/line"
+        style="@style/hline_fill"
+        android:layout_alignLeft="@+id/icon"
+        android:layout_below="@id/icon" />
+
+</RelativeLayout>

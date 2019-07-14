@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/gffffff">
+
+        <RelativeLayout
+            android:id="@+id/edit_rylt"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            >
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/bianji" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/img_chosen"
+            android:layout_toRightOf="@id/edit_rylt"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_baby_name"
+                style="@style/text_33314_style"
+                android:text="羊羊" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_baby_title"
+                    style="@style/text_99912_style"
+                    android:text="宝宝" />
+
+                <TextView
+                    android:id="@+id/tv_baby_sex"
+                    style="@style/text_99912_style"
+                    android:layout_marginLeft="15dp"
+                    android:text="女" />
+
+                <TextView
+                    android:id="@+id/tv_baby_age"
+                    style="@style/text_99912_style"
+                    android:layout_marginLeft="30dp"
+                    android:text="2岁11个月" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_chosen"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/xuanze_default2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/item_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff">
+
+        <View
+            style="@style/hline_margin12"
+            android:background="@color/list_divider" />
+    </LinearLayout>
+
+</LinearLayout>

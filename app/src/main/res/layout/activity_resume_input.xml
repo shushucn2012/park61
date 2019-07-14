@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/top_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_input_area"
+        android:background="@color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_input_area"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/edit_comt"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edit_comt_selector"
+            android:gravity="top"
+            android:hint="写点什么..."
+            android:maxLength="50"
+            android:maxLines="5"
+            android:padding="10dp"
+            android:textColor="@color/g333333"
+            android:textColorHint="@color/g999999"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="56dp"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rec_red_stroke_red_solid"
+            android:text="发送"
+            android:textColor="@color/gffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

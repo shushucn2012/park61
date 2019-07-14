@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llDetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:clickable="true"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/llInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.park61.widget.circleimageview.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_def" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:textColor="@color/g666666"
+            android:textSize="12sp"
+            android:text="123123123"/>
+
+        <TextView
+            android:id="@+id/tv_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_name"
+            android:text="小明"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/com_red"
+            android:textSize="12sp"
+            android:visibility="gone" />
+        <!--<TextView-->
+        <!--android:id="@+id/tvDelete"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="删除"-->
+        <!--android:textColor="#929292"-->
+        <!--android:textSize="16sp"-->
+        <!--android:visibility="gone" />-->
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:textColor="#c4b7bc"
+            android:textSize="10sp"
+            android:text="12321312"/>
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/bdp_dark_gray"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</LinearLayout>
+
+

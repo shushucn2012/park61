@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="账户安全" />
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/modify_mobile_area"
+            style="@style/me_item_area_style"
+            android:layout_height="44dp">
+
+            <TextView
+                style="@style/text_33314_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:textSize="15sp"
+                android:text="修改手机号" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                style="@style/text_99914_style"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/img_modify_mobile_arrow"
+                android:text="" />
+
+            <ImageView
+                android:id="@id/img_modify_mobile_arrow"
+                style="@style/setting_item_arrow_style" />
+        </RelativeLayout>
+
+        <View
+            style="@style/hline_fill"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+
+        <RelativeLayout
+            android:id="@+id/bind_alipay_area"
+            style="@style/me_item_area_style"
+            android:layout_height="44dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_33314_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:textSize="15sp"
+                android:text="绑定支付宝" />
+
+            <TextView
+                android:id="@+id/tv_account"
+                style="@style/text_99914_style"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/img_bind_alipay_arrow"
+                android:text="" />
+
+            <ImageView
+                android:id="@id/img_bind_alipay_arrow"
+                style="@style/setting_item_arrow_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/reset_login_pwd_area"
+            style="@style/me_item_area_style"
+            android:layout_height="44dp">
+
+            <TextView
+                style="@style/text_33314_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:textSize="15sp"
+                android:text="重置登录密码" />
+
+            <ImageView style="@style/setting_item_arrow_style" />
+        </RelativeLayout>
+
+        <View
+            style="@style/hline_fill"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/reset_trade_pwd_area"
+            style="@style/me_item_area_style"
+            android:layout_height="44dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_33314_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:textSize="15sp"
+                android:text="重置交易密码" />
+
+            <ImageView style="@style/setting_item_arrow_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

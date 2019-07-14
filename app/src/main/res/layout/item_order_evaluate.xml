@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@color/gffffff"
+	    android:paddingTop="12dp"
+	    android:paddingLeft="12dp"
+	    android:paddingRight="12dp"
+	    android:layout_marginBottom="12dp" >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:gravity="top"
+	        >
+	        <ImageView 
+	            android:id="@+id/iv_goods_icon"
+	            android:layout_width="70dp"
+	    		android:layout_height="70dp"
+	    		android:scaleType="fitXY"
+	            />
+	        <EditText
+                android:id="@+id/edit_input_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gffffff"
+                android:gravity="top"
+                android:maxLength="300"
+                android:minLines="5"
+                android:padding="10dp"
+                android:textColor="@color/g333333"
+                android:textSize="15sp"
+                android:hint="为了您得到更优质的服务，请写仔细点哦~（300字以内）" />
+	    </LinearLayout>
+	    
+	    <com.park61.widget.gridview.GridViewForScrollView
+             android:id="@+id/gv_input_pic"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@color/gffffff"
+             android:columnWidth="80dp"
+             android:horizontalSpacing="10dp"
+             android:numColumns="4"
+             android:padding="5dp"
+             android:stretchMode="columnWidth"
+             android:verticalSpacing="10dp" />
+	    <View 
+	        android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine"
+	        />
+	    
+	    <RelativeLayout 
+             android:layout_width="fill_parent" 
+            android:layout_height="40dp"
+             >
+             <TextView 
+                 style="@style/text_33314_style"
+          	   android:text="描述相符"
+          	   android:layout_centerVertical="true"
+                 />
+             <com.park61.widget.ProductRatingBar
+                  android:id="@+id/ratingbar_orrelated"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                   />
+         </RelativeLayout>
+	
+	</LinearLayout>
+
+</LinearLayout>

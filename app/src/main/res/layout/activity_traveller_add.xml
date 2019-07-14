@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="新增旅客信息" />
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                style="@style/text_66616_style"
+                android:layout_width="80dp"
+                android:text="姓名" />
+
+            <EditText
+                android:id="@+id/et_traveller_name"
+                style="@style/edit_com_style"
+                android:background="@null"
+                android:hint="请填姓名"
+                android:maxLength="10" />
+        </LinearLayout>
+
+        <View
+            style="@style/hline_fill"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" />
+
+        <RelativeLayout
+            android:id="@+id/area_choose_paper_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/tv_paper_type_label"
+                style="@style/text_66616_style"
+                android:layout_width="80dp"
+                android:layout_centerVertical="true"
+                android:text="证件类型" />
+
+            <EditText
+                android:id="@+id/tv_paper_type"
+                style="@style/edit_com_style"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/img_arrow_papertype"
+                android:layout_toRightOf="@id/tv_paper_type_label"
+                android:background="@null"
+                android:hint="请选择证件类型"
+                android:text="身份证" />
+
+            <ImageView
+                android:id="@+id/img_arrow_papertype"
+                style="@style/mem_item_arrow_style"
+                android:layout_marginRight="0dp" />
+
+            <View
+                style="@style/hline_fill"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                style="@style/text_66616_style"
+                android:layout_width="80dp"
+                android:text="证件号码" />
+
+            <EditText
+                android:id="@+id/et_paper_no"
+                style="@style/edit_com_style"
+                android:background="@null"
+                android:digits="@string/register_paperno_digits"
+                android:hint="请填写证件号码"
+                android:maxLength="20" />
+        </LinearLayout>
+
+        <View
+            style="@style/hline_fill"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" />
+
+        <RelativeLayout
+            android:id="@+id/area_choose_traveller_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/tv_birthday_label"
+                style="@style/text_66616_style"
+                android:layout_width="80dp"
+                android:layout_centerVertical="true"
+                android:text="旅客类型" />
+
+            <EditText
+                android:id="@+id/tv_traveller_type"
+                style="@style/edit_com_style"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/img_arrow_traveller_type"
+                android:layout_toRightOf="@id/tv_birthday_label"
+                android:background="@null"
+                android:hint="请选择旅客类型"
+                android:text="成人" />
+
+            <ImageView
+                android:id="@+id/img_arrow_traveller_type"
+                style="@style/mem_item_arrow_style"
+                android:layout_marginRight="0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/btn_com_style"
+        android:text="保存" />
+
+</LinearLayout>

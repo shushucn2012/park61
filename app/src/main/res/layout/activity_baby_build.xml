@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <RadioGroup
+            android:id="@+id/rg_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_tab_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_build_text_line_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="身高"
+                android:textColor="@drawable/txt_build_tab_selector"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb_tab_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_build_text_line_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="体重"
+                android:textColor="@drawable/txt_build_tab_selector"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/right_img"
+            style="@style/topbar_rightbtn_style"
+            android:text="记录"
+            android:textSize="16sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_color"
+        />
+    
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

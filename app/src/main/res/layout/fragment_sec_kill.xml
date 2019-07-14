@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrHeaderBackground="#e5e5e5"
+        ptr:ptrHeaderTextColor="@color/g666666"
+        ptr:ptrMode="both">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/gffffff">
+
+                    <TextView
+                        android:id="@+id/tv_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:text="限时限量，下单先得"
+                        android:textColor="@color/com_orange"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_start_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_time"
+                        android:text="距离开始:"
+                        android:textColor="@color/g666666"
+                        android:textSize="13sp" />
+
+                    <com.park61.widget.textview.SecTimeTextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="8dp"
+                        android:text="距离时间："
+                        android:textColor="@color/g666666"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <com.park61.widget.list.ListViewForScrollView
+                    android:id="@+id/listview_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@color/bg_color"
+                    android:dividerHeight="3dp"
+                    android:listSelector="#00000000" />
+
+                <TextView
+                    android:id="@+id/tv_empty_tip"
+                    style="@style/text_66616_style"
+                    android:layout_marginTop="150dp"
+                    android:layout_gravity="center"
+                    android:text="暂无数据"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</RelativeLayout>

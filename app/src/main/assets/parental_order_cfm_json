@@ -1,0 +1,51 @@
+{
+    "listPmInfo": [
+        {
+            "productDescription": "测试内容eg33",
+            "count": 1,
+            "currentUnifyPrice": 0.01,
+            "id": 84,
+            "marketPrice": 8888,
+            "productCname": "联想笔记本电脑Y80",
+            "productColor": "黑色",
+            "productPicUrl": "http://park61.oss-cn-zhangjiakou.aliyuncs.com/product/20170817105234818_769.png",
+            "productSize": "22"
+        },
+        {
+            "productDescription": "测试内容eg33",
+            "count": 3,
+            "currentUnifyPrice": 0.02,
+            "id": 85,
+            "marketPrice": 6666,
+            "productCname": "联想笔记本电脑Y80",
+            "productColor": "灰色",
+            "productPicUrl": "http://park61.oss-cn-zhangjiakou.aliyuncs.com/product/20170817105237232_118.png",
+            "productSize": "21"
+        },
+        {
+            "productDescription": "测试内容eg33",
+            "count": 4,
+            "currentUnifyPrice": 0.01,
+            "id": 86,
+            "marketPrice": 5555,
+            "productCname": "联想笔记本电脑Y80",
+            "productColor": "黑色",
+            "productPicUrl": "http://park61.oss-cn-zhangjiakou.aliyuncs.com/product/20170817105240281_752.png",
+            "productSize": "21"
+        },
+        {
+            "productDescription": "测试内容eg33",
+            "count": 5,
+            "currentUnifyPrice": 998,
+            "id": 83,
+            "marketPrice": 999,
+            "productCname": "xielunyan",
+            "productColor": "红色",
+            "productPicUrl": "",
+            "productSize": "2尺"
+        }
+    ],
+    "orderAmount": 998.04,
+    "orderDeliveryFee": 0,
+    "productAmount": 998.04
+}

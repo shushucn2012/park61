@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_to_red_selector"
+    android:minHeight="55dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/amount_area"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_pay_title"
+            style="@style/text_33314_style"
+            android:text="在线支付12313123131313131313213"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tv_pay_time"
+            style="@style/text_99912_style"
+            android:layout_marginTop="3dp"
+            android:text="12313131321132131231313123"
+            android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/amount_area"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_operate_amount"
+            style="@style/text_33316_style"
+            android:text="+200.00"
+            android:layout_gravity="right"
+            />
+        <TextView
+            android:id="@+id/tv_available_amount"
+            android:layout_marginTop="5dp"
+            style="@style/text_66612_style"
+            android:text="600"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+    <View
+        style="@style/hline_fill"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

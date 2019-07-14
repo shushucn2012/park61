@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:background="@drawable/mamatuanbanner"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/area_goods"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@color/gffffff"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="125dp">
+
+        <RelativeLayout
+            android:id="@+id/img_area"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_goods"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_default_v" />
+
+            <TextView
+                android:id="@+id/tv_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_invalid"
+                android:gravity="center"
+                android:text="已团完"
+                android:textColor="@color/gffffff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_area">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                style="@style/text_33316_style"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="61区南湖儿童创意绘画" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_goods_name"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_total_num"
+                    style="@style/text_66612_style"
+                    android:text="限量  件" />
+
+                <TextView
+                    style="@style/text_66612_style"
+                    android:layout_marginLeft="15dp"
+                    android:text="已抢" />
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="100dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:thumb="@null" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@id/price_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv_goods_price"
+                        style="@style/text_66614_style"
+                        android:text="￥78.9"
+                        android:textColor="@color/collect_red"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_old_goods_price"
+                        style="@style/text_99912_style"
+                        android:layout_marginLeft="10dp"
+                        android:text="￥99.5" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_gobuy"
+                    style="@style/btn_com_style"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="马上团" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View style="@style/hline_fill" />
+
+</LinearLayout>

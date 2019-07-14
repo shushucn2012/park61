@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/address_title"
+            style="@style/topbar_title_style"
+            android:text="收货地址" />
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choose_selftake_point_area"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/gffffff"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/store_name_tv"
+            style="@style/text_66614_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/img_arrow"
+            android:text=""
+            android:textColor="@color/g333333" />
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            style="@style/me_item_arrow_style"
+            android:layout_marginRight="12dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/choose_selftake_point_area"
+        android:layout_above="@+id/create_btn"
+        android:id="@+id/act_solution_1_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/store_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gffffff"
+                android:paddingTop="8dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text=""
+                    android:textColor="@color/g333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/receive_phone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/name_tv"
+                    android:text=""
+                    android:textColor="@color/g333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/distance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:text=""
+                    android:textColor="@color/g333333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_tv"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:background="@color/gffffff"
+                        android:text=""
+                        android:textColor="@color/text_color_blue"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/storename_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv1"
+                        android:text=""
+                        android:textColor="@color/g333333"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/store"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gffffff"
+                    android:maxLines="3"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text=""
+                    android:textColor="@color/g333333"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <com.park61.widget.list.ListViewForScrollView
+                android:id="@+id/address_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/create_btn"
+                android:layout_below="@+id/store_area"
+                android:layout_marginTop="1dp"
+                android:background="@color/bg_color"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:listSelector="#00000000"/>
+
+            <RelativeLayout
+                android:id="@+id/block"
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/empty_img"
+                    android:layout_width="100dp"
+                    android:layout_height="95dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/quexing"
+                    android:textSize="15pt" />
+
+                <TextView
+                    android:id="@+id/empty_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/empty_img"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/g999999"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_text_red_deep"
+        android:gravity="center"
+        android:text="新建地址"
+        android:textColor="@color/gffffff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

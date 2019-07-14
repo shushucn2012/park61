@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/create_tv"
+            style="@style/topbar_title_style"
+            android:text="新增联系人" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/gffffff"
+        android:paddingTop="8dp" >
+
+        <EditText
+            android:id="@+id/name_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:hint="联系人姓名"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/g666666"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/name_info"
+            android:layout_marginTop="3dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorLine" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/phone_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/line1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:hint="联系人电话号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/g666666"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:paddingTop="8dp" -->
+    <!-- android:background="@color/gffffff" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="105dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="12dp" -->
+    <!-- android:layout_marginTop="8dp" -->
+    <!-- android:paddingBottom="8dp" -->
+    <!-- android:text="联系人姓名" -->
+    <!-- android:textColor="@color/g666666" -->
+    <!-- android:textSize="16sp" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/name_info" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_marginRight="12dp" -->
+    <!-- android:layout_alignLeft="@+id/phone_info" -->
+    <!-- android:layout_toRightOf="@+id/tv" -->
+    <!-- android:hint="联系人姓名" -->
+    <!-- android:maxLength="11" -->
+    <!-- android:singleLine="true" -->
+    <!-- android:textColor="@color/g333333" -->
+    <!-- android:textSize="14sp" /> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/line1" -->
+    <!-- android:layout_below="@+id/tv" -->
+    <!-- android:layout_marginTop="3dp" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="1dp" > -->
+
+
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_marginLeft="12dp" -->
+    <!-- android:layout_marginRight="12dp" -->
+    <!-- android:layout_height="1dp" -->
+    <!-- android:background="@color/colorLine" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv1" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@+id/line1" -->
+    <!-- android:layout_marginLeft="12dp" -->
+    <!-- android:layout_marginTop="13dp" -->
+    <!-- android:layout_marginBottom="8dp" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:text="联系人电话号码" -->
+    <!-- android:textColor="@color/g666666" -->
+    <!-- android:textSize="16sp" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/phone_info" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_below="@+id/line1" -->
+    <!-- android:layout_marginTop="8dp" -->
+    <!-- android:layout_marginRight="12dp" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:layout_toRightOf="@+id/tv1" -->
+    <!-- android:hint="联系人电话号码" -->
+    <!-- android:inputType="phone" -->
+    <!-- android:maxLength="11" -->
+    <!-- android:singleLine="true" -->
+    <!-- android:textColor="@color/g333333" -->
+    <!-- android:textSize="14sp" /> -->
+    <!-- </RelativeLayout> -->
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/btn_com_style"
+        android:text="保存" />
+
+</LinearLayout>

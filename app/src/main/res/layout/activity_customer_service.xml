@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="客服中心" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gffffff" 
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_33316_style"
+            android:layout_marginLeft="12dp"
+            android:text="客服电话：" />
+        
+         <TextView
+             android:id="@+id/tv_cs_phone"
+            style="@style/text_33316_style"
+            android:layout_marginLeft="5dp"
+            android:textColor="#0099FF"
+            android:text="（027）6552 4760" />
+    </LinearLayout>
+
+</LinearLayout>

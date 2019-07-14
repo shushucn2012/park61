@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/area_tab_root"
+    android:layout_width="72dp"
+    android:layout_height="match_parent"
+    android:minHeight="50dp"
+    android:minWidth="72dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tab_name"
+        style="@style/text_33316_style"
+        android:layout_centerInParent="true"
+        android:text="推荐" />
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="20dp"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/com_orange"
+        android:visibility="invisible" />
+</RelativeLayout>

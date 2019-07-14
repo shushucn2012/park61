@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rec_white_stroke_white_solid"
+        android:orientation="vertical">
+
+        <com.park61.widget.list.ListViewForScrollView
+            android:id="@+id/lv_baby_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/gffffff"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="8dp"
+            android:listSelector="@color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.park61.widget.circleimageview.CircleImageView
+            android:id="@+id/img_baby"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/headimg_default_img" />
+
+        <TextView
+            android:id="@+id/tv_baby_name"
+            style="@style/text_33314_style"
+            android:layout_marginTop="5dp"
+            android:text="123" />
+    </LinearLayout>
+</RelativeLayout>

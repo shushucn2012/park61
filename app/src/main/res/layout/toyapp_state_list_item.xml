@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginLeft="22dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="37dp"
+                android:background="@color/gcccccc" />
+
+            <ImageView
+                android:id="@+id/img_deng"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/sljchuise" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="37dp"
+                android:background="@color/gcccccc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/gffffff"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:text="申请领取" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/text_99912_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="2017-06-18 18:30:56" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_state_tip"
+                style="@style/text_66614_style"
+                android:layout_marginTop="10dp"
+                android:text="快带你的玩具回家吧" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

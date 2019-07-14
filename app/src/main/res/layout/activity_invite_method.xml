@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="邀请方式" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/area_qq_invite"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/gffffff">
+
+            <ImageView
+                android:id="@+id/img_qq_invite"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/qq_invite" />
+
+            <LinearLayout
+                android:id="@+id/area_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_qq_invite"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="10dp"
+                    android:text="QQ邀请" />
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:layout_marginTop="5dp"
+                    android:text="邀请您的QQ好友" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/img_invite_downarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/area_qq"
+            android:layout_marginLeft="53dp"
+            android:background="@color/colorLine" />
+
+        <RelativeLayout
+            android:id="@+id/area_weixin_invite"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/gffffff">
+
+            <ImageView
+                android:id="@+id/img_weixin_invite"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/weixin_invite" />
+
+            <LinearLayout
+                android:id="@+id/area_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_weixin_invite"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="10dp"
+                    android:text="微信邀请" />
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:layout_marginTop="5dp"
+                    android:text="邀请您的微信好友" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/img_invite_downarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/area_weixin"
+            android:layout_marginLeft="53dp"
+            android:background="@color/colorLine" />
+
+        <RelativeLayout
+            android:id="@+id/area_qr_invite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gffffff">
+
+            <ImageView
+                android:id="@+id/img_sao_invite"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/saoyisao_invite" />
+
+            <LinearLayout
+                android:id="@+id/area_sao"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_sao_invite"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="10dp"
+                    android:text="扫码邀请" />
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:layout_marginTop="5dp"
+                    android:text="面对面邀请好友" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/img_invite_downarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/area_weixin"
+            android:background="@color/colorLine" />
+    </LinearLayout>
+</LinearLayout>

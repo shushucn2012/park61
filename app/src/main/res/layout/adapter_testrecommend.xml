@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="124dp"
+    android:layout_marginTop="16dp"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="112dp"
+            android:layout_height="92dp"
+            android:layout_marginLeft="12dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_righticon"
+                android:layout_width="112dp"
+                android:layout_height="92dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_v"
+                app:riv_corner_radius="5dp"
+                app:riv_oval="false" />
+
+            <ImageView
+                android:id="@+id/iv_rightup"
+                android:layout_width="52dp"
+                android:layout_height="18dp"
+                android:src="@color/com_red" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/area_sys_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="DAP测评很好帮助儿童"
+                android:textColor="@color/bdp_dark_gray"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_agearount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="123"
+                android:textColor="@color/g999999"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_viewnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="12位小朋友完成测试"
+                android:textColor="@color/g999999"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/tv_expert_focus_btn">
+
+                    <ImageView
+                        android:id="@+id/img_test_coupon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/icon_test_coupon" />
+
+                    <TextView
+                        android:id="@+id/tv_realprice"
+                        style="@style/text_33318_style"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="¥169.1"
+                        android:textColor="@color/color_text_red_deep" />
+
+                    <TextView
+                        android:id="@+id/tv_orignalprice"
+                        style="@style/text_99914_style"
+                        android:layout_marginLeft="3dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="¥169.8" />
+                </LinearLayout>
+
+                <com.park61.widget.textview.CirButton xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tv_expert_focus_btn"
+                    android:layout_width="65dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dp"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="购买"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    app:cirRadiu="20" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/bg_color" />
+</LinearLayout>

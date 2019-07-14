@@ -1,0 +1,5 @@
+include ':app', ':handmarklibrary'
+include ':app', ':LRecyclerview_library'
+include ':app', ':multi-image-selector'
+include ':app', ':push'
+include 'photoview'

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="false">
+        <shape  android:shape="rectangle">
+
+            <!-- 背景颜色 -->
+            <solid android:color="@color/gffffff" />
+
+            <!-- padding 表示内部空间距离背景图片内部边距 的距离 -->
+            <padding android:bottom="2dp" android:left="5dp" android:right="5dp" android:top="2dp" />
+            <!-- 图片边框属性 -->
+            <stroke android:width="0.5dp" android:color="@color/colorLine" />
+
+
+        </shape>
+    </item>
+
+
+
+</selector>

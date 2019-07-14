@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:background="@null"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_page_title"
+            style="@style/topbar_title_style"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/area_right"
+            style="@style/topbar_rightbtn_style"
+            android:layout_width="55dp"
+            android:gravity="center_vertical|right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/erjidaohang" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/top_bar"
+        android:progress="0"
+        android:max="100"/>
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pb"
+        android:layout_marginTop="1dp" />
+
+</RelativeLayout>

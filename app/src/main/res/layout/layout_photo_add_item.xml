@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="75dp"
+    android:layout_height="75dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/area_add_pic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/rec_xu_stroke_trans_solid"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pingjiatupian" />
+
+        <TextView
+            style="@style/text_99912_style"
+            android:layout_marginTop="10dp"
+            android:text="添加图片"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

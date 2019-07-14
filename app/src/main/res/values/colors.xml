@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 黑色 -->
+    <color name="g000000">#000000</color>
+    <!-- 白色 -->
+    <color name="gffffff">#ffffff</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 灰色 -->
+    <color name="gaaaaaa">#aaaaaa</color>
+    <color name="g333333">#222222</color>
+    <color name="g222222">#222222</color>
+    <!-- 深灰色 -->
+    <color name="g666666">#666666</color>
+    <!-- 深红色 -->
+    <color name="g981c10">#981c10</color>
+    <!-- 通用红色 -->
+    <color name="ge74c3c">#e74c3c</color>
+    <!-- 点击红色 -->
+    <color name="gcf4436">#cf4436</color>
+    <!-- 线条颜色 -->
+    <color name="gcccccc">#dddddd</color>
+    <!-- 背景颜色 -->
+    <color name="gdfdfe9">#dfdfe9</color>
+    <!-- 通用蓝色 -->
+    <color name="g08a6db">#08a6db</color>
+    <!-- 点击蓝色 -->
+    <color name="g0795c5">#0795c5</color>
+    <!-- 点击前灰色 -->
+    <color name="gafb0c0">#afb0c0</color>
+    <!-- 点击灰色 -->
+    <color name="g9d9eac">#9d9eac</color>
+    <!-- 文字灰色 -->
+    <color name="g999999">#999999</color>
+    <!-- 底部白色背景 -->
+    <color name="gededf7">#ededf7</color>
+    <!-- 键盘灰色背景 -->
+    <color name="gd5d5de">#d5d5de</color>
+    <color name="list_divider">#D0CCC7</color>
+    <color name="schedule_bg">#efefef</color>
+    <!-- 透明背景 -->
+    <color name="white">#FFFFFF</color>
+    <color name="transbg">#66000000</color>
+    <color name="com_red">#FF5A80</color>
+    <color name="text_red">#d80c18</color>
+    <color name="com_green">#42D35B</color>
+    <color name="collect_red">#FF4131</color>
+    <color name="transparent_red">#33D22128</color>
+    <color name="com_orange">#ff2f65</color>
+    <color name="toy_size_color">#fe5a80</color>
+    <color name="gray_red">#FF7D86</color>
+    <color name="com_light_orange">#FF5946</color>
+    <color name="bg_color">#f5f5f9</color>
+    <color name="gf8f8f8">#f8f8f8</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="btn_goods_evaluate">#ffa600</color>
+    <color name="btn_addtocart_bg">#FABD00</color>
+    <!-- 宝宝成长日程中有游戏的日期颜色 -->
+    <color name="text_txt_bg">#72d058</color>
+    <color name="text_txt_current_bg">#FF4646</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--浅线-->
+    <color name="topLine">#e5e5e5</color>
+    <color name="colorLine">#e5e5e5</color>
+    <color name="colorLineSales">#D0CFD3</color>
+    <!--背景色-->
+    <color name="color_progress_red_deep">#FF73A7</color>
+    <color name="color_fc3f6d">#FC3F6D</color>
+    <color name="color_text_red_light">#FFACC0</color>
+    <color name="color_text_red_deep">#FF5A80</color>
+    <color name="gfff3f6">#fff3f6</color>
+    <color name="colorBg">#efefef</color>
+    <color name="background_select_tab_pressed">#FF0000</color>
+    <color name="sallow_red">#ff8383</color>
+    <color name="sallow_red_alpha">#22ff8383</color>
+    <color name="text_red_alpha">#22d80c18</color>
+    <color name="bg_red_alpha">#77d80c18</color>
+    <color name="invite_bg">#4443629c</color>
+    <color name="text_blue">#00b4ff</color>
+    <color name="btn_yellow">#ffd200</color>
+    <color name="text_color_blue">#44bfff</color>
+    <color name="gray">#f5f5f9</color>
+    <color name="bg_grey">#f9f9fc</color>
+    <color name="hint_color">#dadada</color>
+    <color name="line_gc">#cccccc</color>
+    <color name="btn_stroke">#818181</color>
+    <color name="btn_bg_grey">#e5e5e5</color>
+    <color name="com_yellow">#ffe13e</color>
+    <color name="gray_white">#FEB1B9</color>
+    <color name="dap_blue">#5889dc</color>
+    <color name="gree">#00d8c4</color>
+    <color name="tint_color">#EF4B81</color>
+    <color name="timeline_background_del_color">#ffcc0000</color>
+    <color name="timeline_backgound_color">#D8D8D8</color>
+
+    <color name="camera_bg">#2c2c2c</color>
+    <color name="title_background_color">#fcb840</color>
+    <color name="camera_progress_split">#005084</color>
+    <color name="camera_progress_three">#24ff00</color>
+    <color name="camera_progress_overflow">#1b5d89</color>
+    <color name="camera_progress_delete">#f68b2b</color>
+    <color name="camera_bottom_press_bg">#1b1c1f</color>
+    <color name="bdp_dark_gray">#ff333333</color>
+    <color name="city_search_bg">#fff2f2f2</color>
+
+    <color name="app_bg">#F6F6F6</color>
+
+    <color name="gdedede">#dedede</color>
+    <color name="activity_sign">#fe698b</color>
+    <color name="activity_close">#d0d0d0</color>
+    <color name="gfafafe">#fafafe</color>
+    <color name="gf9f0f5">#f9f0f5</color>
+    <color name="g8b8b8b">#8b8b8b</color>
+
+</resources>

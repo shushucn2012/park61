@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="@color/gffffff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/text_33318_style"
+        android:singleLine="false"
+        android:text="提 示"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/img_title"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_chenggong_gou"
+        android:layout_marginBottom="25dp"
+        android:visibility="gone"/>
+    
+    <TextView
+        android:id="@+id/text_msg"
+        style="@style/text_33316_style"
+        android:singleLine="false"
+        android:text="提 示" />
+
+</LinearLayout>

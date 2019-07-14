@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        android:layout_width="match_parent" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="支付方式" />
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                style="@style/text_33312_style"
+                android:textColor="@color/color_text_red_deep"
+                android:text="¥"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tv_pay_amount"
+                style="@style/text_33316_style"
+                android:textColor="@color/color_text_red_deep"
+                android:text="0.00"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="9dp">
+
+            <TextView
+                style="@style/text_99914_style"
+                android:text="订单号:" />
+
+            <TextView
+                android:id="@+id/tv_order_num"
+                style="@style/text_99914_style"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@color/gffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            style="@style/text_99914_style"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="left|center_vertical"
+            android:text="选择支付方式" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_color" />
+
+        <ListView
+            android:id="@+id/lv_pay_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/bg_color"
+            android:dividerHeight="1dp"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/btn_com_style"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rec_red_stroke_red_solid_corner30"
+        android:text="立即付款" />
+
+</LinearLayout>

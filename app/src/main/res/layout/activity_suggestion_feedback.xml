@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style" >
+
+        <Button
+            android:id="@+id/left_img"
+            style="@style/topbar_leftbtn_style"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/topbar_title_style"
+            android:text="意见反馈" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="问题种类"
+        android:textColor="@color/g666666"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/type1_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_type"
+        android:layout_marginTop="10dp"
+        android:background="#efefef" >
+
+        <Button
+            android:id="@+id/btn_buy_question"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:background="@color/gffffff"
+            android:padding="2dp"
+            android:text="购买遇见的问题"
+            android:textColor="@color/g333333"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_need"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/btn_buy_question"
+            android:background="@color/gffffff"
+            android:padding="2dp"
+            android:text="您的新需求"
+            android:textColor="@color/g333333"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/type2_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type1_area"
+        android:layout_marginTop="10dp"
+        android:background="#efefef" >
+
+        <Button
+            android:id="@+id/btn_question"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:background="@color/gffffff"
+            android:padding="2dp"
+            android:text="对我们建议"
+            android:textColor="@color/g333333"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_other"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/btn_question"
+            android:background="@color/gffffff"
+            android:padding="2dp"
+            android:text="其他"
+            android:textColor="@color/g333333"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_input_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type2_area"
+        android:layout_marginTop="10dp"
+        android:background="@color/gffffff"
+        android:gravity="top"
+        android:hint="您的意见，就是对我们对最大的帮助~(300字以内)"
+        android:maxLength="300"
+        android:minLines="5"
+        android:padding="12dp"
+        android:textColor="@color/g333333"
+        android:textSize="14sp" />
+
+    <GridView
+        android:id="@+id/gv_input_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_input_word"
+        android:background="@color/gffffff"
+        android:columnWidth="80dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:padding="10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+    <Button 
+        android:id="@+id/btn_submit"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:background="@color/gaaaaaa"
+        android:text="发表意见"
+        android:textColor="@color/gffffff"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

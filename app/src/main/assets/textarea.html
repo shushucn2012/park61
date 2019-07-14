@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://m.61park.cn/html-sui/requirement-house/write.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0">
+<meta content="telephone=no" name="format-detection">
+
+    <title>textarea</title>
+    <script type="text/javascript">
+        function fun(str)
+        {
+            var pic=document.createElement("img");
+            pic.setAttribute("src",str);
+            document.getElementById("myDiv").appendChild(pic);
+        }
+        function output(){
+           window.Android.call(document.getElementById("myDiv").innerHTML);
+           return document.getElementById("myDiv").innerHTML;
+        }
+    </script>
+    <style type="text/css">
+    body{height:100%; overflow:hidden; margin:0px; padding:0px;}
+    .box{width: 100%;}
+    #myDiv{margin:0 2%;width: 96%;height:100%;position:absolute;font-size:.8rem;line-height:1.3rem;overflow:auto;font-family: "微软雅黑";color:#666;}
+    #myDiv img{width:auto;height:2rem!important;margin:0 .5rem .2rem .5rem;border:1px solid #efefef;padding: 2px; vertical-align:bottom}
+    </style>
+</head>
+<body>
+<div class="box">
+    <div id="myDiv" contenteditable="true">
+    </div>
+</div>
+
+
+
+</body></html>
